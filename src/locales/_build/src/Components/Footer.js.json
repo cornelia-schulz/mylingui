@@ -1,0 +1,58 @@
+{
+  "About Us": {
+    "origin": [
+      [
+        "src/Components/Footer.js",
+        13
+      ]
+    ]
+  },
+  "What We Do": {
+    "origin": [
+      [
+        "src/Components/Footer.js",
+        14
+      ]
+    ]
+  },
+  "FAQ": {
+    "origin": [
+      [
+        "src/Components/Footer.js",
+        15
+      ]
+    ]
+  },
+  "Career": {
+    "origin": [
+      [
+        "src/Components/Footer.js",
+        16
+      ]
+    ]
+  },
+  "Blog": {
+    "origin": [
+      [
+        "src/Components/Footer.js",
+        17
+      ]
+    ]
+  },
+  "Contact Us": {
+    "origin": [
+      [
+        "src/Components/Footer.js",
+        18
+      ]
+    ]
+  },
+  "© 2018 Huddle Copyright": {
+    "origin": [
+      [
+        "src/Components/Footer.js",
+        23
+      ]
+    ]
+  }
+}

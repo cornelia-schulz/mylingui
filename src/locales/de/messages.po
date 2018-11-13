@@ -13,14 +13,46 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/App.js:14
-msgid "Edit <0>src/App.js</0> and save to reload."
-msgstr "Bearbeite <0>src/App.js</0>, speichere und lade die Seite erneut."
+#: src/Components/Footer.js:13
+msgid "About Us"
+msgstr "Über"
 
-#: src/App.js:10
-msgid "Homepage"
-msgstr "Startseite"
+#: src/Components/Footer.js:17
+msgid "Blog"
+msgstr "Blog"
 
-#: src/App.js:16
-msgid "Learn Lingui"
-msgstr "Lern Lingui"
+#: src/Components/Main.js:9
+msgid "Build The Community Your Fans Will Love"
+msgstr "Baue eine Gemeinschaft auf, die deine Fans lieben werden"
+
+#: src/Components/Footer.js:16
+msgid "Career"
+msgstr "Karriere"
+
+#: src/Components/Footer.js:18
+msgid "Contact Us"
+msgstr "Kontakt"
+
+#: src/Components/Footer.js:15
+msgid "FAQ"
+msgstr "FAQ"
+
+#: src/Components/Main.js:14
+msgid "Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussions."
+msgstr "Huddle gestaltet Gemeinschaften neu. Deine Besucher haben das gleiche Mitspracherecht wie du. Erstelle Verbindungen durch bedeutungsvolle Unterhaltungen."
+
+#: src/Components/SignUp.js:13
+msgid "Register"
+msgstr "Anmelden"
+
+#: src/Components/SignUp.js:8
+msgid "Sign Up For Early Access"
+msgstr "Melde dich an, um frühen Zugang zu erhalten"
+
+#: src/Components/Footer.js:14
+msgid "What We Do"
+msgstr "Was wir machen"
+
+#: src/Components/Footer.js:23
+msgid "© 2018 Huddle Copyright"
+msgstr "© 2018 Huddle Copyright"

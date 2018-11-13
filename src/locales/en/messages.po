@@ -13,14 +13,46 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/App.js:14
-msgid "Edit <0>src/App.js</0> and save to reload."
+#: src/Components/Footer.js:13
+msgid "About Us"
 msgstr ""
 
-#: src/App.js:10
-msgid "Homepage"
+#: src/Components/Footer.js:17
+msgid "Blog"
 msgstr ""
 
-#: src/App.js:16
-msgid "Learn Lingui"
+#: src/Components/Main.js:9
+msgid "Build The Community Your Fans Will Love"
+msgstr ""
+
+#: src/Components/Footer.js:16
+msgid "Career"
+msgstr ""
+
+#: src/Components/Footer.js:18
+msgid "Contact Us"
+msgstr ""
+
+#: src/Components/Footer.js:15
+msgid "FAQ"
+msgstr ""
+
+#: src/Components/Main.js:14
+msgid "Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussions."
+msgstr ""
+
+#: src/Components/SignUp.js:13
+msgid "Register"
+msgstr ""
+
+#: src/Components/SignUp.js:8
+msgid "Sign Up For Early Access"
+msgstr ""
+
+#: src/Components/Footer.js:14
+msgid "What We Do"
+msgstr ""
+
+#: src/Components/Footer.js:23
+msgid "© 2018 Huddle Copyright"
 msgstr ""
