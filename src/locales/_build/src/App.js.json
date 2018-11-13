@@ -1,0 +1,26 @@
+{
+  "Homepage": {
+    "origin": [
+      [
+        "src/App.js",
+        10
+      ]
+    ]
+  },
+  "Edit <0>src/App.js</0> and save to reload.": {
+    "origin": [
+      [
+        "src/App.js",
+        14
+      ]
+    ]
+  },
+  "Learn Lingui": {
+    "origin": [
+      [
+        "src/App.js",
+        16
+      ]
+    ]
+  }
+}
