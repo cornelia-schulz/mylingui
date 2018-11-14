@@ -3,9 +3,7 @@ html, body {
 }
 
 .App {
-    width: 1440px;
-    margin: auto;
-    margin-top: 50px;
+    margin: 50px 20px;
 }
 
 header {
@@ -18,11 +16,11 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 49px
+    font-size: 3em;
 }
 
 h2 {
-    font-size: 40px
+    font-size: 2em;
 }
 
 main {
@@ -42,6 +40,10 @@ footer {
     text-align: center;
     color: hsl(208, 11%, 55%);
     margin-bottom: 100px;
+}
+
+.mockup {
+    max-width: 100%;
 }
 
 .signup {
@@ -98,4 +100,61 @@ footer {
     margin-left: 40px;
     font-size: 14px;
     margin-bottom: 40px;
+}
+
+@media (max-width: 812px) {
+    .App {
+        width: 100%;
+        margin: 0;
+    }
+
+    header {
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+
+    main {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    footer {
+        flex-wrap: wrap;
+    }
+
+    h1 {
+        font-size: 1.7em;
+    }
+
+    .app-logo {
+        height: 20px;
+    }
+
+    .blurb {
+        font-size: 1em;
+        margin-bottom: 50px;
+    }
+
+    .email, .register {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .left, .right {
+        width: 100%;
+        padding:  50px 0px 10px 20px;
+    }
+
+    .footerlink {
+        width: 100%;
+        text-align: left;
+        padding-left: 0;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .copyright {
+        text-align: center;
+    }
 }

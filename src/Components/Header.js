@@ -4,7 +4,7 @@ import logo from '../images/logo.svg';
 function Header(props) {
     return(
         <header>
-            <img src={logo} className="App-logo" alt="logo" />
+            <img src={logo} className="app-logo" alt="logo" />
         </header>
     )
 }

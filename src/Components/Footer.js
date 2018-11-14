@@ -22,7 +22,7 @@ function Footer(props) {
                 <button className='footerlink'><Trans>Career</Trans></button>
                 <button className='footerlink'><Trans>Blog</Trans></button>
                 <button className='footerlink'><Trans>Contact Us</Trans></button>
-                <p><Trans>&copy; 2018 Huddle Copyright</Trans></p>
+                <p className='copyright'><Trans>&copy; 2018 Huddle Copyright</Trans></p>
             </div>
             
             

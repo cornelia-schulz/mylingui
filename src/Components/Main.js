@@ -17,7 +17,7 @@ function Main(props) {
                      engage in genuine discussions.
                 </Trans>
             </p>
-            <img src={mockup} className="Mockup" alt="screen mockup" />
+            <img src={mockup} className="mockup" alt="screen mockup" />
         </main>
     )
 }
