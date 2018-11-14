@@ -10,9 +10,11 @@ function Main(props) {
                     Build The Community Your Fans Will Love
                 </Trans>
             </h1>
-            <p>
+            <p className='blurb'>
                 <Trans>
-                    Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussions.
+                    Huddle re-imagines the way we build communities. You have a voice,<br/>
+                     but so does your audience. Create connections with your users as you <br/>
+                     engage in genuine discussions.
                 </Trans>
             </p>
             <img src={mockup} className="Mockup" alt="screen mockup" />

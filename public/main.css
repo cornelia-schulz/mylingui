@@ -1,8 +1,101 @@
+html, body {
+    font-family: 'Open Sans', sans-serif;
+}
+
 .App {
-    margin: 20px;
+    width: 1440px;
+    margin: auto;
+    margin-top: 50px;
 }
 
 header {
-   text-align: left
+   text-align: left;
+   margin-bottom: 100px;
 }
 
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 49px
+}
+
+h2 {
+    font-size: 40px
+}
+
+main {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+footer {
+    background-color: hsl(192, 100%, 9%);
+    color: #fff;
+    display: flex;
+}
+
+.blurb {
+    font-size: 28px;
+    text-align: center;
+    color: hsl(208, 11%, 55%);
+    margin-bottom: 100px;
+}
+
+.signup {
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.email {
+    width: 450px;
+    height: 50px;
+    border-radius: 5px;
+    border-style:solid;
+    text-indent: 20px;
+    color: hsl(208, 11%, 55%);
+}
+
+.register {
+    background-color: hsl(322, 100%, 66%);
+    height: 55px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    margin-left: 30px;
+}
+
+.left {
+    width: 30%;
+    padding: 80px 100px 50px 150px;
+}
+
+.right {
+    width: 70%;
+    padding:  80px 150px 50px 50px;
+    text-align: right;
+}
+
+.footer-logo {
+    height: 30px;
+    margin-bottom: 40px;
+}
+
+.social {
+    height: 25px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.footerlink {
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    margin-left: 40px;
+    font-size: 14px;
+    margin-bottom: 40px;
+}

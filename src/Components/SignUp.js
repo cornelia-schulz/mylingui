@@ -9,8 +9,8 @@ function SignUp(props) {
                     Sign Up For Early Access
                 </Trans>
             </h2>
-            <input type='text' name='email' />
-            <button type='submit'><Trans>Register</Trans></button>
+            <input className='email' placeholder='email@example.com' type='text' name='email' />
+            <button className='register' type='submit'><Trans>Register</Trans></button>
         </div>
     )
 }
