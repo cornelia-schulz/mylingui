@@ -1,9 +1,9 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import logo from '../images/logo-white.svg';
-import fb from '../images/fb.png';
-import twitter from '../images/twitter.png';
-import instagram from '../images/instagram.png';
+import logo from '/images/logo-white.svg';
+import fb from '/images/fb.png';
+import twitter from '/images/twitter.png';
+import instagram from '/images/instagram.png';
 
 function Footer(props) {
     return(

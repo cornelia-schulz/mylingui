@@ -1,6 +1,6 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import mockup from '../images/screen-mockups.svg';
+import mockup from '/images/screen-mockups.svg';
 
 function Main(props) {
     return(
