@@ -1,9 +1,8 @@
 {
   "name": "mylingui",
   "version": "0.1.0",
-<<<<<<< HEAD
   "description": "Practise app for Lingui and user locales",
-  "main": "/src/server/index.js",
+  "main": "/server/index.js",
   "author": "Cornelia Schulz",
   "private": true,
   "babel": {
@@ -12,9 +11,6 @@
       "@babel/react"
     ]
   },
-=======
-  "private": false,
->>>>>>> 24bcf0f8aaf165037c3224282504b00d591de862
   "dependencies": {
     "@lingui/react": "^2.7.1",
     "accept-language": "^3.0.18",
@@ -28,7 +24,7 @@
     "react-scripts": "^2.1.3"
   },
   "scripts": {
-    "dev": "webpack & node server",
+    "dev": "node server & webpack-dev-server --mode development",
     "start": "webpack",
     "build": "webpack --mode production",
     "test": "react-scripts test",
