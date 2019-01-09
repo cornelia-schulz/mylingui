@@ -1,6 +1,5 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import mockup from '/images/screen-mockups.svg';
 
 function Main(props) {
     return(
@@ -17,7 +16,7 @@ function Main(props) {
                      engage in genuine discussions.
                 </Trans>
             </p>
-            <img src={mockup} className="mockup" alt="screen mockup" />
+            <img src="/images/screen-mockups.svg" className="mockup" alt="screen mockup" />
         </main>
     )
 }

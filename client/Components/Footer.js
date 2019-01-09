@@ -1,18 +1,14 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import logo from '/images/logo-white.svg';
-import fb from '/images/fb.png';
-import twitter from '/images/twitter.png';
-import instagram from '/images/instagram.png';
 
 function Footer(props) {
     return(
         <footer>
             <div className='left'>
-                <img src={logo} className="footer-logo" alt="logo" /><br/>
-                <img src={fb} className="social" alt="Facebook icon" />
-                <img src={instagram} className="social" alt="Instagram icon" />
-                <img src={twitter} className="social" alt="Twitter icon" />
+                <img src="/images/logo-white.svg" className="footer-logo" alt="logo" /><br/>
+                <img src="/images/fb.png" className="social" alt="Facebook icon" />
+                <img src="/images/instagram.png" className="social" alt="Instagram icon" />
+                <img src="/images/twitter.png" className="social" alt="Twitter icon" />
             </div>
             
             <div className='right'>
