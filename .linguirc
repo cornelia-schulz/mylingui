@@ -1,5 +1,5 @@
 {
-    "localeDir": "src/locales",
-    "srcPathDirs": ["src/"],
+    "localeDir": "server/public/locales",
+    "srcPathDirs": ["client/Components/"],
     "format": "po"
 }

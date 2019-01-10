@@ -1,0 +1,18 @@
+{
+  "Build The Community Your Fans Will Love": {
+    "origin": [
+      [
+        "client/Components/Main.js",
+        8
+      ]
+    ]
+  },
+  "Huddle re-imagines the way we build communities. You have a voice,<0/>but so does your audience. Create connections with your users as you <1/>engage in genuine discussions.": {
+    "origin": [
+      [
+        "client/Components/Main.js",
+        13
+      ]
+    ]
+  }
+}

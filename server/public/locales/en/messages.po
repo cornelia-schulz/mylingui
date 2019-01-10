@@ -13,46 +13,50 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/Components/Footer.js:13
+#: client/Components/Footer.js:15
 msgid "About Us"
-msgstr ""
+msgstr "About Us"
 
-#: src/Components/Footer.js:17
+#: client/Components/Footer.js:19
 msgid "Blog"
-msgstr ""
+msgstr "Blog"
 
-#: src/Components/Main.js:9
+#: client/Components/Main.js:8
 msgid "Build The Community Your Fans Will Love"
 msgstr ""
 
-#: src/Components/Footer.js:16
+#: client/Components/Footer.js:18
 msgid "Career"
-msgstr ""
+msgstr "Build The Community Your Fans Will Love"
 
-#: src/Components/Footer.js:18
+#: client/Components/Footer.js:20
 msgid "Contact Us"
-msgstr ""
+msgstr "Contact Us"
 
-#: src/Components/Footer.js:15
+#: client/Components/Footer.js:17
 msgid "FAQ"
-msgstr ""
+msgstr "FAQ"
 
 #: src/Components/Main.js:14
-msgid "Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussions."
-msgstr ""
+#~ msgid "Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussions."
+#~ msgstr "Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussions."
 
-#: src/Components/SignUp.js:13
+#: client/Components/Main.js:13
+msgid "Huddle re-imagines the way we build communities. You have a voice,<0/>but so does your audience. Create connections with your users as you <1/>engage in genuine discussions."
+msgstr "Huddle re-imagines the way we build communities. You have a voice,<0/>but so does your audience. Create connections with your users as you <1/>engage in genuine discussions."
+
+#: client/Components/SignUp.js:13
 msgid "Register"
-msgstr ""
+msgstr "Register"
 
-#: src/Components/SignUp.js:8
+#: client/Components/SignUp.js:8
 msgid "Sign Up For Early Access"
-msgstr ""
+msgstr "Sign Up For Early Access"
 
-#: src/Components/Footer.js:14
+#: client/Components/Footer.js:16
 msgid "What We Do"
-msgstr ""
+msgstr "What We Do"
 
-#: src/Components/Footer.js:23
+#: client/Components/Footer.js:21
 msgid "© 2018 Huddle Copyright"
-msgstr ""
+msgstr "© 2018 Huddle Copyright"

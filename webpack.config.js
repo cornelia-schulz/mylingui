@@ -12,7 +12,12 @@ module.exports = {
       test: /\.jsx?$/,
       loader: 'babel-loader',
       exclude: /node_modules/
-    }]
+    },
+    {
+      test: /messages\.(po)$/,
+      include: /locales/,
+      loader: require.resolve('@lingui/loader'),
+  },]
   },
   resolve: {
     extensions: ['.js', '.jsx']

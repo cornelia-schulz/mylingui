@@ -246,21 +246,28 @@ function Header(props) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _lingui_macro__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @lingui/macro */ "./node_modules/@lingui/macro/index.js");
-/* harmony import */ var _lingui_macro__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_lingui_macro__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _lingui_macro__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @lingui/macro */ "./node_modules/@lingui/macro/index.js");
+/* harmony import */ var _lingui_macro__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_lingui_macro__WEBPACK_IMPORTED_MODULE_2__);
+
 
 
 
 function Main(props) {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("main", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_lingui_macro__WEBPACK_IMPORTED_MODULE_1__["Trans"], null, "Build The Community Your Fans Will Love")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("main", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_lingui_macro__WEBPACK_IMPORTED_MODULE_2__["Trans"], null, "Build The Community Your Fans Will Love")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "blurb"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_lingui_macro__WEBPACK_IMPORTED_MODULE_1__["Trans"], null, "Huddle re-imagines the way we build communities. You have a voice,", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "but so does your audience. Create connections with your users as you ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "engage in genuine discussions.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_lingui_macro__WEBPACK_IMPORTED_MODULE_2__["Trans"], null, "Huddle re-imagines the way we build communities. You have a voice,", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "but so does your audience. Create connections with your users as you ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "engage in genuine discussions.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "/images/screen-mockups.svg",
     className: "mockup",
     alt: "screen mockup"
   }));
 }
 
+Main.contextTypes = {
+  linguiPublisher: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object.isRequired,
+  linguiDefaultRender: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.any
+};
 /* harmony default export */ __webpack_exports__["default"] = (Main);
 
 /***/ }),
@@ -313,38 +320,1112 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _Components_App__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Components/App */ "./client/Components/App.js");
-// import React from 'react';
-// import ReactDOM from 'react-dom';
-// import App from './Components/App';
-// import * as serviceWorker from '../serviceWorker';
-// import { I18nProvider } from '@lingui/react';
-// const MyApp = () => {
-//     return (
-//         <I18nProvider language='en'>
-//             <App />
-//         </I18nProvider>
-//     )
-// }
-// ReactDOM.render(<MyApp />, document.getElementById('app'));
-// // If you want your app to work offline and load faster, you can change
-// // unregister() to register() below. Note this comes with some pitfalls.
-// // Learn more about service workers: http://bit.ly/CRA-PWA
-// serviceWorker.unregister();
+/* harmony import */ var _serviceWorker__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../serviceWorker */ "./serviceWorker.js");
+/* harmony import */ var _lingui_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @lingui/react */ "./node_modules/@lingui/react/index.js");
+/* harmony import */ var _lingui_react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_lingui_react__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _lingui_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @lingui/core */ "./node_modules/@lingui/core/index.js");
+/* harmony import */ var _lingui_core__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_lingui_core__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _server_public_locales_en_messages_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../server/public/locales/en/messages.js */ "./server/public/locales/en/messages.js");
+/* harmony import */ var _server_public_locales_en_messages_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_server_public_locales_en_messages_js__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _server_public_locales_de_messages_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../server/public/locales/de/messages.js */ "./server/public/locales/de/messages.js");
+/* harmony import */ var _server_public_locales_de_messages_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_server_public_locales_de_messages_js__WEBPACK_IMPORTED_MODULE_7__);
 
 
 
-document.addEventListener('DOMContentLoaded', function () {
-  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(I18nProvider, {
+
+
+
+
+
+
+var MyApp = function MyApp() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_lingui_react__WEBPACK_IMPORTED_MODULE_4__["I18nProvider"], {
+    catalogs: {
+      en: _server_public_locales_en_messages_js__WEBPACK_IMPORTED_MODULE_6___default.a
+    },
     language: "en"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Components_App__WEBPACK_IMPORTED_MODULE_2__["default"], null)), document.getElementById('app'));
-});
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Components_App__WEBPACK_IMPORTED_MODULE_2__["default"], null));
+};
+
+react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(MyApp, null), document.getElementById('app')); // If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: http://bit.ly/CRA-PWA
+
+_serviceWorker__WEBPACK_IMPORTED_MODULE_3__["unregister"]();
 
 /***/ }),
 
-/***/ "./node_modules/@lingui/babel-plugin-transform-react/transformer.js":
-/*!**************************************************************************!*\
-  !*** ./node_modules/@lingui/babel-plugin-transform-react/transformer.js ***!
-  \**************************************************************************/
+/***/ "./node_modules/@lingui/core/cjs/core.development.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/@lingui/core/cjs/core.development.js ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, '__esModule', { value: true });
+
+function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
+
+var _Object$getOwnPropertyNames = _interopDefault(__webpack_require__(/*! babel-runtime/core-js/object/get-own-property-names */ "./node_modules/babel-runtime/core-js/object/get-own-property-names.js"));
+var _objectWithoutProperties = _interopDefault(__webpack_require__(/*! babel-runtime/helpers/objectWithoutProperties */ "./node_modules/babel-runtime/helpers/objectWithoutProperties.js"));
+var _extends = _interopDefault(__webpack_require__(/*! babel-runtime/helpers/extends */ "./node_modules/babel-runtime/helpers/extends.js"));
+var messageformatParser = __webpack_require__(/*! messageformat-parser */ "./node_modules/messageformat-parser/parser.js");
+var _slicedToArray = _interopDefault(__webpack_require__(/*! babel-runtime/helpers/slicedToArray */ "./node_modules/babel-runtime/helpers/slicedToArray.js"));
+var plurals = _interopDefault(__webpack_require__(/*! make-plural/umd/plurals */ "./node_modules/make-plural/umd/plurals.js"));
+var _Object$keys = _interopDefault(__webpack_require__(/*! babel-runtime/core-js/object/keys */ "./node_modules/babel-runtime/core-js/object/keys.js"));
+var _typeof = _interopDefault(__webpack_require__(/*! babel-runtime/helpers/typeof */ "./node_modules/babel-runtime/helpers/typeof.js"));
+var _classCallCheck = _interopDefault(__webpack_require__(/*! babel-runtime/helpers/classCallCheck */ "./node_modules/babel-runtime/helpers/classCallCheck.js"));
+var _createClass = _interopDefault(__webpack_require__(/*! babel-runtime/helpers/createClass */ "./node_modules/babel-runtime/helpers/createClass.js"));
+
+var isString = function isString(s) {
+  return typeof s === "string";
+};
+var isFunction = function isFunction(f) {
+  return typeof f === "function";
+};
+function isEmpty(obj) {
+  // null and undefined are "empty"
+  if (obj === null || obj === undefined) return true;
+
+  if (obj.length > 0) return false;
+  if (obj.length === 0) return true;
+
+  return !_Object$getOwnPropertyNames(obj).length;
+}
+
+function date(locales) {
+  var format = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+
+  var formatter = new Intl.DateTimeFormat(locales, format);
+  return function (value) {
+    if (isString(value)) value = new Date(value);
+    return formatter.format(value);
+  };
+}
+
+function number(locales) {
+  var format = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+
+  var formatter = new Intl.NumberFormat(locales, format);
+  return function (value) {
+    return formatter.format(value);
+  };
+}
+
+var defaultFormats = function defaultFormats(language, locales) {
+  var languageData = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+  var formats = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : {};
+
+  locales = locales || language;
+  var plurals$$1 = languageData.plurals;
+
+  var style = function style(format) {
+    return isString(format) ? formats[format] || { style: format } : format;
+  };
+  var replaceOctothorpe = function replaceOctothorpe(value, message) {
+    return function (ctx) {
+      var msg = isFunction(message) ? message(ctx) : message;
+      var norm = Array.isArray(msg) ? msg : [msg];
+      var formatter = new Intl.NumberFormat(locales);
+      var valueStr = formatter.format(value);
+      return norm.map(function (m) {
+        return isString(m) ? m.replace("#", valueStr) : m;
+      });
+    };
+  };
+
+  return {
+    plural: function plural(value, _ref) {
+      var _ref$offset = _ref.offset,
+          offset = _ref$offset === undefined ? 0 : _ref$offset,
+          rules = _objectWithoutProperties(_ref, ["offset"]);
+
+      var message = rules[value] || rules[plurals$$1(value - offset)];
+      return replaceOctothorpe(value - offset, message);
+    },
+
+    selectordinal: function selectordinal(value, _ref2) {
+      var _ref2$offset = _ref2.offset,
+          offset = _ref2$offset === undefined ? 0 : _ref2$offset,
+          rules = _objectWithoutProperties(_ref2, ["offset"]);
+
+      var message = rules[value] || rules[plurals$$1(value - offset, true)];
+      return replaceOctothorpe(value - offset, message);
+    },
+
+    select: function select(value, rules) {
+      return rules[value] || rules.other;
+    },
+
+    number: function number$$1(value, format) {
+      return number(locales, style(format))(value);
+    },
+
+    date: function date$$1(value, format) {
+      return date(locales, style(format))(value);
+    },
+
+    undefined: function undefined(value) {
+      return value;
+    }
+  };
+};
+
+// Params -> CTX
+/**
+ * Creates a context object, which formats ICU MessageFormat arguments based on
+ * argument type.
+ *
+ * @param language     - Language of message
+ * @param locales      - Locales to be used when formatting the numbers or dates
+ * @param values       - Parameters for variable interpolation
+ * @param languageData - Language data (e.g: plurals)
+ * @param formats - Custom format styles
+ * @returns {function(string, string, any)}
+ */
+function context(_ref3) {
+  var language = _ref3.language,
+      locales = _ref3.locales,
+      values = _ref3.values,
+      formats = _ref3.formats,
+      languageData = _ref3.languageData;
+
+  var formatters = defaultFormats(language, locales, languageData, formats);
+
+  var ctx = function ctx(name, type, format) {
+    var value = values[name];
+    var formatted = formatters[type](value, format);
+    var message = isFunction(formatted) ? formatted(ctx) : formatted;
+    return Array.isArray(message) ? message.join("") : message;
+  };
+
+  return ctx;
+}
+
+function interpolate(translation, language, locales, languageData) {
+  return function (values) {
+    var formats = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+
+    var message = translation(context({
+      language: language,
+      locales: locales,
+      languageData: languageData,
+      formats: formats,
+      values: values
+    }));
+
+    return Array.isArray(message) ? message.join("").trim() : message;
+  };
+}
+
+var flatten = function flatten(arrays) {
+  return [].concat.apply([], arrays);
+};
+var zip = function zip(a, b) {
+  return a.map(function (item, index) {
+    return [item, b[index]];
+  });
+};
+
+var t = function t(strings) {
+  for (var _len = arguments.length, values = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+    values[_key - 1] = arguments[_key];
+  }
+
+  return flatten(zip(strings, values)).join("");
+};
+
+var _plural = function _plural(type) {
+  return function (i18n) {
+    return function (_ref) {
+      var value = _ref.value,
+          _ref$offset = _ref.offset,
+          offset = _ref$offset === undefined ? 0 : _ref$offset,
+          locales = _ref.locales,
+          format = _ref.format,
+          other = _ref.other,
+          pluralForms = _objectWithoutProperties(_ref, ["value", "offset", "locales", "format", "other"]);
+
+      if (locales === undefined) locales = i18n.locales || i18n.language;
+
+      var diff = value - offset;
+      var diffAsString = number(locales, format)(diff);
+      var translation = pluralForms[value.toString()] || // exact match
+      pluralForms[i18n.pluralForm(diff, type)] || // plural form
+      other; // fallback
+      return translation.replace("#", diffAsString);
+    };
+  };
+};
+
+var plural = _plural("cardinal");
+var selectOrdinal = _plural("ordinal");
+
+function select(_ref2) {
+  var value = _ref2.value,
+      other = _ref2.other,
+      selectForms = _objectWithoutProperties(_ref2, ["value", "other"]);
+
+  return selectForms[value] || other;
+}
+
+// [Tokens] -> (CTX -> String)
+function processTokens(tokens) {
+  var octothorpe = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+
+  if (!tokens.filter(function (token) {
+    return !isString(token);
+  }).length) {
+    return tokens.join("");
+  }
+
+  return function (ctx) {
+    return tokens.map(function (token) {
+      if (isString(token)) {
+        return token;
+
+        // # in plural case
+      } else if (token.type === "octothorpe") {
+        var name = octothorpe.name,
+            _octothorpe$offset = octothorpe.offset,
+            _offset = _octothorpe$offset === undefined ? 0 : _octothorpe$offset;
+
+        return ctx(name) - _offset;
+
+        // simple argument
+      } else if (token.type === "argument") {
+        return ctx(token.arg);
+
+        // argument with custom format (date, number)
+      } else if (token.type === "function") {
+        return ctx(token.arg, token.key, token.params[0]);
+      }
+
+      var offset = token.offset ? parseInt(token.offset) : undefined;
+
+      // complex argument with cases
+      var formatProps = {};
+      token.cases.forEach(function (item) {
+        formatProps[item.key] = processTokens(item.tokens, {
+          name: token.arg,
+          offset: offset
+        });
+      });
+
+      return ctx(token.arg, token.type, _extends({
+        offset: offset
+      }, formatProps));
+    });
+  };
+}
+
+// Message -> (Params -> String)
+function compile(message) {
+  try {
+    return processTokens(messageformatParser.parse(message));
+  } catch (e) {
+    console.error("Message cannot be parsed due to syntax erorrs: " + message);
+    return message;
+  }
+}
+
+var loadLanguageData = (function (locale) {
+  if (!locale) {
+    return;
+  }
+
+  var _locale$split = locale.split(/[_-]/),
+      _locale$split2 = _slicedToArray(_locale$split, 1),
+      language = _locale$split2[0];
+
+  return { plurals: plurals[language] };
+});
+
+
+
+var dev = /*#__PURE__*/Object.freeze({
+  compile: compile,
+  loadLanguageData: loadLanguageData
+});
+
+function getLanguageData(catalog) {
+  return (catalog || {}).languageData || {};
+}
+
+function getMessages(catalog) {
+  return (catalog || {}).messages || {};
+}
+
+var I18n = function () {
+  function I18n() {
+    _classCallCheck(this, I18n);
+
+    // Messages and languageData are merged on load,
+    // so we must initialize it manually
+    this._activeMessages = {};
+    this._catalogs = {};
+
+    {
+      this.t = t;
+      this.select = select;
+      this.plural = plural(this);
+      this.selectOrdinal = selectOrdinal(this);
+    }
+  }
+
+  // Messages/language data in active language.
+  // This is optimization, so we don't perform object lookup
+  // _catalogs[language] for each translation.
+
+
+  // Message catalogs
+
+
+  _createClass(I18n, [{
+    key: "_cacheActiveLanguage",
+    value: function _cacheActiveLanguage() {
+      var activeCatalog = this._catalogs[this.language];
+
+      var languageData = getLanguageData(activeCatalog);
+      {
+        // Allow overriding data in development, useful for testing
+        if (isEmpty(languageData) && this._dev && isFunction(this._dev.loadLanguageData)) {
+          languageData = this._dev.loadLanguageData(this.language);
+        }
+      }
+
+      this._activeMessages = getMessages(activeCatalog);
+      this._activeLanguageData = languageData;
+    }
+  }, {
+    key: "load",
+    value: function load(catalogs) {
+      var _this = this;
+
+      if ((typeof catalogs === "undefined" ? "undefined" : _typeof(catalogs)) !== "object") return;
+
+      // deeply merge Catalogs
+      _Object$keys(_extends({}, this._catalogs, catalogs)).forEach(function (language) {
+        var compiledMessages = getMessages(catalogs[language]);
+
+        {
+          if (_this._dev && isFunction(_this._dev.compile)) {
+            compiledMessages = _Object$keys(compiledMessages).reduce(function (dict, id) {
+              var msg = compiledMessages[id];
+              dict[id] = isString(msg) ? _this._dev.compile(msg) : msg;
+              return dict;
+            }, {});
+          }
+        }
+
+        _this._catalogs[language] = {
+          messages: _extends({}, getMessages(_this._catalogs[language]), compiledMessages),
+          languageData: _extends({}, getLanguageData(_this._catalogs[language]), getLanguageData(catalogs[language]))
+        };
+      });
+
+      this._cacheActiveLanguage();
+    }
+  }, {
+    key: "activate",
+    value: function activate(language, locales) {
+      if (!language) return;
+
+      {
+        if (this.availableLanguages.indexOf(language) === -1) {
+          console.warn("Message catalog for locale \"" + language + "\" not loaded.");
+        }
+      }
+
+      this._language = language;
+      this._locales = locales;
+      this._cacheActiveLanguage();
+    }
+  }, {
+    key: "use",
+    value: function use(language, locales) {
+      return setupI18n({
+        language: language,
+        locales: locales,
+        catalogs: this._catalogs,
+        development: this._dev
+      });
+    }
+
+    // default translate method
+
+  }, {
+    key: "_",
+    value: function _(id) {
+      var values = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+
+      var _ref = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {},
+          defaults = _ref.defaults,
+          _ref$formats = _ref.formats,
+          formats = _ref$formats === undefined ? {} : _ref$formats;
+
+      // Expand message descriptor
+      if (id && (typeof id === "undefined" ? "undefined" : _typeof(id)) === "object") {
+        values = id.values;
+        defaults = id.defaults;
+        formats = id.formats;
+        id = id.id;
+      }
+
+      var translation = this.messages[id] || defaults || id;
+
+      // replace missing messages with custom message for debugging
+      var missing = this._missing;
+      if (missing && !this.messages[id]) {
+        translation = isFunction(missing) ? missing(this.language, id) : missing;
+      }
+
+      {
+        if (isString(translation) && this._dev && isFunction(this._dev.compile)) {
+          translation = this._dev.compile(translation);
+        }
+      }
+
+      if (!isFunction(translation)) return translation;
+      return interpolate(translation, this.language, this.locales, this.languageData)(values, formats);
+    }
+  }, {
+    key: "pluralForm",
+    value: function pluralForm(n) {
+      var pluralType = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "cardinal";
+
+      if (!this.languageData.plurals) return "other";
+      return this.languageData.plurals(n, pluralType === "ordinal");
+    }
+  }, {
+    key: "date",
+    value: function date$$1(value, format) {
+      return date(this.locales || this.language, format)(value);
+    }
+  }, {
+    key: "number",
+    value: function number$$1(value, format) {
+      return number(this.locales || this.language, format)(value);
+    }
+  }, {
+    key: "availableLanguages",
+    get: function get() {
+      return _Object$keys(this._catalogs);
+    }
+  }, {
+    key: "language",
+    get: function get() {
+      return this._language;
+    }
+  }, {
+    key: "locales",
+    get: function get() {
+      return this._locales;
+    }
+  }, {
+    key: "messages",
+    get: function get() {
+      return this._activeMessages;
+    }
+  }, {
+    key: "languageData",
+    get: function get() {
+      return this._activeLanguageData;
+    }
+  }]);
+
+  return I18n;
+}();
+
+function setupI18n() {
+  var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+
+  var i18n = new I18n();
+
+  {
+    i18n._dev = dev;
+  }
+
+  if (params.catalogs) i18n.load(params.catalogs);
+  if (params.language) i18n.activate(params.language, params.locales);
+  if (params.missing) i18n._missing = params.missing;
+
+  return i18n;
+}
+
+var i18n = setupI18n();
+
+var i18nMark = function i18nMark(id) {
+  return id;
+};
+
+exports.i18nMark = i18nMark;
+exports.i18n = i18n;
+exports.setupI18n = setupI18n;
+exports.date = date;
+exports.number = number;
+
+
+/***/ }),
+
+/***/ "./node_modules/@lingui/core/index.js":
+/*!********************************************!*\
+  !*** ./node_modules/@lingui/core/index.js ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+if (false) {} else {
+  module.exports = __webpack_require__(/*! ./cjs/core.development.js */ "./node_modules/@lingui/core/cjs/core.development.js")
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/@lingui/macro/index.js":
+/*!*********************************************!*\
+  !*** ./node_modules/@lingui/macro/index.js ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process) {
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.number = exports.date = exports.selectOrdinal = exports.select = exports.plural = exports.t = exports.NumberFormat = exports.DateFormat = exports.SelectOrdinal = exports.Select = exports.Plural = exports.Trans = undefined;
+
+var _keys = __webpack_require__(/*! babel-runtime/core-js/object/keys */ "./node_modules/babel-runtime/core-js/object/keys.js");
+
+var _keys2 = _interopRequireDefault(_keys);
+
+var _babelPluginMacros = __webpack_require__(/*! babel-plugin-macros */ "./node_modules/babel-plugin-macros/dist/index.js");
+
+var _js = __webpack_require__(/*! ./js */ "./node_modules/@lingui/macro/js.js");
+
+var _js2 = _interopRequireDefault(_js);
+
+var _transformer = __webpack_require__(/*! @lingui/babel-plugin-transform-react/transformer */ "./node_modules/@lingui/macro/node_modules/@lingui/babel-plugin-transform-react/transformer.js");
+
+var _transformer2 = _interopRequireDefault(_transformer);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function macro(_ref) {
+  var references = _ref.references,
+      state = _ref.state,
+      babel = _ref.babel;
+  var t = babel.types;
+
+
+  var transformer = (0, _js2.default)(babel);
+  var jsxTransformer = new _transformer2.default(babel);
+  var reactImportsToCarryOver = ["DateFormat", "NumberFormat"];
+  var reactImports = [];
+
+  (0, _keys2.default)(references).forEach(function (tagName) {
+    var tags = references[tagName];
+    var macroType = getMacroType(tagName);
+
+    if (macroType === "jsx") {
+      if (!reactImports.includes("Trans")) {
+        reactImports.push("Trans");
+      }
+
+      if (reactImportsToCarryOver.includes(tagName)) {
+        reactImports.push(tagName);
+      }
+
+      // Trick the plugin into thinking we've processed an import
+      jsxTransformer.setImportDeclarations((0, _keys2.default)(references).reduce(function (obj, key) {
+        if (key !== "default" || key !== "Trans") obj[key] = key;
+        return obj;
+      }, {}));
+
+      tags.forEach(function (openingTag) {
+        if (!t.isJSXOpeningElement(openingTag.container)) return; // Exclude closing elements
+
+        var node = openingTag.context.parentPath.container;
+
+        jsxTransformer.transform({ node: node }, state.file);
+      });
+    } else {
+      tags.forEach(function (tag) {
+        var expression = tag.parentPath;
+
+        if (tagName === "t" && t.isCallExpression(expression)) {
+          expression = expression.parentPath;
+        }
+
+        transformer(expression, state.file);
+      });
+    }
+  });
+
+  addLinguiReactImports(babel, state, reactImports);
+
+  if (process.env.LINGUI_EXTRACT === "1") {
+    return {
+      keepImports: true
+    };
+  }
+}
+
+function getMacroType(tagName) {
+  switch (tagName) {
+    case "t":
+    case "plural":
+    case "select":
+    case "selectOrdinal":
+    case "number":
+    case "date":
+      return "js";
+    case "Trans":
+    case "Plural":
+    case "Select":
+    case "SelectOrdinal":
+    case "NumberFormat":
+    case "DateFormat":
+      return "jsx";
+  }
+}
+
+function addLinguiReactImports(babel, state, imports) {
+  if (!imports.length) return;
+
+  var t = babel.types;
+
+
+  var linguiReactImport = state.file.path.node.body.find(function (importNode) {
+    return t.isImportDeclaration(importNode) && importNode.source.value === "@lingui/react";
+  });
+
+  // Handle adding the import or altering the existing import
+  if (linguiReactImport) {
+    imports.forEach(function (name) {
+      if (linguiReactImport.specifiers.findIndex(function (specifier) {
+        return specifier.imported && specifier.imported.name === name;
+      }) === -1) {
+        linguiReactImport.specifiers.push(t.importSpecifier(t.identifier(name), t.identifier(name)));
+      }
+    });
+  } else {
+    state.file.path.node.body.unshift(t.importDeclaration(imports.map(function (name) {
+      return t.importSpecifier(t.identifier(name), t.identifier(name));
+    }), t.stringLiteral("@lingui/react")));
+  }
+}
+
+var Trans = function Trans() {};
+var Plural = function Plural() {};
+var Select = function Select() {};
+var SelectOrdinal = function SelectOrdinal() {};
+var DateFormat = function DateFormat() {};
+var NumberFormat = function NumberFormat() {};
+
+var t = function t() {};
+var plural = function plural() {};
+var select = function select() {};
+var selectOrdinal = function selectOrdinal() {};
+var date = function date() {};
+var number = function number() {};
+
+exports.Trans = Trans;
+exports.Plural = Plural;
+exports.Select = Select;
+exports.SelectOrdinal = SelectOrdinal;
+exports.DateFormat = DateFormat;
+exports.NumberFormat = NumberFormat;
+exports.t = t;
+exports.plural = plural;
+exports.select = select;
+exports.selectOrdinal = selectOrdinal;
+exports.date = date;
+exports.number = number;
+exports.default = (0, _babelPluginMacros.createMacro)(macro);
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../process/browser.js */ "./node_modules/process/browser.js")))
+
+/***/ }),
+
+/***/ "./node_modules/@lingui/macro/js.js":
+/*!******************************************!*\
+  !*** ./node_modules/@lingui/macro/js.js ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _values = __webpack_require__(/*! babel-runtime/core-js/object/values */ "./node_modules/babel-runtime/core-js/object/values.js");
+
+var _values2 = _interopRequireDefault(_values);
+
+var _getIterator2 = __webpack_require__(/*! babel-runtime/core-js/get-iterator */ "./node_modules/babel-runtime/core-js/get-iterator.js");
+
+var _getIterator3 = _interopRequireDefault(_getIterator2);
+
+var _includes = __webpack_require__(/*! babel-runtime/core-js/array/includes */ "./node_modules/babel-runtime/core-js/array/includes.js");
+
+var _includes2 = _interopRequireDefault(_includes);
+
+var _keys = __webpack_require__(/*! babel-runtime/core-js/object/keys */ "./node_modules/babel-runtime/core-js/object/keys.js");
+
+var _keys2 = _interopRequireDefault(_keys);
+
+var _extends2 = __webpack_require__(/*! babel-runtime/helpers/extends */ "./node_modules/babel-runtime/helpers/extends.js");
+
+var _extends3 = _interopRequireDefault(_extends2);
+
+exports.default = function (_ref) {
+  var t = _ref.types;
+
+  var isIdentifier = function isIdentifier(node, name) {
+    return t.isIdentifier(node, { name: name });
+  };
+
+  var isI18nMethod = function isI18nMethod(node) {
+    return isIdentifier(node.tag, "t") || t.isCallExpression(node.tag) && isIdentifier(node.tag.callee, "t");
+  };
+
+  var isChoiceMethod = function isChoiceMethod(node) {
+    return isIdentifier(node, "plural") || isIdentifier(node, "select") || isIdentifier(node, "selectOrdinal");
+  };
+
+  var isFormatMethod = function isFormatMethod(node) {
+    return isIdentifier(node, "date") || isIdentifier(node, "number");
+  };
+
+  /**
+   * Convert identifiers to *named* arguments and everything else
+   * to *positional* arguments.
+   *
+   * Example
+   * `world` is named argument and `new Date()` is positional one
+   *
+   * Input:   `Hello ${world}, today is ${new Date()}`
+   * Output:  `Hello {world}, today is {0}`
+   */
+  function expressionToArgument(exp, props) {
+    var name = t.isIdentifier(exp) ? exp.name : props.argumentGenerator();
+    var key = t.isIdentifier(exp) ? exp : t.numericLiteral(name);
+
+    return { name: name, key: key };
+  }
+
+  function transformI18nMethod(node, file, props) {
+    if (t.isCallExpression(node.tag)) {
+      // Message with custom ID, where message is used as defaults
+      // i18n.t('id')`Hello World`
+      var defaults = node.tag.arguments[0];
+      if (!t.isStringLiteral(defaults)) {
+        throw file.buildCodeFrameError(node.tag, "Message ID must be a string");
+      }
+      var newProps = transformTemplateLiteral(node.quasi, file, props);
+      return (0, _extends3.default)({}, newProps, {
+        text: defaults.value,
+        defaults: props.text
+      });
+    }
+
+    return transformTemplateLiteral(node.quasi, file, props);
+  }
+
+  function transformChoiceMethod(node, file, props) {
+    var root = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : false;
+
+    var choices = {};
+    var choicesType = node.callee.name.toLowerCase();
+    var defaults = void 0;
+    var variable = void 0;
+    var offset = "";
+
+    var choiceArguments = node.arguments[0];
+    if (t.isStringLiteral(choiceArguments)) {
+      defaults = choiceArguments.value;
+      choiceArguments = node.arguments[1];
+    }
+
+    var _iteratorNormalCompletion = true;
+    var _didIteratorError = false;
+    var _iteratorError = undefined;
+
+    try {
+      for (var _iterator = (0, _getIterator3.default)(choiceArguments.properties), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+        var attr = _step.value;
+
+        if (attr.computed) {
+          throw file.buildCodeFrameError(attr, "Computed properties aren't allowed.");
+        }
+
+        var key = attr.key;
+        // key is either:
+        // NumericLiteral => convert to `={number}`
+        // StringLiteral => key.value
+        // Literal => key.name
+
+        var name = t.isNumericLiteral(key) ? "=" + key.value : key.name || key.value;
+
+        if (name === "value") {
+          var exp = attr.value;
+
+          var _expressionToArgument = expressionToArgument(exp, props),
+              _name = _expressionToArgument.name,
+              _key = _expressionToArgument.key;
+
+          variable = _name;
+          props.values[_name] = t.objectProperty(_key, exp);
+        } else if (choicesType !== "select" && name === "offset") {
+          // offset is static parameter, so it must be either string or number
+          if (!t.isNumericLiteral(attr.value) && !t.isStringLiteral(attr.value)) {
+            throw file.buildCodeFrameError(node.callee, "Offset argument cannot be a variable.");
+          }
+          offset = " offset:" + attr.value.value;
+        } else {
+          var value = "";
+
+          if (t.isTemplateLiteral(attr.value)) {
+            props = transformTemplateLiteral(attr.value, file, (0, _extends3.default)({}, props, {
+              text: ""
+            }));
+            value = props.text;
+          } else if (t.isCallExpression(attr.value)) {
+            props = transformMethod(attr.value, file, (0, _extends3.default)({}, props, { text: "" }));
+            value = "{" + props.text + "}";
+          } else {
+            value = attr.value.value;
+          }
+          choices[name] = value;
+        }
+      }
+
+      // missing value
+    } catch (err) {
+      _didIteratorError = true;
+      _iteratorError = err;
+    } finally {
+      try {
+        if (!_iteratorNormalCompletion && _iterator.return) {
+          _iterator.return();
+        }
+      } finally {
+        if (_didIteratorError) {
+          throw _iteratorError;
+        }
+      }
+    }
+
+    if (variable === undefined) {
+      throw file.buildCodeFrameError(node.callee, "Value argument is missing.");
+    }
+
+    var choicesKeys = (0, _keys2.default)(choices);
+
+    // 'other' choice is required
+    if (!choicesKeys.length) {
+      throw file.buildCodeFrameError(node.callee, "Missing " + choicesType + " choices. At least fallback argument 'other' is required.");
+    } else if (!(0, _includes2.default)(choicesKeys, "other")) {
+      throw file.buildCodeFrameError(node.callee, "Missing fallback argument 'other'.");
+    }
+
+    // validate plural rules
+    if (choicesType === "plural" || choicesType === "selectordinal") {
+      choicesKeys.forEach(function (rule) {
+        if (!(0, _includes2.default)(pluralRules, rule) && !/=\d+/.test(rule)) {
+          throw file.buildCodeFrameError(node.callee, "Invalid plural rule '" + rule + "'. Must be " + pluralRules.join(", ") + " or exact number depending on your source language ('one' and 'other' for English).");
+        }
+      });
+    }
+
+    var argument = choicesKeys.map(function (form) {
+      return form + " {" + choices[form] + "}";
+    }).join(" ");
+    var format = variable + ", " + choicesType + "," + offset + " " + argument;
+    props.text = root ? "{" + format + "}" : format;
+
+    if (defaults) {
+      return (0, _extends3.default)({}, props, {
+        text: defaults,
+        defaults: props.text
+      });
+    }
+
+    return props;
+  }
+
+  function transformFormatMethod(node, file, props, root) {
+    var exp = node.arguments[0];
+
+    // missing value
+    if (exp === undefined) {
+      throw file.buildCodeFrameError(node.callee, "The first argument of format function must be a variable.");
+    }
+
+    var _expressionToArgument2 = expressionToArgument(exp, props),
+        name = _expressionToArgument2.name,
+        key = _expressionToArgument2.key;
+
+    var type = node.callee.name;
+    var parts = [name, // variable name
+    type // format type
+    ];
+
+    var format = "";
+    var formatArg = node.arguments[1];
+    if (!formatArg) {
+      // Do not throw validation error when format doesn't exist
+    } else if (t.isStringLiteral(formatArg)) {
+      format = formatArg.value;
+    } else if (t.isIdentifier(formatArg) || t.isObjectExpression(formatArg)) {
+      if (t.isIdentifier(formatArg)) {
+        format = formatArg.name;
+      } else {
+        var formatName = new RegExp("^" + type + "\\d+$");
+        var existing = (0, _keys2.default)(props.formats).filter(function (name) {
+          return formatName.test(name);
+        });
+        format = "" + type + (existing.length || 0);
+      }
+
+      props.formats[format] = t.objectProperty(t.identifier(format), formatArg);
+    } else {
+      throw file.buildCodeFrameError(formatArg, "Format can be either string for buil-in formats, variable or object for custom defined formats.");
+    }
+
+    if (format) parts.push(format);
+
+    props.values[name] = t.objectProperty(key, exp);
+    props.text += "" + parts.join(",");
+
+    return props;
+  }
+
+  function transformTemplateLiteral(exp, file, props) {
+    var parts = [];
+
+    exp.quasis.forEach(function (item, index) {
+      parts.push(item);
+
+      if (!item.tail) parts.push(exp.expressions[index]);
+    });
+
+    parts.forEach(function (item) {
+      if (t.isTemplateElement(item)) {
+        props.text += item.value.raw;
+      } else if (t.isCallExpression(item) && (isI18nMethod(item.callee) || isChoiceMethod(item.callee) || isFormatMethod(item.callee))) {
+        var _transformMethod = transformMethod(item, file, (0, _extends3.default)({}, props, {
+          text: ""
+        })),
+            text = _transformMethod.text;
+
+        props.text += "{" + text + "}";
+      } else {
+        var _expressionToArgument3 = expressionToArgument(item, props),
+            name = _expressionToArgument3.name,
+            key = _expressionToArgument3.key;
+
+        props.text += "{" + name + "}";
+        props.values[name] = t.objectProperty(key, item);
+      }
+    });
+
+    return props;
+  }
+
+  function transformMethod(node, file, props) {
+    var root = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : false;
+
+    if (isI18nMethod(node)) {
+      // t
+      return transformI18nMethod(node, file, props);
+    } else if (isChoiceMethod(node.callee)) {
+      // plural, select and selectOrdinal
+      return transformChoiceMethod(node, file, props, root);
+    } else if (isFormatMethod(node.callee)) {
+      // date, number
+      return transformFormatMethod(node, file, props, root);
+    }
+
+    return props;
+  }
+
+  return function transform(path, file) {
+    // 1. Collect all parameters and generate message ID
+    var props = transformMethod(path.node, file, initialProps(), true);
+
+    var text = props.text.replace(nlRe, " ").trim();
+    if (!text) return;
+
+    // 2. Create message descriptor
+    var descriptorProps = [t.objectProperty(t.identifier("id"), t.StringLiteral(text))];
+
+    if (props.defaults) {
+      descriptorProps.push(t.objectProperty(t.identifier("defaults"), t.stringLiteral(props.defaults)));
+    }
+
+    var formatsList = (0, _values2.default)(props.formats);
+    if (formatsList.length) {
+      descriptorProps.push(t.objectProperty(t.identifier("formats"), t.objectExpression(formatsList)));
+    }
+
+    var valuesList = (0, _values2.default)(props.values);
+    if (valuesList.length) {
+      descriptorProps.push(t.objectProperty(t.identifier("values"), t.objectExpression(valuesList.length ? valuesList : [])));
+    }
+
+    var exp = t.objectExpression(descriptorProps);
+    exp.loc = path.node.loc;
+    path.replaceWith(exp);
+
+    // 3. Add leading `i18n` comment (if doesn't exist) for lingui-extract
+    var nodeWithComments = path.parentPath.type === "ExpressionStatement" ? path.parentPath.node : path.node;
+    var i18nComment = nodeWithComments.leadingComments && nodeWithComments.leadingComments.filter(function (node) {
+      return node.value.trim().substr(0, 4) === "i18n";
+    })[0];
+
+    if (!i18nComment) {
+      path.addComment("leading", "i18n");
+    }
+  };
+};
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var nlRe = /(?:\r\n|\r|\n)+\s+/g;
+
+var pluralRules = ["zero", "one", "two", "few", "many", "other"];
+
+var generatorFactory = function generatorFactory() {
+  var index = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
+  return function () {
+    return index++;
+  };
+};
+
+var initialProps = function initialProps() {
+  return {
+    text: "",
+    values: {},
+    formats: {},
+    argumentGenerator: generatorFactory()
+  };
+};
+
+/***/ }),
+
+/***/ "./node_modules/@lingui/macro/node_modules/@lingui/babel-plugin-transform-react/transformer.js":
+/*!*****************************************************************************************************!*\
+  !*** ./node_modules/@lingui/macro/node_modules/@lingui/babel-plugin-transform-react/transformer.js ***!
+  \*****************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -871,540 +1952,642 @@ exports.default = Transformer;
 
 /***/ }),
 
-/***/ "./node_modules/@lingui/macro/index.js":
-/*!*********************************************!*\
-  !*** ./node_modules/@lingui/macro/index.js ***!
-  \*********************************************/
+/***/ "./node_modules/@lingui/react/cjs/react.development.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/@lingui/react/cjs/react.development.js ***!
+  \*************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(process) {
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.number = exports.date = exports.selectOrdinal = exports.select = exports.plural = exports.t = exports.NumberFormat = exports.DateFormat = exports.SelectOrdinal = exports.Select = exports.Plural = exports.Trans = undefined;
-
-var _keys = __webpack_require__(/*! babel-runtime/core-js/object/keys */ "./node_modules/babel-runtime/core-js/object/keys.js");
-
-var _keys2 = _interopRequireDefault(_keys);
-
-var _babelPluginMacros = __webpack_require__(/*! babel-plugin-macros */ "./node_modules/babel-plugin-macros/dist/index.js");
-
-var _js = __webpack_require__(/*! ./js */ "./node_modules/@lingui/macro/js.js");
-
-var _js2 = _interopRequireDefault(_js);
-
-var _transformer = __webpack_require__(/*! @lingui/babel-plugin-transform-react/transformer */ "./node_modules/@lingui/babel-plugin-transform-react/transformer.js");
-
-var _transformer2 = _interopRequireDefault(_transformer);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function macro(_ref) {
-  var references = _ref.references,
-      state = _ref.state,
-      babel = _ref.babel;
-  var t = babel.types;
 
 
-  var transformer = (0, _js2.default)(babel);
-  var jsxTransformer = new _transformer2.default(babel);
-  var reactImportsToCarryOver = ["DateFormat", "NumberFormat"];
-  var reactImports = [];
+Object.defineProperty(exports, '__esModule', { value: true });
 
-  (0, _keys2.default)(references).forEach(function (tagName) {
-    var tags = references[tagName];
-    var macroType = getMacroType(tagName);
+function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 
-    if (macroType === "jsx") {
-      if (!reactImports.includes("Trans")) {
-        reactImports.push("Trans");
-      }
+var _Object$getPrototypeOf = _interopDefault(__webpack_require__(/*! babel-runtime/core-js/object/get-prototype-of */ "./node_modules/babel-runtime/core-js/object/get-prototype-of.js"));
+var _classCallCheck = _interopDefault(__webpack_require__(/*! babel-runtime/helpers/classCallCheck */ "./node_modules/babel-runtime/helpers/classCallCheck.js"));
+var _createClass = _interopDefault(__webpack_require__(/*! babel-runtime/helpers/createClass */ "./node_modules/babel-runtime/helpers/createClass.js"));
+var _possibleConstructorReturn = _interopDefault(__webpack_require__(/*! babel-runtime/helpers/possibleConstructorReturn */ "./node_modules/babel-runtime/helpers/possibleConstructorReturn.js"));
+var _inherits = _interopDefault(__webpack_require__(/*! babel-runtime/helpers/inherits */ "./node_modules/babel-runtime/helpers/inherits.js"));
+var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+var PropTypes = _interopDefault(__webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js"));
+var hashSum = _interopDefault(__webpack_require__(/*! hash-sum */ "./node_modules/hash-sum/hash-sum.js"));
+var core = __webpack_require__(/*! @lingui/core */ "./node_modules/@lingui/core/index.js");
+var _extends = _interopDefault(__webpack_require__(/*! babel-runtime/helpers/extends */ "./node_modules/babel-runtime/helpers/extends.js"));
+var hoistStatics = _interopDefault(__webpack_require__(/*! hoist-non-react-statics */ "./node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js"));
+var _getIterator = _interopDefault(__webpack_require__(/*! babel-runtime/core-js/get-iterator */ "./node_modules/babel-runtime/core-js/get-iterator.js"));
+var _slicedToArray = _interopDefault(__webpack_require__(/*! babel-runtime/helpers/slicedToArray */ "./node_modules/babel-runtime/helpers/slicedToArray.js"));
+var _Object$keys = _interopDefault(__webpack_require__(/*! babel-runtime/core-js/object/keys */ "./node_modules/babel-runtime/core-js/object/keys.js"));
+var _toConsumableArray = _interopDefault(__webpack_require__(/*! babel-runtime/helpers/toConsumableArray */ "./node_modules/babel-runtime/helpers/toConsumableArray.js"));
+var _objectWithoutProperties = _interopDefault(__webpack_require__(/*! babel-runtime/helpers/objectWithoutProperties */ "./node_modules/babel-runtime/helpers/objectWithoutProperties.js"));
 
-      if (reactImportsToCarryOver.includes(tagName)) {
-        reactImports.push(tagName);
-      }
+/*
+ * I18nPublisher - Connects to lingui-i18n/I18n class
+ * Allows listeners to subscribe for changes
+ */
+function LinguiPublisher(i18n) {
+  var subscribers = [];
 
-      // Trick the plugin into thinking we've processed an import
-      jsxTransformer.setImportDeclarations((0, _keys2.default)(references).reduce(function (obj, key) {
-        if (key !== "default" || key !== "Trans") obj[key] = key;
-        return obj;
-      }, {}));
+  return {
+    i18n: i18n,
+    i18nHash: null,
 
-      tags.forEach(function (openingTag) {
-        if (!t.isJSXOpeningElement(openingTag.container)) return; // Exclude closing elements
-
-        var node = openingTag.context.parentPath.container;
-
-        jsxTransformer.transform({ node: node }, state.file);
+    getSubscribers: function getSubscribers() {
+      return subscribers;
+    },
+    subscribe: function subscribe(callback) {
+      subscribers.push(callback);
+    },
+    unsubscribe: function unsubscribe(callback) {
+      subscribers = subscribers.filter(function (cb) {
+        return cb !== callback;
       });
-    } else {
-      tags.forEach(function (tag) {
-        var expression = tag.parentPath;
+    },
+    update: function update() {
+      var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
+          catalogs = _ref.catalogs,
+          language = _ref.language,
+          locales = _ref.locales;
 
-        if (tagName === "t" && t.isCallExpression(expression)) {
-          expression = expression.parentPath;
-        }
+      if (!catalogs && !language && !locales) return;
 
-        transformer(expression, state.file);
+      if (catalogs) i18n.load(catalogs);
+      if (language) i18n.activate(language, locales);
+
+      this.i18nHash = hashSum([i18n.language, i18n.messages]);
+
+      subscribers.forEach(function (f) {
+        return f();
       });
     }
-  });
-
-  addLinguiReactImports(babel, state, reactImports);
-
-  if (process.env.LINGUI_EXTRACT === "1") {
-    return {
-      keepImports: true
-    };
-  }
+  };
 }
 
-function getMacroType(tagName) {
-  switch (tagName) {
-    case "t":
-    case "plural":
-    case "select":
-    case "selectOrdinal":
-    case "number":
-    case "date":
-      return "js";
-    case "Trans":
-    case "Plural":
-    case "Select":
-    case "SelectOrdinal":
-    case "NumberFormat":
-    case "DateFormat":
-      return "jsx";
-  }
-}
+var I18nProvider = function (_React$Component) {
+  _inherits(I18nProvider, _React$Component);
 
-function addLinguiReactImports(babel, state, imports) {
-  if (!imports.length) return;
+  function I18nProvider(props) {
+    _classCallCheck(this, I18nProvider);
 
-  var t = babel.types;
+    var _this = _possibleConstructorReturn(this, (I18nProvider.__proto__ || _Object$getPrototypeOf(I18nProvider)).call(this, props));
 
+    var language = props.language,
+        locales = props.locales,
+        catalogs = props.catalogs,
+        missing = props.missing;
 
-  var linguiReactImport = state.file.path.node.body.find(function (importNode) {
-    return t.isImportDeclaration(importNode) && importNode.source.value === "@lingui/react";
-  });
-
-  // Handle adding the import or altering the existing import
-  if (linguiReactImport) {
-    imports.forEach(function (name) {
-      if (linguiReactImport.specifiers.findIndex(function (specifier) {
-        return specifier.imported && specifier.imported.name === name;
-      }) === -1) {
-        linguiReactImport.specifiers.push(t.importSpecifier(t.identifier(name), t.identifier(name)));
-      }
+    var i18n = props.i18n || core.setupI18n({
+      language: language,
+      locales: locales,
+      catalogs: catalogs
     });
-  } else {
-    state.file.path.node.body.unshift(t.importDeclaration(imports.map(function (name) {
-      return t.importSpecifier(t.identifier(name), t.identifier(name));
-    }), t.stringLiteral("@lingui/react")));
+    _this.linguiPublisher = new LinguiPublisher(i18n);
+    _this.linguiPublisher.i18n._missing = _this.props.missing;
+    return _this;
   }
+
+  _createClass(I18nProvider, [{
+    key: "componentDidUpdate",
+    value: function componentDidUpdate(prevProps) {
+      var _props = this.props,
+          language = _props.language,
+          locales = _props.locales,
+          catalogs = _props.catalogs;
+
+      if (language !== prevProps.language || locales !== prevProps.locales || catalogs !== prevProps.catalogs) {
+        this.linguiPublisher.update({ language: language, catalogs: catalogs, locales: locales });
+      }
+
+      this.linguiPublisher.i18n._missing = this.props.missing;
+    }
+  }, {
+    key: "getChildContext",
+    value: function getChildContext() {
+      return {
+        linguiPublisher: this.linguiPublisher,
+        linguiDefaultRender: this.props.defaultRender
+      };
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return this.props.children;
+    }
+  }]);
+
+  return I18nProvider;
+}(React.Component);
+
+I18nProvider.defaultProps = {
+  defaultRender: null
+};
+I18nProvider.childContextTypes = {
+  linguiPublisher: PropTypes.object.isRequired,
+  linguiDefaultRender: PropTypes.any
+};
+
+var I18n = function (_React$Component) {
+  _inherits(I18n, _React$Component);
+
+  function I18n() {
+    var _ref;
+
+    var _temp, _this, _ret;
+
+    _classCallCheck(this, I18n);
+
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = I18n.__proto__ || _Object$getPrototypeOf(I18n)).call.apply(_ref, [this].concat(args))), _this), _this.checkUpdate = /* istanbul ignore next */function () {
+      _this.forceUpdate();
+    }, _temp), _possibleConstructorReturn(_this, _ret);
+  }
+
+  _createClass(I18n, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _getI18n = this.getI18n(),
+          subscribe = _getI18n.subscribe;
+
+      if (this.props.update && subscribe) subscribe(this.checkUpdate);
+    }
+  }, {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      var _getI18n2 = this.getI18n(),
+          unsubscribe = _getI18n2.unsubscribe;
+
+      if (this.props.update && unsubscribe) unsubscribe(this.checkUpdate);
+    }
+
+    // Test checks that subscribe/unsubscribe is called with function.
+
+  }, {
+    key: "getI18n",
+    value: function getI18n() {
+      return this.context.linguiPublisher || {};
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _props = this.props,
+          children = _props.children,
+          withHash = _props.withHash;
+
+      var _getI18n3 = this.getI18n(),
+          i18n = _getI18n3.i18n,
+          i18nHash = _getI18n3.i18nHash;
+
+      var props = _extends({
+        i18n: i18n
+      }, withHash ? { i18nHash: i18nHash } : {});
+
+      if (typeof children === "function") {
+        return children(props);
+      }
+
+      {
+        console.warn("I18n accepts only function as a children. " + "Other usecases are deprecated and will be removed in v3.0");
+      }
+
+      // Deprecate v3.0
+      return React.isValidElement(children) ? React.cloneElement(children, props) : React.createElement(children, props);
+    }
+  }]);
+
+  return I18n;
+}(React.Component);
+
+I18n.defaultProps = {
+  update: true,
+  withHash: true
+};
+I18n.contextTypes = {
+  linguiPublisher: PropTypes.object
+};
+
+var withI18n = function withI18n() {
+  var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  return function (WrappedComponent) {
+    {
+      if (typeof options === "function" || React.isValidElement(options)) {
+        console.warn("withI18n([options]) takes options as a first argument, " + "but received React component itself. Without options, the Component " + "should be wrapped as withI18n()(Component), not withI18n(Component).");
+      }
+    }
+
+    var _options$update = options.update,
+        update = _options$update === undefined ? true : _options$update,
+        _options$withHash = options.withHash,
+        withHash = _options$withHash === undefined ? true : _options$withHash,
+        _options$withRef = options.withRef,
+        withRef = _options$withRef === undefined ? false : _options$withRef;
+
+    var WithI18n = function (_React$Component) {
+      _inherits(WithI18n, _React$Component);
+
+      function WithI18n() {
+        var _ref;
+
+        var _temp, _this, _ret;
+
+        _classCallCheck(this, WithI18n);
+
+        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+          args[_key] = arguments[_key];
+        }
+
+        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = WithI18n.__proto__ || _Object$getPrototypeOf(WithI18n)).call.apply(_ref, [this].concat(args))), _this), _this.wrappedInstance = null, _this.setWrappedInstance = function (ref) {
+          if (withRef) _this.wrappedInstance = ref;
+        }, _this.getWrappedInstance = function () {
+          if (!withRef) {
+            throw new Error("To access the wrapped instance, you need to specify { withRef: true }" + " in the options argument of the withI18n() call.");
+          }
+
+          return _this.wrappedInstance;
+        }, _temp), _possibleConstructorReturn(_this, _ret);
+      }
+
+      _createClass(WithI18n, [{
+        key: "render",
+        value: function render() {
+          var props = _extends({}, this.props, withRef ? { ref: this.setWrappedInstance } : {});
+          return React.createElement(
+            I18n,
+            { update: update, withHash: withHash },
+            function (_ref2) {
+              var i18n = _ref2.i18n,
+                  i18nHash = _ref2.i18nHash;
+              return React.createElement(WrappedComponent, _extends({}, props, { i18n: i18n, i18nHash: i18nHash }));
+            }
+          );
+        }
+      }]);
+
+      return WithI18n;
+    }(React.Component);
+
+    WithI18n.contextTypes = {
+      linguiPublisher: PropTypes.object
+    };
+
+
+    return hoistStatics(WithI18n, WrappedComponent);
+  };
+};
+
+// match <0>paired</0> and <1/> unpaired tags
+var tagRe = /<(\d+)>(.*)<\/\1>|<(\d+)\/>/;
+var nlRe = /(?:\r\n|\r|\n)/g;
+
+/**
+ * `formatElements` - parse string and return tree of react elements
+ *
+ * `value` is string to be formatted with <0>Paired<0/> or <0/> (unpaired)
+ * placeholders. `elements` is a array of react elements which indexes
+ * correspond to element indexes in formatted string
+ */
+function formatElements(value) {
+  var elements = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : [];
+
+  // TODO: warn if there're any unprocessed elements
+  // TODO: warn if element at `index` doesn't exist
+
+  var parts = value.replace(nlRe, "").split(tagRe);
+
+  // no inline elements, return
+  if (parts.length === 1) return value;
+
+  var tree = [];
+
+  var before = parts.shift();
+  if (before) tree.push(before);
+
+  var _iteratorNormalCompletion = true;
+  var _didIteratorError = false;
+  var _iteratorError = undefined;
+
+  try {
+    for (var _iterator = _getIterator(getElements(parts)), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+      var _ref = _step.value;
+
+      var _ref2 = _slicedToArray(_ref, 3);
+
+      var index = _ref2[0];
+      var children = _ref2[1];
+      var after = _ref2[2];
+
+      var element = elements[index];
+      tree.push(React.cloneElement(element, { key: index },
+
+      // format children for pair tags
+      // unpaired tags might have children if it's a component passed as a variable
+      children ? formatElements(children, elements) : element.props.children));
+
+      if (after) tree.push(after);
+    }
+  } catch (err) {
+    _didIteratorError = true;
+    _iteratorError = err;
+  } finally {
+    try {
+      if (!_iteratorNormalCompletion && _iterator.return) {
+        _iterator.return();
+      }
+    } finally {
+      if (_didIteratorError) {
+        throw _iteratorError;
+      }
+    }
+  }
+
+  return tree;
 }
 
-var Trans = function Trans() {};
-var Plural = function Plural() {};
-var Select = function Select() {};
-var SelectOrdinal = function SelectOrdinal() {};
-var DateFormat = function DateFormat() {};
-var NumberFormat = function NumberFormat() {};
+/*
+ * `getElements` - return array of element indexes and element childrens
+ *
+ * `parts` is array of [pairedIndex, children, unpairedIndex, textAfter, ...]
+ * where:
+ * - `pairedIndex` is index of paired element (undef for unpaired)
+ * - `children` are children of paired element (undef for unpaired)
+ * - `unpairedIndex` is index of unpaired element (undef for paired)
+ * - `textAfter` is string after all elements (empty string, if there's nothing)
+ *
+ * `parts` length is always multiply of 4
+ *
+ * Returns: Array<[elementIndex, children, after]>
+ */
+function getElements(parts) {
+  if (!parts.length) return [];
 
-var t = function t() {};
-var plural = function plural() {};
-var select = function select() {};
-var selectOrdinal = function selectOrdinal() {};
-var date = function date() {};
-var number = function number() {};
+  var _parts$slice = parts.slice(0, 4),
+      _parts$slice2 = _slicedToArray(_parts$slice, 4),
+      paired = _parts$slice2[0],
+      children = _parts$slice2[1],
+      unpaired = _parts$slice2[2],
+      after = _parts$slice2[3];
 
-exports.Trans = Trans;
+  return [[parseInt(paired || unpaired), children || "", after]].concat(getElements(parts.slice(4, parts.length)));
+}
+
+var Render = function (_React$Component) {
+  _inherits(Render, _React$Component);
+
+  function Render() {
+    _classCallCheck(this, Render);
+
+    return _possibleConstructorReturn(this, (Render.__proto__ || _Object$getPrototypeOf(Render)).apply(this, arguments));
+  }
+
+  _createClass(Render, [{
+    key: "render",
+    value: function render() {
+      var _props = this.props,
+          className = _props.className,
+          value = _props.value;
+
+      var render = this.props.render || this.context.linguiDefaultRender;
+
+      if (render === null || render === undefined) {
+        return value;
+      } else if (typeof render === "string") {
+        // Built-in element: h1, p
+        return React.createElement(render, { className: className }, value);
+      }
+
+      return React.isValidElement(render) ? // Custom element: <p className="lear' />
+      React.cloneElement(render, {}, value) : // Custom component: ({ translation }) => <a title={translation}>x</a>
+      React.createElement(render, { translation: value });
+    }
+  }]);
+
+  return Render;
+}(React.Component);
+
+Render.contextTypes = {
+  linguiDefaultRender: PropTypes.any
+};
+
+var Trans = function (_React$Component) {
+  _inherits(Trans, _React$Component);
+
+  function Trans() {
+    _classCallCheck(this, Trans);
+
+    return _possibleConstructorReturn(this, (Trans.__proto__ || _Object$getPrototypeOf(Trans)).apply(this, arguments));
+  }
+
+  _createClass(Trans, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      {
+        if (!this.getTranslation() && this.props.children) {
+          console.warn("@lingui/babel-preset-react is probably missing in babel config, " + "but you are using <Trans> component in a way which requires it. " + "Either don't use children in <Trans> component or configure babel " + "to load @lingui/babel-preset-react preset. See tutorial for more info: " + "https://l.lingui.io/tutorial-i18n-react");
+        }
+      }
+    }
+  }, {
+    key: "getTranslation",
+    value: function getTranslation() {
+      var _props = this.props,
+          _props$id = _props.id,
+          id = _props$id === undefined ? "" : _props$id,
+          defaults = _props.defaults,
+          i18n = _props.i18n,
+          formats = _props.formats;
+
+
+      var values = _extends({}, this.props.values);
+      var components = this.props.components ? [].concat(_toConsumableArray(this.props.components)) : [];
+
+      if (values) {
+        /*
+        Related discussion: https://github.com/lingui/js-lingui/issues/183
+         Values *might* contain React elements with static content.
+        They're replaced with <INDEX /> placeholders and added to `components`.
+         Example:
+        Translation: Hello {name}
+        Values: { name: <strong>Jane</strong> }
+         It'll become "Hello <0 />" with components=[<strong>Jane</strong>]
+        */
+
+        _Object$keys(values).forEach(function (key) {
+          var value = values[key];
+          if (!React.isValidElement(value)) return;
+
+          var index = components.push(value) - 1; // push returns new length of array
+          values[key] = "<" + index + "/>";
+        });
+      }
+
+      var translation = i18n && typeof i18n._ === "function" ? i18n._(id, values, { defaults: defaults, formats: formats }) : id; // i18n provider isn't loaded at all
+      if (!translation) return null;
+
+      return formatElements(translation, components);
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return React.createElement(Render, {
+        render: this.props.render,
+        className: this.props.className,
+        value: this.getTranslation()
+      });
+    }
+  }]);
+
+  return Trans;
+}(React.Component);
+
+var Trans$1 = withI18n()(Trans);
+
+var Select = withI18n()(function (_React$Component) {
+  _inherits(Select, _React$Component);
+
+  function Select() {
+    _classCallCheck(this, Select);
+
+    return _possibleConstructorReturn(this, (Select.__proto__ || _Object$getPrototypeOf(Select)).apply(this, arguments));
+  }
+
+  _createClass(Select, [{
+    key: "render",
+    value: function render() {
+      // lingui-transform-js transforms also this file in react-native env.
+      // i18n must be aliased to _i18n to hide i18n.select call from plugin,
+      // otherwise it throws "undefined is not iterable" obscure error.
+      var _props = this.props,
+          className = _props.className,
+          render = _props.render,
+          _i18n = _props.i18n,
+          selectProps = _objectWithoutProperties(_props, ["className", "render", "i18n"]);
+
+      return React.createElement(Render, {
+        className: className,
+        render: render,
+        value: _i18n.select(selectProps)
+      });
+    }
+  }]);
+
+  return Select;
+}(React.Component));
+
+var PluralFactory = function PluralFactory() {
+  var _class2, _temp2;
+
+  var ordinal = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
+
+  var displayName = !ordinal ? "Plural" : "SelectOrdinal";
+  var pluralType = !ordinal ? "plural" : "selectOrdinal";
+
+  return _temp2 = _class2 = function (_React$Component2) {
+    _inherits(_class2, _React$Component2);
+
+    function _class2() {
+      var _ref;
+
+      var _temp, _this2, _ret;
+
+      _classCallCheck(this, _class2);
+
+      for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+        args[_key] = arguments[_key];
+      }
+
+      return _ret = (_temp = (_this2 = _possibleConstructorReturn(this, (_ref = _class2.__proto__ || _Object$getPrototypeOf(_class2)).call.apply(_ref, [this].concat(args))), _this2), _this2.displayName = displayName, _temp), _possibleConstructorReturn(_this2, _ret);
+    }
+
+    _createClass(_class2, [{
+      key: "render",
+      value: function render() {
+        var _props2 = this.props,
+            className = _props2.className,
+            render = _props2.render,
+            i18n = _props2.i18n,
+            value = _props2.value,
+            offset = _props2.offset,
+            props = _objectWithoutProperties(_props2, ["className", "render", "i18n", "value", "offset"]);
+
+        // i18n.selectOrdinal/plural uses numbers for exact matches (1, 2),
+        // while SelectOrdinal/Plural has to use strings (_1, _2).
+
+
+        var pluralProps = _Object$keys(props).reduce(function (acc, prop) {
+          var key = prop.replace("_", "");
+          acc[key] = props[prop];
+          return acc;
+        }, {
+          value: Number(value),
+          offset: Number(offset)
+        });
+
+        return React.createElement(Render, {
+          className: className,
+          render: render,
+          value: i18n[pluralType](pluralProps)
+        });
+      }
+    }]);
+
+    return _class2;
+  }(React.Component), _class2.defaultProps = {
+    offset: 0
+  }, _temp2;
+};
+
+var Plural = withI18n()(PluralFactory(false));
+var SelectOrdinal = withI18n()(PluralFactory(true));
+
+function createFormat(formatFunction) {
+  return function (_ref) {
+    var value = _ref.value,
+        format = _ref.format,
+        i18n = _ref.i18n,
+        className = _ref.className,
+        render = _ref.render;
+
+    var formatter = formatFunction(i18n.locales || i18n.language, format);
+    return React.createElement(Render, { className: className, render: render, value: formatter(value) });
+  };
+}
+
+var DateFormat = withI18n()(createFormat(core.date));
+var NumberFormat = withI18n()(createFormat(core.number));
+
+var i18nMark = function i18nMark(id) {
+  return id;
+};
+
+exports.i18nMark = i18nMark;
+exports.withI18n = withI18n;
+exports.I18nProvider = I18nProvider;
+exports.I18n = I18n;
+exports.Trans = Trans$1;
 exports.Plural = Plural;
 exports.Select = Select;
 exports.SelectOrdinal = SelectOrdinal;
 exports.DateFormat = DateFormat;
 exports.NumberFormat = NumberFormat;
-exports.t = t;
-exports.plural = plural;
-exports.select = select;
-exports.selectOrdinal = selectOrdinal;
-exports.date = date;
-exports.number = number;
-exports.default = (0, _babelPluginMacros.createMacro)(macro);
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../process/browser.js */ "./node_modules/process/browser.js")))
+
 
 /***/ }),
 
-/***/ "./node_modules/@lingui/macro/js.js":
-/*!******************************************!*\
-  !*** ./node_modules/@lingui/macro/js.js ***!
-  \******************************************/
+/***/ "./node_modules/@lingui/react/index.js":
+/*!*********************************************!*\
+  !*** ./node_modules/@lingui/react/index.js ***!
+  \*********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
+if (false) {} else {
+  module.exports = __webpack_require__(/*! ./cjs/react.development.js */ "./node_modules/@lingui/react/cjs/react.development.js")
+}
 
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _values = __webpack_require__(/*! babel-runtime/core-js/object/values */ "./node_modules/babel-runtime/core-js/object/values.js");
-
-var _values2 = _interopRequireDefault(_values);
-
-var _getIterator2 = __webpack_require__(/*! babel-runtime/core-js/get-iterator */ "./node_modules/babel-runtime/core-js/get-iterator.js");
-
-var _getIterator3 = _interopRequireDefault(_getIterator2);
-
-var _includes = __webpack_require__(/*! babel-runtime/core-js/array/includes */ "./node_modules/babel-runtime/core-js/array/includes.js");
-
-var _includes2 = _interopRequireDefault(_includes);
-
-var _keys = __webpack_require__(/*! babel-runtime/core-js/object/keys */ "./node_modules/babel-runtime/core-js/object/keys.js");
-
-var _keys2 = _interopRequireDefault(_keys);
-
-var _extends2 = __webpack_require__(/*! babel-runtime/helpers/extends */ "./node_modules/babel-runtime/helpers/extends.js");
-
-var _extends3 = _interopRequireDefault(_extends2);
-
-exports.default = function (_ref) {
-  var t = _ref.types;
-
-  var isIdentifier = function isIdentifier(node, name) {
-    return t.isIdentifier(node, { name: name });
-  };
-
-  var isI18nMethod = function isI18nMethod(node) {
-    return isIdentifier(node.tag, "t") || t.isCallExpression(node.tag) && isIdentifier(node.tag.callee, "t");
-  };
-
-  var isChoiceMethod = function isChoiceMethod(node) {
-    return isIdentifier(node, "plural") || isIdentifier(node, "select") || isIdentifier(node, "selectOrdinal");
-  };
-
-  var isFormatMethod = function isFormatMethod(node) {
-    return isIdentifier(node, "date") || isIdentifier(node, "number");
-  };
-
-  /**
-   * Convert identifiers to *named* arguments and everything else
-   * to *positional* arguments.
-   *
-   * Example
-   * `world` is named argument and `new Date()` is positional one
-   *
-   * Input:   `Hello ${world}, today is ${new Date()}`
-   * Output:  `Hello {world}, today is {0}`
-   */
-  function expressionToArgument(exp, props) {
-    var name = t.isIdentifier(exp) ? exp.name : props.argumentGenerator();
-    var key = t.isIdentifier(exp) ? exp : t.numericLiteral(name);
-
-    return { name: name, key: key };
-  }
-
-  function transformI18nMethod(node, file, props) {
-    if (t.isCallExpression(node.tag)) {
-      // Message with custom ID, where message is used as defaults
-      // i18n.t('id')`Hello World`
-      var defaults = node.tag.arguments[0];
-      if (!t.isStringLiteral(defaults)) {
-        throw file.buildCodeFrameError(node.tag, "Message ID must be a string");
-      }
-      var newProps = transformTemplateLiteral(node.quasi, file, props);
-      return (0, _extends3.default)({}, newProps, {
-        text: defaults.value,
-        defaults: props.text
-      });
-    }
-
-    return transformTemplateLiteral(node.quasi, file, props);
-  }
-
-  function transformChoiceMethod(node, file, props) {
-    var root = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : false;
-
-    var choices = {};
-    var choicesType = node.callee.name.toLowerCase();
-    var defaults = void 0;
-    var variable = void 0;
-    var offset = "";
-
-    var choiceArguments = node.arguments[0];
-    if (t.isStringLiteral(choiceArguments)) {
-      defaults = choiceArguments.value;
-      choiceArguments = node.arguments[1];
-    }
-
-    var _iteratorNormalCompletion = true;
-    var _didIteratorError = false;
-    var _iteratorError = undefined;
-
-    try {
-      for (var _iterator = (0, _getIterator3.default)(choiceArguments.properties), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-        var attr = _step.value;
-
-        if (attr.computed) {
-          throw file.buildCodeFrameError(attr, "Computed properties aren't allowed.");
-        }
-
-        var key = attr.key;
-        // key is either:
-        // NumericLiteral => convert to `={number}`
-        // StringLiteral => key.value
-        // Literal => key.name
-
-        var name = t.isNumericLiteral(key) ? "=" + key.value : key.name || key.value;
-
-        if (name === "value") {
-          var exp = attr.value;
-
-          var _expressionToArgument = expressionToArgument(exp, props),
-              _name = _expressionToArgument.name,
-              _key = _expressionToArgument.key;
-
-          variable = _name;
-          props.values[_name] = t.objectProperty(_key, exp);
-        } else if (choicesType !== "select" && name === "offset") {
-          // offset is static parameter, so it must be either string or number
-          if (!t.isNumericLiteral(attr.value) && !t.isStringLiteral(attr.value)) {
-            throw file.buildCodeFrameError(node.callee, "Offset argument cannot be a variable.");
-          }
-          offset = " offset:" + attr.value.value;
-        } else {
-          var value = "";
-
-          if (t.isTemplateLiteral(attr.value)) {
-            props = transformTemplateLiteral(attr.value, file, (0, _extends3.default)({}, props, {
-              text: ""
-            }));
-            value = props.text;
-          } else if (t.isCallExpression(attr.value)) {
-            props = transformMethod(attr.value, file, (0, _extends3.default)({}, props, { text: "" }));
-            value = "{" + props.text + "}";
-          } else {
-            value = attr.value.value;
-          }
-          choices[name] = value;
-        }
-      }
-
-      // missing value
-    } catch (err) {
-      _didIteratorError = true;
-      _iteratorError = err;
-    } finally {
-      try {
-        if (!_iteratorNormalCompletion && _iterator.return) {
-          _iterator.return();
-        }
-      } finally {
-        if (_didIteratorError) {
-          throw _iteratorError;
-        }
-      }
-    }
-
-    if (variable === undefined) {
-      throw file.buildCodeFrameError(node.callee, "Value argument is missing.");
-    }
-
-    var choicesKeys = (0, _keys2.default)(choices);
-
-    // 'other' choice is required
-    if (!choicesKeys.length) {
-      throw file.buildCodeFrameError(node.callee, "Missing " + choicesType + " choices. At least fallback argument 'other' is required.");
-    } else if (!(0, _includes2.default)(choicesKeys, "other")) {
-      throw file.buildCodeFrameError(node.callee, "Missing fallback argument 'other'.");
-    }
-
-    // validate plural rules
-    if (choicesType === "plural" || choicesType === "selectordinal") {
-      choicesKeys.forEach(function (rule) {
-        if (!(0, _includes2.default)(pluralRules, rule) && !/=\d+/.test(rule)) {
-          throw file.buildCodeFrameError(node.callee, "Invalid plural rule '" + rule + "'. Must be " + pluralRules.join(", ") + " or exact number depending on your source language ('one' and 'other' for English).");
-        }
-      });
-    }
-
-    var argument = choicesKeys.map(function (form) {
-      return form + " {" + choices[form] + "}";
-    }).join(" ");
-    var format = variable + ", " + choicesType + "," + offset + " " + argument;
-    props.text = root ? "{" + format + "}" : format;
-
-    if (defaults) {
-      return (0, _extends3.default)({}, props, {
-        text: defaults,
-        defaults: props.text
-      });
-    }
-
-    return props;
-  }
-
-  function transformFormatMethod(node, file, props, root) {
-    var exp = node.arguments[0];
-
-    // missing value
-    if (exp === undefined) {
-      throw file.buildCodeFrameError(node.callee, "The first argument of format function must be a variable.");
-    }
-
-    var _expressionToArgument2 = expressionToArgument(exp, props),
-        name = _expressionToArgument2.name,
-        key = _expressionToArgument2.key;
-
-    var type = node.callee.name;
-    var parts = [name, // variable name
-    type // format type
-    ];
-
-    var format = "";
-    var formatArg = node.arguments[1];
-    if (!formatArg) {
-      // Do not throw validation error when format doesn't exist
-    } else if (t.isStringLiteral(formatArg)) {
-      format = formatArg.value;
-    } else if (t.isIdentifier(formatArg) || t.isObjectExpression(formatArg)) {
-      if (t.isIdentifier(formatArg)) {
-        format = formatArg.name;
-      } else {
-        var formatName = new RegExp("^" + type + "\\d+$");
-        var existing = (0, _keys2.default)(props.formats).filter(function (name) {
-          return formatName.test(name);
-        });
-        format = "" + type + (existing.length || 0);
-      }
-
-      props.formats[format] = t.objectProperty(t.identifier(format), formatArg);
-    } else {
-      throw file.buildCodeFrameError(formatArg, "Format can be either string for buil-in formats, variable or object for custom defined formats.");
-    }
-
-    if (format) parts.push(format);
-
-    props.values[name] = t.objectProperty(key, exp);
-    props.text += "" + parts.join(",");
-
-    return props;
-  }
-
-  function transformTemplateLiteral(exp, file, props) {
-    var parts = [];
-
-    exp.quasis.forEach(function (item, index) {
-      parts.push(item);
-
-      if (!item.tail) parts.push(exp.expressions[index]);
-    });
-
-    parts.forEach(function (item) {
-      if (t.isTemplateElement(item)) {
-        props.text += item.value.raw;
-      } else if (t.isCallExpression(item) && (isI18nMethod(item.callee) || isChoiceMethod(item.callee) || isFormatMethod(item.callee))) {
-        var _transformMethod = transformMethod(item, file, (0, _extends3.default)({}, props, {
-          text: ""
-        })),
-            text = _transformMethod.text;
-
-        props.text += "{" + text + "}";
-      } else {
-        var _expressionToArgument3 = expressionToArgument(item, props),
-            name = _expressionToArgument3.name,
-            key = _expressionToArgument3.key;
-
-        props.text += "{" + name + "}";
-        props.values[name] = t.objectProperty(key, item);
-      }
-    });
-
-    return props;
-  }
-
-  function transformMethod(node, file, props) {
-    var root = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : false;
-
-    if (isI18nMethod(node)) {
-      // t
-      return transformI18nMethod(node, file, props);
-    } else if (isChoiceMethod(node.callee)) {
-      // plural, select and selectOrdinal
-      return transformChoiceMethod(node, file, props, root);
-    } else if (isFormatMethod(node.callee)) {
-      // date, number
-      return transformFormatMethod(node, file, props, root);
-    }
-
-    return props;
-  }
-
-  return function transform(path, file) {
-    // 1. Collect all parameters and generate message ID
-    var props = transformMethod(path.node, file, initialProps(), true);
-
-    var text = props.text.replace(nlRe, " ").trim();
-    if (!text) return;
-
-    // 2. Create message descriptor
-    var descriptorProps = [t.objectProperty(t.identifier("id"), t.StringLiteral(text))];
-
-    if (props.defaults) {
-      descriptorProps.push(t.objectProperty(t.identifier("defaults"), t.stringLiteral(props.defaults)));
-    }
-
-    var formatsList = (0, _values2.default)(props.formats);
-    if (formatsList.length) {
-      descriptorProps.push(t.objectProperty(t.identifier("formats"), t.objectExpression(formatsList)));
-    }
-
-    var valuesList = (0, _values2.default)(props.values);
-    if (valuesList.length) {
-      descriptorProps.push(t.objectProperty(t.identifier("values"), t.objectExpression(valuesList.length ? valuesList : [])));
-    }
-
-    var exp = t.objectExpression(descriptorProps);
-    exp.loc = path.node.loc;
-    path.replaceWith(exp);
-
-    // 3. Add leading `i18n` comment (if doesn't exist) for lingui-extract
-    var nodeWithComments = path.parentPath.type === "ExpressionStatement" ? path.parentPath.node : path.node;
-    var i18nComment = nodeWithComments.leadingComments && nodeWithComments.leadingComments.filter(function (node) {
-      return node.value.trim().substr(0, 4) === "i18n";
-    })[0];
-
-    if (!i18nComment) {
-      path.addComment("leading", "i18n");
-    }
-  };
-};
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var nlRe = /(?:\r\n|\r|\n)+\s+/g;
-
-var pluralRules = ["zero", "one", "two", "few", "many", "other"];
-
-var generatorFactory = function generatorFactory() {
-  var index = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
-  return function () {
-    return index++;
-  };
-};
-
-var initialProps = function initialProps() {
-  return {
-    text: "",
-    values: {},
-    formats: {},
-    argumentGenerator: generatorFactory()
-  };
-};
 
 /***/ }),
 
@@ -1727,6 +2910,17 @@ Object.assign(module.exports, {
 
 /***/ }),
 
+/***/ "./node_modules/babel-runtime/core-js/array/from.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/babel-runtime/core-js/array/from.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = { "default": __webpack_require__(/*! core-js/library/fn/array/from */ "./node_modules/core-js/library/fn/array/from.js"), __esModule: true };
+
+/***/ }),
+
 /***/ "./node_modules/babel-runtime/core-js/array/includes.js":
 /*!**************************************************************!*\
   !*** ./node_modules/babel-runtime/core-js/array/includes.js ***!
@@ -1749,6 +2943,17 @@ module.exports = { "default": __webpack_require__(/*! core-js/library/fn/get-ite
 
 /***/ }),
 
+/***/ "./node_modules/babel-runtime/core-js/is-iterable.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/babel-runtime/core-js/is-iterable.js ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = { "default": __webpack_require__(/*! core-js/library/fn/is-iterable */ "./node_modules/core-js/library/fn/is-iterable.js"), __esModule: true };
+
+/***/ }),
+
 /***/ "./node_modules/babel-runtime/core-js/object/assign.js":
 /*!*************************************************************!*\
   !*** ./node_modules/babel-runtime/core-js/object/assign.js ***!
@@ -1757,6 +2962,17 @@ module.exports = { "default": __webpack_require__(/*! core-js/library/fn/get-ite
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = { "default": __webpack_require__(/*! core-js/library/fn/object/assign */ "./node_modules/core-js/library/fn/object/assign.js"), __esModule: true };
+
+/***/ }),
+
+/***/ "./node_modules/babel-runtime/core-js/object/create.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/babel-runtime/core-js/object/create.js ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = { "default": __webpack_require__(/*! core-js/library/fn/object/create */ "./node_modules/core-js/library/fn/object/create.js"), __esModule: true };
 
 /***/ }),
 
@@ -1771,6 +2987,28 @@ module.exports = { "default": __webpack_require__(/*! core-js/library/fn/object/
 
 /***/ }),
 
+/***/ "./node_modules/babel-runtime/core-js/object/get-own-property-names.js":
+/*!*****************************************************************************!*\
+  !*** ./node_modules/babel-runtime/core-js/object/get-own-property-names.js ***!
+  \*****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = { "default": __webpack_require__(/*! core-js/library/fn/object/get-own-property-names */ "./node_modules/core-js/library/fn/object/get-own-property-names.js"), __esModule: true };
+
+/***/ }),
+
+/***/ "./node_modules/babel-runtime/core-js/object/get-prototype-of.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/babel-runtime/core-js/object/get-prototype-of.js ***!
+  \***********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = { "default": __webpack_require__(/*! core-js/library/fn/object/get-prototype-of */ "./node_modules/core-js/library/fn/object/get-prototype-of.js"), __esModule: true };
+
+/***/ }),
+
 /***/ "./node_modules/babel-runtime/core-js/object/keys.js":
 /*!***********************************************************!*\
   !*** ./node_modules/babel-runtime/core-js/object/keys.js ***!
@@ -1782,6 +3020,17 @@ module.exports = { "default": __webpack_require__(/*! core-js/library/fn/object/
 
 /***/ }),
 
+/***/ "./node_modules/babel-runtime/core-js/object/set-prototype-of.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/babel-runtime/core-js/object/set-prototype-of.js ***!
+  \***********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = { "default": __webpack_require__(/*! core-js/library/fn/object/set-prototype-of */ "./node_modules/core-js/library/fn/object/set-prototype-of.js"), __esModule: true };
+
+/***/ }),
+
 /***/ "./node_modules/babel-runtime/core-js/object/values.js":
 /*!*************************************************************!*\
   !*** ./node_modules/babel-runtime/core-js/object/values.js ***!
@@ -1790,6 +3039,28 @@ module.exports = { "default": __webpack_require__(/*! core-js/library/fn/object/
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = { "default": __webpack_require__(/*! core-js/library/fn/object/values */ "./node_modules/core-js/library/fn/object/values.js"), __esModule: true };
+
+/***/ }),
+
+/***/ "./node_modules/babel-runtime/core-js/symbol.js":
+/*!******************************************************!*\
+  !*** ./node_modules/babel-runtime/core-js/symbol.js ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = { "default": __webpack_require__(/*! core-js/library/fn/symbol */ "./node_modules/core-js/library/fn/symbol/index.js"), __esModule: true };
+
+/***/ }),
+
+/***/ "./node_modules/babel-runtime/core-js/symbol/iterator.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/babel-runtime/core-js/symbol/iterator.js ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = { "default": __webpack_require__(/*! core-js/library/fn/symbol/iterator */ "./node_modules/core-js/library/fn/symbol/iterator.js"), __esModule: true };
 
 /***/ }),
 
@@ -1881,6 +3152,230 @@ exports.default = _assign2.default || function (target) {
   }
 
   return target;
+};
+
+/***/ }),
+
+/***/ "./node_modules/babel-runtime/helpers/inherits.js":
+/*!********************************************************!*\
+  !*** ./node_modules/babel-runtime/helpers/inherits.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+exports.__esModule = true;
+
+var _setPrototypeOf = __webpack_require__(/*! ../core-js/object/set-prototype-of */ "./node_modules/babel-runtime/core-js/object/set-prototype-of.js");
+
+var _setPrototypeOf2 = _interopRequireDefault(_setPrototypeOf);
+
+var _create = __webpack_require__(/*! ../core-js/object/create */ "./node_modules/babel-runtime/core-js/object/create.js");
+
+var _create2 = _interopRequireDefault(_create);
+
+var _typeof2 = __webpack_require__(/*! ../helpers/typeof */ "./node_modules/babel-runtime/helpers/typeof.js");
+
+var _typeof3 = _interopRequireDefault(_typeof2);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = function (subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === "undefined" ? "undefined" : (0, _typeof3.default)(superClass)));
+  }
+
+  subClass.prototype = (0, _create2.default)(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      enumerable: false,
+      writable: true,
+      configurable: true
+    }
+  });
+  if (superClass) _setPrototypeOf2.default ? (0, _setPrototypeOf2.default)(subClass, superClass) : subClass.__proto__ = superClass;
+};
+
+/***/ }),
+
+/***/ "./node_modules/babel-runtime/helpers/objectWithoutProperties.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/babel-runtime/helpers/objectWithoutProperties.js ***!
+  \***********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+exports.__esModule = true;
+
+exports.default = function (obj, keys) {
+  var target = {};
+
+  for (var i in obj) {
+    if (keys.indexOf(i) >= 0) continue;
+    if (!Object.prototype.hasOwnProperty.call(obj, i)) continue;
+    target[i] = obj[i];
+  }
+
+  return target;
+};
+
+/***/ }),
+
+/***/ "./node_modules/babel-runtime/helpers/possibleConstructorReturn.js":
+/*!*************************************************************************!*\
+  !*** ./node_modules/babel-runtime/helpers/possibleConstructorReturn.js ***!
+  \*************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+exports.__esModule = true;
+
+var _typeof2 = __webpack_require__(/*! ../helpers/typeof */ "./node_modules/babel-runtime/helpers/typeof.js");
+
+var _typeof3 = _interopRequireDefault(_typeof2);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = function (self, call) {
+  if (!self) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return call && ((typeof call === "undefined" ? "undefined" : (0, _typeof3.default)(call)) === "object" || typeof call === "function") ? call : self;
+};
+
+/***/ }),
+
+/***/ "./node_modules/babel-runtime/helpers/slicedToArray.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/babel-runtime/helpers/slicedToArray.js ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+exports.__esModule = true;
+
+var _isIterable2 = __webpack_require__(/*! ../core-js/is-iterable */ "./node_modules/babel-runtime/core-js/is-iterable.js");
+
+var _isIterable3 = _interopRequireDefault(_isIterable2);
+
+var _getIterator2 = __webpack_require__(/*! ../core-js/get-iterator */ "./node_modules/babel-runtime/core-js/get-iterator.js");
+
+var _getIterator3 = _interopRequireDefault(_getIterator2);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = function () {
+  function sliceIterator(arr, i) {
+    var _arr = [];
+    var _n = true;
+    var _d = false;
+    var _e = undefined;
+
+    try {
+      for (var _i = (0, _getIterator3.default)(arr), _s; !(_n = (_s = _i.next()).done); _n = true) {
+        _arr.push(_s.value);
+
+        if (i && _arr.length === i) break;
+      }
+    } catch (err) {
+      _d = true;
+      _e = err;
+    } finally {
+      try {
+        if (!_n && _i["return"]) _i["return"]();
+      } finally {
+        if (_d) throw _e;
+      }
+    }
+
+    return _arr;
+  }
+
+  return function (arr, i) {
+    if (Array.isArray(arr)) {
+      return arr;
+    } else if ((0, _isIterable3.default)(Object(arr))) {
+      return sliceIterator(arr, i);
+    } else {
+      throw new TypeError("Invalid attempt to destructure non-iterable instance");
+    }
+  };
+}();
+
+/***/ }),
+
+/***/ "./node_modules/babel-runtime/helpers/toConsumableArray.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/babel-runtime/helpers/toConsumableArray.js ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+exports.__esModule = true;
+
+var _from = __webpack_require__(/*! ../core-js/array/from */ "./node_modules/babel-runtime/core-js/array/from.js");
+
+var _from2 = _interopRequireDefault(_from);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = function (arr) {
+  if (Array.isArray(arr)) {
+    for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) {
+      arr2[i] = arr[i];
+    }
+
+    return arr2;
+  } else {
+    return (0, _from2.default)(arr);
+  }
+};
+
+/***/ }),
+
+/***/ "./node_modules/babel-runtime/helpers/typeof.js":
+/*!******************************************************!*\
+  !*** ./node_modules/babel-runtime/helpers/typeof.js ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+exports.__esModule = true;
+
+var _iterator = __webpack_require__(/*! ../core-js/symbol/iterator */ "./node_modules/babel-runtime/core-js/symbol/iterator.js");
+
+var _iterator2 = _interopRequireDefault(_iterator);
+
+var _symbol = __webpack_require__(/*! ../core-js/symbol */ "./node_modules/babel-runtime/core-js/symbol.js");
+
+var _symbol2 = _interopRequireDefault(_symbol);
+
+var _typeof = typeof _symbol2.default === "function" && typeof _iterator2.default === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof _symbol2.default === "function" && obj.constructor === _symbol2.default && obj !== _symbol2.default.prototype ? "symbol" : typeof obj; };
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = typeof _symbol2.default === "function" && _typeof(_iterator2.default) === "symbol" ? function (obj) {
+  return typeof obj === "undefined" ? "undefined" : _typeof(obj);
+} : function (obj) {
+  return obj && typeof _symbol2.default === "function" && obj.constructor === _symbol2.default && obj !== _symbol2.default.prototype ? "symbol" : typeof obj === "undefined" ? "undefined" : _typeof(obj);
 };
 
 /***/ }),
@@ -3850,6 +5345,20 @@ function isnan (val) {
 
 /***/ }),
 
+/***/ "./node_modules/core-js/library/fn/array/from.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/core-js/library/fn/array/from.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! ../../modules/es6.string.iterator */ "./node_modules/core-js/library/modules/es6.string.iterator.js");
+__webpack_require__(/*! ../../modules/es6.array.from */ "./node_modules/core-js/library/modules/es6.array.from.js");
+module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Array.from;
+
+
+/***/ }),
+
 /***/ "./node_modules/core-js/library/fn/array/includes.js":
 /*!***********************************************************!*\
   !*** ./node_modules/core-js/library/fn/array/includes.js ***!
@@ -3877,6 +5386,20 @@ module.exports = __webpack_require__(/*! ../modules/core.get-iterator */ "./node
 
 /***/ }),
 
+/***/ "./node_modules/core-js/library/fn/is-iterable.js":
+/*!********************************************************!*\
+  !*** ./node_modules/core-js/library/fn/is-iterable.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! ../modules/web.dom.iterable */ "./node_modules/core-js/library/modules/web.dom.iterable.js");
+__webpack_require__(/*! ../modules/es6.string.iterator */ "./node_modules/core-js/library/modules/es6.string.iterator.js");
+module.exports = __webpack_require__(/*! ../modules/core.is-iterable */ "./node_modules/core-js/library/modules/core.is-iterable.js");
+
+
+/***/ }),
+
 /***/ "./node_modules/core-js/library/fn/object/assign.js":
 /*!**********************************************************!*\
   !*** ./node_modules/core-js/library/fn/object/assign.js ***!
@@ -3886,6 +5409,22 @@ module.exports = __webpack_require__(/*! ../modules/core.get-iterator */ "./node
 
 __webpack_require__(/*! ../../modules/es6.object.assign */ "./node_modules/core-js/library/modules/es6.object.assign.js");
 module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Object.assign;
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/fn/object/create.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/core-js/library/fn/object/create.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! ../../modules/es6.object.create */ "./node_modules/core-js/library/modules/es6.object.create.js");
+var $Object = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Object;
+module.exports = function create(P, D) {
+  return $Object.create(P, D);
+};
 
 
 /***/ }),
@@ -3906,6 +5445,35 @@ module.exports = function defineProperty(it, key, desc) {
 
 /***/ }),
 
+/***/ "./node_modules/core-js/library/fn/object/get-own-property-names.js":
+/*!**************************************************************************!*\
+  !*** ./node_modules/core-js/library/fn/object/get-own-property-names.js ***!
+  \**************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! ../../modules/es6.object.get-own-property-names */ "./node_modules/core-js/library/modules/es6.object.get-own-property-names.js");
+var $Object = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Object;
+module.exports = function getOwnPropertyNames(it) {
+  return $Object.getOwnPropertyNames(it);
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/fn/object/get-prototype-of.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/core-js/library/fn/object/get-prototype-of.js ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! ../../modules/es6.object.get-prototype-of */ "./node_modules/core-js/library/modules/es6.object.get-prototype-of.js");
+module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Object.getPrototypeOf;
+
+
+/***/ }),
+
 /***/ "./node_modules/core-js/library/fn/object/keys.js":
 /*!********************************************************!*\
   !*** ./node_modules/core-js/library/fn/object/keys.js ***!
@@ -3919,6 +5487,19 @@ module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/
 
 /***/ }),
 
+/***/ "./node_modules/core-js/library/fn/object/set-prototype-of.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/core-js/library/fn/object/set-prototype-of.js ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! ../../modules/es6.object.set-prototype-of */ "./node_modules/core-js/library/modules/es6.object.set-prototype-of.js");
+module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Object.setPrototypeOf;
+
+
+/***/ }),
+
 /***/ "./node_modules/core-js/library/fn/object/values.js":
 /*!**********************************************************!*\
   !*** ./node_modules/core-js/library/fn/object/values.js ***!
@@ -3928,6 +5509,36 @@ module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/
 
 __webpack_require__(/*! ../../modules/es7.object.values */ "./node_modules/core-js/library/modules/es7.object.values.js");
 module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Object.values;
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/fn/symbol/index.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/core-js/library/fn/symbol/index.js ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! ../../modules/es6.symbol */ "./node_modules/core-js/library/modules/es6.symbol.js");
+__webpack_require__(/*! ../../modules/es6.object.to-string */ "./node_modules/core-js/library/modules/es6.object.to-string.js");
+__webpack_require__(/*! ../../modules/es7.symbol.async-iterator */ "./node_modules/core-js/library/modules/es7.symbol.async-iterator.js");
+__webpack_require__(/*! ../../modules/es7.symbol.observable */ "./node_modules/core-js/library/modules/es7.symbol.observable.js");
+module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Symbol;
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/fn/symbol/iterator.js":
+/*!************************************************************!*\
+  !*** ./node_modules/core-js/library/fn/symbol/iterator.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! ../../modules/es6.string.iterator */ "./node_modules/core-js/library/modules/es6.string.iterator.js");
+__webpack_require__(/*! ../../modules/web.dom.iterable */ "./node_modules/core-js/library/modules/web.dom.iterable.js");
+module.exports = __webpack_require__(/*! ../../modules/_wks-ext */ "./node_modules/core-js/library/modules/_wks-ext.js").f('iterator');
 
 
 /***/ }),
@@ -4072,6 +5683,26 @@ if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
 
 /***/ }),
 
+/***/ "./node_modules/core-js/library/modules/_create-property.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/_create-property.js ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var $defineProperty = __webpack_require__(/*! ./_object-dp */ "./node_modules/core-js/library/modules/_object-dp.js");
+var createDesc = __webpack_require__(/*! ./_property-desc */ "./node_modules/core-js/library/modules/_property-desc.js");
+
+module.exports = function (object, index, value) {
+  if (index in object) $defineProperty.f(object, index, createDesc(0, value));
+  else object[index] = value;
+};
+
+
+/***/ }),
+
 /***/ "./node_modules/core-js/library/modules/_ctx.js":
 /*!******************************************************!*\
   !*** ./node_modules/core-js/library/modules/_ctx.js ***!
@@ -4163,6 +5794,32 @@ module.exports = function (it) {
 module.exports = (
   'constructor,hasOwnProperty,isPrototypeOf,propertyIsEnumerable,toLocaleString,toString,valueOf'
 ).split(',');
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/_enum-keys.js":
+/*!************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/_enum-keys.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// all enumerable object keys, includes symbols
+var getKeys = __webpack_require__(/*! ./_object-keys */ "./node_modules/core-js/library/modules/_object-keys.js");
+var gOPS = __webpack_require__(/*! ./_object-gops */ "./node_modules/core-js/library/modules/_object-gops.js");
+var pIE = __webpack_require__(/*! ./_object-pie */ "./node_modules/core-js/library/modules/_object-pie.js");
+module.exports = function (it) {
+  var result = getKeys(it);
+  var getSymbols = gOPS.f;
+  if (getSymbols) {
+    var symbols = getSymbols(it);
+    var isEnum = pIE.f;
+    var i = 0;
+    var key;
+    while (symbols.length > i) if (isEnum.call(it, key = symbols[i++])) result.push(key);
+  } return result;
+};
 
 
 /***/ }),
@@ -4353,6 +6010,41 @@ module.exports = Object('z').propertyIsEnumerable(0) ? Object : function (it) {
 
 /***/ }),
 
+/***/ "./node_modules/core-js/library/modules/_is-array-iter.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/_is-array-iter.js ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// check on default Array iterator
+var Iterators = __webpack_require__(/*! ./_iterators */ "./node_modules/core-js/library/modules/_iterators.js");
+var ITERATOR = __webpack_require__(/*! ./_wks */ "./node_modules/core-js/library/modules/_wks.js")('iterator');
+var ArrayProto = Array.prototype;
+
+module.exports = function (it) {
+  return it !== undefined && (Iterators.Array === it || ArrayProto[ITERATOR] === it);
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/_is-array.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/core-js/library/modules/_is-array.js ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// 7.2.2 IsArray(argument)
+var cof = __webpack_require__(/*! ./_cof */ "./node_modules/core-js/library/modules/_cof.js");
+module.exports = Array.isArray || function isArray(arg) {
+  return cof(arg) == 'Array';
+};
+
+
+/***/ }),
+
 /***/ "./node_modules/core-js/library/modules/_is-object.js":
 /*!************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_is-object.js ***!
@@ -4362,6 +6054,29 @@ module.exports = Object('z').propertyIsEnumerable(0) ? Object : function (it) {
 
 module.exports = function (it) {
   return typeof it === 'object' ? it !== null : typeof it === 'function';
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/_iter-call.js":
+/*!************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/_iter-call.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// call something on iterator step with safe closing on error
+var anObject = __webpack_require__(/*! ./_an-object */ "./node_modules/core-js/library/modules/_an-object.js");
+module.exports = function (iterator, fn, value, entries) {
+  try {
+    return entries ? fn(anObject(value)[0], value[1]) : fn(value);
+  // 7.4.6 IteratorClose(iterator, completion)
+  } catch (e) {
+    var ret = iterator['return'];
+    if (ret !== undefined) anObject(ret.call(iterator));
+    throw e;
+  }
 };
 
 
@@ -4473,6 +6188,39 @@ module.exports = function (Base, NAME, Constructor, next, DEFAULT, IS_SET, FORCE
 
 /***/ }),
 
+/***/ "./node_modules/core-js/library/modules/_iter-detect.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/_iter-detect.js ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var ITERATOR = __webpack_require__(/*! ./_wks */ "./node_modules/core-js/library/modules/_wks.js")('iterator');
+var SAFE_CLOSING = false;
+
+try {
+  var riter = [7][ITERATOR]();
+  riter['return'] = function () { SAFE_CLOSING = true; };
+  // eslint-disable-next-line no-throw-literal
+  Array.from(riter, function () { throw 2; });
+} catch (e) { /* empty */ }
+
+module.exports = function (exec, skipClosing) {
+  if (!skipClosing && !SAFE_CLOSING) return false;
+  var safe = false;
+  try {
+    var arr = [7];
+    var iter = arr[ITERATOR]();
+    iter.next = function () { return { done: safe = true }; };
+    arr[ITERATOR] = function () { return iter; };
+    exec(arr);
+  } catch (e) { /* empty */ }
+  return safe;
+};
+
+
+/***/ }),
+
 /***/ "./node_modules/core-js/library/modules/_iter-step.js":
 /*!************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_iter-step.js ***!
@@ -4507,6 +6255,70 @@ module.exports = {};
 /***/ (function(module, exports) {
 
 module.exports = true;
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/_meta.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/core-js/library/modules/_meta.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var META = __webpack_require__(/*! ./_uid */ "./node_modules/core-js/library/modules/_uid.js")('meta');
+var isObject = __webpack_require__(/*! ./_is-object */ "./node_modules/core-js/library/modules/_is-object.js");
+var has = __webpack_require__(/*! ./_has */ "./node_modules/core-js/library/modules/_has.js");
+var setDesc = __webpack_require__(/*! ./_object-dp */ "./node_modules/core-js/library/modules/_object-dp.js").f;
+var id = 0;
+var isExtensible = Object.isExtensible || function () {
+  return true;
+};
+var FREEZE = !__webpack_require__(/*! ./_fails */ "./node_modules/core-js/library/modules/_fails.js")(function () {
+  return isExtensible(Object.preventExtensions({}));
+});
+var setMeta = function (it) {
+  setDesc(it, META, { value: {
+    i: 'O' + ++id, // object ID
+    w: {}          // weak collections IDs
+  } });
+};
+var fastKey = function (it, create) {
+  // return primitive with prefix
+  if (!isObject(it)) return typeof it == 'symbol' ? it : (typeof it == 'string' ? 'S' : 'P') + it;
+  if (!has(it, META)) {
+    // can't set metadata to uncaught frozen object
+    if (!isExtensible(it)) return 'F';
+    // not necessary to add metadata
+    if (!create) return 'E';
+    // add missing metadata
+    setMeta(it);
+  // return object ID
+  } return it[META].i;
+};
+var getWeak = function (it, create) {
+  if (!has(it, META)) {
+    // can't set metadata to uncaught frozen object
+    if (!isExtensible(it)) return true;
+    // not necessary to add metadata
+    if (!create) return false;
+    // add missing metadata
+    setMeta(it);
+  // return hash weak collections IDs
+  } return it[META].w;
+};
+// add metadata on freeze-family methods calling
+var onFreeze = function (it) {
+  if (FREEZE && meta.NEED && isExtensible(it) && !has(it, META)) setMeta(it);
+  return it;
+};
+var meta = module.exports = {
+  KEY: META,
+  NEED: false,
+  fastKey: fastKey,
+  getWeak: getWeak,
+  onFreeze: onFreeze
+};
 
 
 /***/ }),
@@ -4655,6 +6467,81 @@ module.exports = __webpack_require__(/*! ./_descriptors */ "./node_modules/core-
   var P;
   while (length > i) dP.f(O, P = keys[i++], Properties[P]);
   return O;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/_object-gopd.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/_object-gopd.js ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var pIE = __webpack_require__(/*! ./_object-pie */ "./node_modules/core-js/library/modules/_object-pie.js");
+var createDesc = __webpack_require__(/*! ./_property-desc */ "./node_modules/core-js/library/modules/_property-desc.js");
+var toIObject = __webpack_require__(/*! ./_to-iobject */ "./node_modules/core-js/library/modules/_to-iobject.js");
+var toPrimitive = __webpack_require__(/*! ./_to-primitive */ "./node_modules/core-js/library/modules/_to-primitive.js");
+var has = __webpack_require__(/*! ./_has */ "./node_modules/core-js/library/modules/_has.js");
+var IE8_DOM_DEFINE = __webpack_require__(/*! ./_ie8-dom-define */ "./node_modules/core-js/library/modules/_ie8-dom-define.js");
+var gOPD = Object.getOwnPropertyDescriptor;
+
+exports.f = __webpack_require__(/*! ./_descriptors */ "./node_modules/core-js/library/modules/_descriptors.js") ? gOPD : function getOwnPropertyDescriptor(O, P) {
+  O = toIObject(O);
+  P = toPrimitive(P, true);
+  if (IE8_DOM_DEFINE) try {
+    return gOPD(O, P);
+  } catch (e) { /* empty */ }
+  if (has(O, P)) return createDesc(!pIE.f.call(O, P), O[P]);
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/_object-gopn-ext.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/_object-gopn-ext.js ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// fallback for IE11 buggy Object.getOwnPropertyNames with iframe and window
+var toIObject = __webpack_require__(/*! ./_to-iobject */ "./node_modules/core-js/library/modules/_to-iobject.js");
+var gOPN = __webpack_require__(/*! ./_object-gopn */ "./node_modules/core-js/library/modules/_object-gopn.js").f;
+var toString = {}.toString;
+
+var windowNames = typeof window == 'object' && window && Object.getOwnPropertyNames
+  ? Object.getOwnPropertyNames(window) : [];
+
+var getWindowNames = function (it) {
+  try {
+    return gOPN(it);
+  } catch (e) {
+    return windowNames.slice();
+  }
+};
+
+module.exports.f = function getOwnPropertyNames(it) {
+  return windowNames && toString.call(it) == '[object Window]' ? getWindowNames(it) : gOPN(toIObject(it));
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/_object-gopn.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/_object-gopn.js ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// 19.1.2.7 / 15.2.3.4 Object.getOwnPropertyNames(O)
+var $keys = __webpack_require__(/*! ./_object-keys-internal */ "./node_modules/core-js/library/modules/_object-keys-internal.js");
+var hiddenKeys = __webpack_require__(/*! ./_enum-bug-keys */ "./node_modules/core-js/library/modules/_enum-bug-keys.js").concat('length', 'prototype');
+
+exports.f = Object.getOwnPropertyNames || function getOwnPropertyNames(O) {
+  return $keys(O, hiddenKeys);
 };
 
 
@@ -4829,6 +6716,42 @@ module.exports = function (bitmap, value) {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(/*! ./_hide */ "./node_modules/core-js/library/modules/_hide.js");
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/_set-proto.js":
+/*!************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/_set-proto.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Works with __proto__ only. Old v8 can't work with null proto objects.
+/* eslint-disable no-proto */
+var isObject = __webpack_require__(/*! ./_is-object */ "./node_modules/core-js/library/modules/_is-object.js");
+var anObject = __webpack_require__(/*! ./_an-object */ "./node_modules/core-js/library/modules/_an-object.js");
+var check = function (O, proto) {
+  anObject(O);
+  if (!isObject(proto) && proto !== null) throw TypeError(proto + ": can't set as prototype!");
+};
+module.exports = {
+  set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line
+    function (test, buggy, set) {
+      try {
+        set = __webpack_require__(/*! ./_ctx */ "./node_modules/core-js/library/modules/_ctx.js")(Function.call, __webpack_require__(/*! ./_object-gopd */ "./node_modules/core-js/library/modules/_object-gopd.js").f(Object.prototype, '__proto__').set, 2);
+        set(test, []);
+        buggy = !(test instanceof Array);
+      } catch (e) { buggy = true; }
+      return function setPrototypeOf(O, proto) {
+        check(O, proto);
+        if (buggy) O.__proto__ = proto;
+        else set(O, proto);
+        return O;
+      };
+    }({}, false) : undefined),
+  check: check
+};
 
 
 /***/ }),
@@ -5042,6 +6965,38 @@ module.exports = function (key) {
 
 /***/ }),
 
+/***/ "./node_modules/core-js/library/modules/_wks-define.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/_wks-define.js ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var global = __webpack_require__(/*! ./_global */ "./node_modules/core-js/library/modules/_global.js");
+var core = __webpack_require__(/*! ./_core */ "./node_modules/core-js/library/modules/_core.js");
+var LIBRARY = __webpack_require__(/*! ./_library */ "./node_modules/core-js/library/modules/_library.js");
+var wksExt = __webpack_require__(/*! ./_wks-ext */ "./node_modules/core-js/library/modules/_wks-ext.js");
+var defineProperty = __webpack_require__(/*! ./_object-dp */ "./node_modules/core-js/library/modules/_object-dp.js").f;
+module.exports = function (name) {
+  var $Symbol = core.Symbol || (core.Symbol = LIBRARY ? {} : global.Symbol || {});
+  if (name.charAt(0) != '_' && !(name in $Symbol)) defineProperty($Symbol, name, { value: wksExt.f(name) });
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/_wks-ext.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/core-js/library/modules/_wks-ext.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports.f = __webpack_require__(/*! ./_wks */ "./node_modules/core-js/library/modules/_wks.js");
+
+
+/***/ }),
+
 /***/ "./node_modules/core-js/library/modules/_wks.js":
 /*!******************************************************!*\
   !*** ./node_modules/core-js/library/modules/_wks.js ***!
@@ -5097,6 +7052,76 @@ module.exports = __webpack_require__(/*! ./_core */ "./node_modules/core-js/libr
   if (typeof iterFn != 'function') throw TypeError(it + ' is not iterable!');
   return anObject(iterFn.call(it));
 };
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/core.is-iterable.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/core.is-iterable.js ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var classof = __webpack_require__(/*! ./_classof */ "./node_modules/core-js/library/modules/_classof.js");
+var ITERATOR = __webpack_require__(/*! ./_wks */ "./node_modules/core-js/library/modules/_wks.js")('iterator');
+var Iterators = __webpack_require__(/*! ./_iterators */ "./node_modules/core-js/library/modules/_iterators.js");
+module.exports = __webpack_require__(/*! ./_core */ "./node_modules/core-js/library/modules/_core.js").isIterable = function (it) {
+  var O = Object(it);
+  return O[ITERATOR] !== undefined
+    || '@@iterator' in O
+    // eslint-disable-next-line no-prototype-builtins
+    || Iterators.hasOwnProperty(classof(O));
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/es6.array.from.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/es6.array.from.js ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var ctx = __webpack_require__(/*! ./_ctx */ "./node_modules/core-js/library/modules/_ctx.js");
+var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
+var toObject = __webpack_require__(/*! ./_to-object */ "./node_modules/core-js/library/modules/_to-object.js");
+var call = __webpack_require__(/*! ./_iter-call */ "./node_modules/core-js/library/modules/_iter-call.js");
+var isArrayIter = __webpack_require__(/*! ./_is-array-iter */ "./node_modules/core-js/library/modules/_is-array-iter.js");
+var toLength = __webpack_require__(/*! ./_to-length */ "./node_modules/core-js/library/modules/_to-length.js");
+var createProperty = __webpack_require__(/*! ./_create-property */ "./node_modules/core-js/library/modules/_create-property.js");
+var getIterFn = __webpack_require__(/*! ./core.get-iterator-method */ "./node_modules/core-js/library/modules/core.get-iterator-method.js");
+
+$export($export.S + $export.F * !__webpack_require__(/*! ./_iter-detect */ "./node_modules/core-js/library/modules/_iter-detect.js")(function (iter) { Array.from(iter); }), 'Array', {
+  // 22.1.2.1 Array.from(arrayLike, mapfn = undefined, thisArg = undefined)
+  from: function from(arrayLike /* , mapfn = undefined, thisArg = undefined */) {
+    var O = toObject(arrayLike);
+    var C = typeof this == 'function' ? this : Array;
+    var aLen = arguments.length;
+    var mapfn = aLen > 1 ? arguments[1] : undefined;
+    var mapping = mapfn !== undefined;
+    var index = 0;
+    var iterFn = getIterFn(O);
+    var length, result, step, iterator;
+    if (mapping) mapfn = ctx(mapfn, aLen > 2 ? arguments[2] : undefined, 2);
+    // if object isn't iterable or it's array with default iterator - use simple case
+    if (iterFn != undefined && !(C == Array && isArrayIter(iterFn))) {
+      for (iterator = iterFn.call(O), result = new C(); !(step = iterator.next()).done; index++) {
+        createProperty(result, index, mapping ? call(iterator, mapfn, [step.value, index], true) : step.value);
+      }
+    } else {
+      length = toLength(O.length);
+      for (result = new C(length); length > index; index++) {
+        createProperty(result, index, mapping ? mapfn(O[index], index) : O[index]);
+      }
+    }
+    result.length = index;
+    return result;
+  }
+});
 
 
 /***/ }),
@@ -5162,6 +7187,20 @@ $export($export.S + $export.F, 'Object', { assign: __webpack_require__(/*! ./_ob
 
 /***/ }),
 
+/***/ "./node_modules/core-js/library/modules/es6.object.create.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/es6.object.create.js ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
+// 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])
+$export($export.S, 'Object', { create: __webpack_require__(/*! ./_object-create */ "./node_modules/core-js/library/modules/_object-create.js") });
+
+
+/***/ }),
+
 /***/ "./node_modules/core-js/library/modules/es6.object.define-property.js":
 /*!****************************************************************************!*\
   !*** ./node_modules/core-js/library/modules/es6.object.define-property.js ***!
@@ -5172,6 +7211,41 @@ $export($export.S + $export.F, 'Object', { assign: __webpack_require__(/*! ./_ob
 var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
 // 19.1.2.4 / 15.2.3.6 Object.defineProperty(O, P, Attributes)
 $export($export.S + $export.F * !__webpack_require__(/*! ./_descriptors */ "./node_modules/core-js/library/modules/_descriptors.js"), 'Object', { defineProperty: __webpack_require__(/*! ./_object-dp */ "./node_modules/core-js/library/modules/_object-dp.js").f });
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/es6.object.get-own-property-names.js":
+/*!***********************************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/es6.object.get-own-property-names.js ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// 19.1.2.7 Object.getOwnPropertyNames(O)
+__webpack_require__(/*! ./_object-sap */ "./node_modules/core-js/library/modules/_object-sap.js")('getOwnPropertyNames', function () {
+  return __webpack_require__(/*! ./_object-gopn-ext */ "./node_modules/core-js/library/modules/_object-gopn-ext.js").f;
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/es6.object.get-prototype-of.js":
+/*!*****************************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/es6.object.get-prototype-of.js ***!
+  \*****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// 19.1.2.9 Object.getPrototypeOf(O)
+var toObject = __webpack_require__(/*! ./_to-object */ "./node_modules/core-js/library/modules/_to-object.js");
+var $getPrototypeOf = __webpack_require__(/*! ./_object-gpo */ "./node_modules/core-js/library/modules/_object-gpo.js");
+
+__webpack_require__(/*! ./_object-sap */ "./node_modules/core-js/library/modules/_object-sap.js")('getPrototypeOf', function () {
+  return function getPrototypeOf(it) {
+    return $getPrototypeOf(toObject(it));
+  };
+});
 
 
 /***/ }),
@@ -5192,6 +7266,31 @@ __webpack_require__(/*! ./_object-sap */ "./node_modules/core-js/library/modules
     return $keys(toObject(it));
   };
 });
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/es6.object.set-prototype-of.js":
+/*!*****************************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/es6.object.set-prototype-of.js ***!
+  \*****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// 19.1.3.19 Object.setPrototypeOf(O, proto)
+var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
+$export($export.S, 'Object', { setPrototypeOf: __webpack_require__(/*! ./_set-proto */ "./node_modules/core-js/library/modules/_set-proto.js").set });
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/es6.object.to-string.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/es6.object.to-string.js ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
 
 
 /***/ }),
@@ -5221,6 +7320,252 @@ __webpack_require__(/*! ./_iter-define */ "./node_modules/core-js/library/module
   this._i += point.length;
   return { value: point, done: false };
 });
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/es6.symbol.js":
+/*!************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/es6.symbol.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+// ECMAScript 6 symbols shim
+var global = __webpack_require__(/*! ./_global */ "./node_modules/core-js/library/modules/_global.js");
+var has = __webpack_require__(/*! ./_has */ "./node_modules/core-js/library/modules/_has.js");
+var DESCRIPTORS = __webpack_require__(/*! ./_descriptors */ "./node_modules/core-js/library/modules/_descriptors.js");
+var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
+var redefine = __webpack_require__(/*! ./_redefine */ "./node_modules/core-js/library/modules/_redefine.js");
+var META = __webpack_require__(/*! ./_meta */ "./node_modules/core-js/library/modules/_meta.js").KEY;
+var $fails = __webpack_require__(/*! ./_fails */ "./node_modules/core-js/library/modules/_fails.js");
+var shared = __webpack_require__(/*! ./_shared */ "./node_modules/core-js/library/modules/_shared.js");
+var setToStringTag = __webpack_require__(/*! ./_set-to-string-tag */ "./node_modules/core-js/library/modules/_set-to-string-tag.js");
+var uid = __webpack_require__(/*! ./_uid */ "./node_modules/core-js/library/modules/_uid.js");
+var wks = __webpack_require__(/*! ./_wks */ "./node_modules/core-js/library/modules/_wks.js");
+var wksExt = __webpack_require__(/*! ./_wks-ext */ "./node_modules/core-js/library/modules/_wks-ext.js");
+var wksDefine = __webpack_require__(/*! ./_wks-define */ "./node_modules/core-js/library/modules/_wks-define.js");
+var enumKeys = __webpack_require__(/*! ./_enum-keys */ "./node_modules/core-js/library/modules/_enum-keys.js");
+var isArray = __webpack_require__(/*! ./_is-array */ "./node_modules/core-js/library/modules/_is-array.js");
+var anObject = __webpack_require__(/*! ./_an-object */ "./node_modules/core-js/library/modules/_an-object.js");
+var isObject = __webpack_require__(/*! ./_is-object */ "./node_modules/core-js/library/modules/_is-object.js");
+var toIObject = __webpack_require__(/*! ./_to-iobject */ "./node_modules/core-js/library/modules/_to-iobject.js");
+var toPrimitive = __webpack_require__(/*! ./_to-primitive */ "./node_modules/core-js/library/modules/_to-primitive.js");
+var createDesc = __webpack_require__(/*! ./_property-desc */ "./node_modules/core-js/library/modules/_property-desc.js");
+var _create = __webpack_require__(/*! ./_object-create */ "./node_modules/core-js/library/modules/_object-create.js");
+var gOPNExt = __webpack_require__(/*! ./_object-gopn-ext */ "./node_modules/core-js/library/modules/_object-gopn-ext.js");
+var $GOPD = __webpack_require__(/*! ./_object-gopd */ "./node_modules/core-js/library/modules/_object-gopd.js");
+var $DP = __webpack_require__(/*! ./_object-dp */ "./node_modules/core-js/library/modules/_object-dp.js");
+var $keys = __webpack_require__(/*! ./_object-keys */ "./node_modules/core-js/library/modules/_object-keys.js");
+var gOPD = $GOPD.f;
+var dP = $DP.f;
+var gOPN = gOPNExt.f;
+var $Symbol = global.Symbol;
+var $JSON = global.JSON;
+var _stringify = $JSON && $JSON.stringify;
+var PROTOTYPE = 'prototype';
+var HIDDEN = wks('_hidden');
+var TO_PRIMITIVE = wks('toPrimitive');
+var isEnum = {}.propertyIsEnumerable;
+var SymbolRegistry = shared('symbol-registry');
+var AllSymbols = shared('symbols');
+var OPSymbols = shared('op-symbols');
+var ObjectProto = Object[PROTOTYPE];
+var USE_NATIVE = typeof $Symbol == 'function';
+var QObject = global.QObject;
+// Don't use setters in Qt Script, https://github.com/zloirock/core-js/issues/173
+var setter = !QObject || !QObject[PROTOTYPE] || !QObject[PROTOTYPE].findChild;
+
+// fallback for old Android, https://code.google.com/p/v8/issues/detail?id=687
+var setSymbolDesc = DESCRIPTORS && $fails(function () {
+  return _create(dP({}, 'a', {
+    get: function () { return dP(this, 'a', { value: 7 }).a; }
+  })).a != 7;
+}) ? function (it, key, D) {
+  var protoDesc = gOPD(ObjectProto, key);
+  if (protoDesc) delete ObjectProto[key];
+  dP(it, key, D);
+  if (protoDesc && it !== ObjectProto) dP(ObjectProto, key, protoDesc);
+} : dP;
+
+var wrap = function (tag) {
+  var sym = AllSymbols[tag] = _create($Symbol[PROTOTYPE]);
+  sym._k = tag;
+  return sym;
+};
+
+var isSymbol = USE_NATIVE && typeof $Symbol.iterator == 'symbol' ? function (it) {
+  return typeof it == 'symbol';
+} : function (it) {
+  return it instanceof $Symbol;
+};
+
+var $defineProperty = function defineProperty(it, key, D) {
+  if (it === ObjectProto) $defineProperty(OPSymbols, key, D);
+  anObject(it);
+  key = toPrimitive(key, true);
+  anObject(D);
+  if (has(AllSymbols, key)) {
+    if (!D.enumerable) {
+      if (!has(it, HIDDEN)) dP(it, HIDDEN, createDesc(1, {}));
+      it[HIDDEN][key] = true;
+    } else {
+      if (has(it, HIDDEN) && it[HIDDEN][key]) it[HIDDEN][key] = false;
+      D = _create(D, { enumerable: createDesc(0, false) });
+    } return setSymbolDesc(it, key, D);
+  } return dP(it, key, D);
+};
+var $defineProperties = function defineProperties(it, P) {
+  anObject(it);
+  var keys = enumKeys(P = toIObject(P));
+  var i = 0;
+  var l = keys.length;
+  var key;
+  while (l > i) $defineProperty(it, key = keys[i++], P[key]);
+  return it;
+};
+var $create = function create(it, P) {
+  return P === undefined ? _create(it) : $defineProperties(_create(it), P);
+};
+var $propertyIsEnumerable = function propertyIsEnumerable(key) {
+  var E = isEnum.call(this, key = toPrimitive(key, true));
+  if (this === ObjectProto && has(AllSymbols, key) && !has(OPSymbols, key)) return false;
+  return E || !has(this, key) || !has(AllSymbols, key) || has(this, HIDDEN) && this[HIDDEN][key] ? E : true;
+};
+var $getOwnPropertyDescriptor = function getOwnPropertyDescriptor(it, key) {
+  it = toIObject(it);
+  key = toPrimitive(key, true);
+  if (it === ObjectProto && has(AllSymbols, key) && !has(OPSymbols, key)) return;
+  var D = gOPD(it, key);
+  if (D && has(AllSymbols, key) && !(has(it, HIDDEN) && it[HIDDEN][key])) D.enumerable = true;
+  return D;
+};
+var $getOwnPropertyNames = function getOwnPropertyNames(it) {
+  var names = gOPN(toIObject(it));
+  var result = [];
+  var i = 0;
+  var key;
+  while (names.length > i) {
+    if (!has(AllSymbols, key = names[i++]) && key != HIDDEN && key != META) result.push(key);
+  } return result;
+};
+var $getOwnPropertySymbols = function getOwnPropertySymbols(it) {
+  var IS_OP = it === ObjectProto;
+  var names = gOPN(IS_OP ? OPSymbols : toIObject(it));
+  var result = [];
+  var i = 0;
+  var key;
+  while (names.length > i) {
+    if (has(AllSymbols, key = names[i++]) && (IS_OP ? has(ObjectProto, key) : true)) result.push(AllSymbols[key]);
+  } return result;
+};
+
+// 19.4.1.1 Symbol([description])
+if (!USE_NATIVE) {
+  $Symbol = function Symbol() {
+    if (this instanceof $Symbol) throw TypeError('Symbol is not a constructor!');
+    var tag = uid(arguments.length > 0 ? arguments[0] : undefined);
+    var $set = function (value) {
+      if (this === ObjectProto) $set.call(OPSymbols, value);
+      if (has(this, HIDDEN) && has(this[HIDDEN], tag)) this[HIDDEN][tag] = false;
+      setSymbolDesc(this, tag, createDesc(1, value));
+    };
+    if (DESCRIPTORS && setter) setSymbolDesc(ObjectProto, tag, { configurable: true, set: $set });
+    return wrap(tag);
+  };
+  redefine($Symbol[PROTOTYPE], 'toString', function toString() {
+    return this._k;
+  });
+
+  $GOPD.f = $getOwnPropertyDescriptor;
+  $DP.f = $defineProperty;
+  __webpack_require__(/*! ./_object-gopn */ "./node_modules/core-js/library/modules/_object-gopn.js").f = gOPNExt.f = $getOwnPropertyNames;
+  __webpack_require__(/*! ./_object-pie */ "./node_modules/core-js/library/modules/_object-pie.js").f = $propertyIsEnumerable;
+  __webpack_require__(/*! ./_object-gops */ "./node_modules/core-js/library/modules/_object-gops.js").f = $getOwnPropertySymbols;
+
+  if (DESCRIPTORS && !__webpack_require__(/*! ./_library */ "./node_modules/core-js/library/modules/_library.js")) {
+    redefine(ObjectProto, 'propertyIsEnumerable', $propertyIsEnumerable, true);
+  }
+
+  wksExt.f = function (name) {
+    return wrap(wks(name));
+  };
+}
+
+$export($export.G + $export.W + $export.F * !USE_NATIVE, { Symbol: $Symbol });
+
+for (var es6Symbols = (
+  // 19.4.2.2, 19.4.2.3, 19.4.2.4, 19.4.2.6, 19.4.2.8, 19.4.2.9, 19.4.2.10, 19.4.2.11, 19.4.2.12, 19.4.2.13, 19.4.2.14
+  'hasInstance,isConcatSpreadable,iterator,match,replace,search,species,split,toPrimitive,toStringTag,unscopables'
+).split(','), j = 0; es6Symbols.length > j;)wks(es6Symbols[j++]);
+
+for (var wellKnownSymbols = $keys(wks.store), k = 0; wellKnownSymbols.length > k;) wksDefine(wellKnownSymbols[k++]);
+
+$export($export.S + $export.F * !USE_NATIVE, 'Symbol', {
+  // 19.4.2.1 Symbol.for(key)
+  'for': function (key) {
+    return has(SymbolRegistry, key += '')
+      ? SymbolRegistry[key]
+      : SymbolRegistry[key] = $Symbol(key);
+  },
+  // 19.4.2.5 Symbol.keyFor(sym)
+  keyFor: function keyFor(sym) {
+    if (!isSymbol(sym)) throw TypeError(sym + ' is not a symbol!');
+    for (var key in SymbolRegistry) if (SymbolRegistry[key] === sym) return key;
+  },
+  useSetter: function () { setter = true; },
+  useSimple: function () { setter = false; }
+});
+
+$export($export.S + $export.F * !USE_NATIVE, 'Object', {
+  // 19.1.2.2 Object.create(O [, Properties])
+  create: $create,
+  // 19.1.2.4 Object.defineProperty(O, P, Attributes)
+  defineProperty: $defineProperty,
+  // 19.1.2.3 Object.defineProperties(O, Properties)
+  defineProperties: $defineProperties,
+  // 19.1.2.6 Object.getOwnPropertyDescriptor(O, P)
+  getOwnPropertyDescriptor: $getOwnPropertyDescriptor,
+  // 19.1.2.7 Object.getOwnPropertyNames(O)
+  getOwnPropertyNames: $getOwnPropertyNames,
+  // 19.1.2.8 Object.getOwnPropertySymbols(O)
+  getOwnPropertySymbols: $getOwnPropertySymbols
+});
+
+// 24.3.2 JSON.stringify(value [, replacer [, space]])
+$JSON && $export($export.S + $export.F * (!USE_NATIVE || $fails(function () {
+  var S = $Symbol();
+  // MS Edge converts symbol values to JSON as {}
+  // WebKit converts symbol values to JSON as null
+  // V8 throws on boxed symbols
+  return _stringify([S]) != '[null]' || _stringify({ a: S }) != '{}' || _stringify(Object(S)) != '{}';
+})), 'JSON', {
+  stringify: function stringify(it) {
+    var args = [it];
+    var i = 1;
+    var replacer, $replacer;
+    while (arguments.length > i) args.push(arguments[i++]);
+    $replacer = replacer = args[1];
+    if (!isObject(replacer) && it === undefined || isSymbol(it)) return; // IE8 returns string on undefined
+    if (!isArray(replacer)) replacer = function (key, value) {
+      if (typeof $replacer == 'function') value = $replacer.call(this, key, value);
+      if (!isSymbol(value)) return value;
+    };
+    args[1] = replacer;
+    return _stringify.apply($JSON, args);
+  }
+});
+
+// 19.4.3.4 Symbol.prototype[@@toPrimitive](hint)
+$Symbol[PROTOTYPE][TO_PRIMITIVE] || __webpack_require__(/*! ./_hide */ "./node_modules/core-js/library/modules/_hide.js")($Symbol[PROTOTYPE], TO_PRIMITIVE, $Symbol[PROTOTYPE].valueOf);
+// 19.4.3.5 Symbol.prototype[@@toStringTag]
+setToStringTag($Symbol, 'Symbol');
+// 20.2.1.9 Math[@@toStringTag]
+setToStringTag(Math, 'Math', true);
+// 24.3.3 JSON[@@toStringTag]
+setToStringTag(global.JSON, 'JSON', true);
 
 
 /***/ }),
@@ -5265,6 +7610,30 @@ $export($export.S, 'Object', {
     return $values(it);
   }
 });
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/es7.symbol.async-iterator.js":
+/*!***************************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/es7.symbol.async-iterator.js ***!
+  \***************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! ./_wks-define */ "./node_modules/core-js/library/modules/_wks-define.js")('asyncIterator');
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/es7.symbol.observable.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/es7.symbol.observable.js ***!
+  \***********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! ./_wks-define */ "./node_modules/core-js/library/modules/_wks-define.js")('observable');
 
 
 /***/ }),
@@ -12813,6 +15182,169 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ }),
 
+/***/ "./node_modules/hash-sum/hash-sum.js":
+/*!*******************************************!*\
+  !*** ./node_modules/hash-sum/hash-sum.js ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+function pad (hash, len) {
+  while (hash.length < len) {
+    hash = '0' + hash;
+  }
+  return hash;
+}
+
+function fold (hash, text) {
+  var i;
+  var chr;
+  var len;
+  if (text.length === 0) {
+    return hash;
+  }
+  for (i = 0, len = text.length; i < len; i++) {
+    chr = text.charCodeAt(i);
+    hash = ((hash << 5) - hash) + chr;
+    hash |= 0;
+  }
+  return hash < 0 ? hash * -2 : hash;
+}
+
+function foldObject (hash, o, seen) {
+  return Object.keys(o).sort().reduce(foldKey, hash);
+  function foldKey (hash, key) {
+    return foldValue(hash, o[key], key, seen);
+  }
+}
+
+function foldValue (input, value, key, seen) {
+  var hash = fold(fold(fold(input, key), toString(value)), typeof value);
+  if (value === null) {
+    return fold(hash, 'null');
+  }
+  if (value === undefined) {
+    return fold(hash, 'undefined');
+  }
+  if (typeof value === 'object') {
+    if (seen.indexOf(value) !== -1) {
+      return fold(hash, '[Circular]' + key);
+    }
+    seen.push(value);
+    return foldObject(hash, value, seen);
+  }
+  return fold(hash, value.toString());
+}
+
+function toString (o) {
+  return Object.prototype.toString.call(o);
+}
+
+function sum (o) {
+  return pad(foldValue(0, o, '', []).toString(16), 8);
+}
+
+module.exports = sum;
+
+
+/***/ }),
+
+/***/ "./node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js":
+/*!**********************************************************************************!*\
+  !*** ./node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _ReactIs$ForwardRef;
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+/**
+ * Copyright 2015, Yahoo! Inc.
+ * Copyrights licensed under the New BSD License. See the accompanying LICENSE file for terms.
+ */
+var ReactIs = __webpack_require__(/*! react-is */ "./node_modules/react-is/index.js");
+var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+var REACT_STATICS = {
+    childContextTypes: true,
+    contextTypes: true,
+    defaultProps: true,
+    displayName: true,
+    getDefaultProps: true,
+    getDerivedStateFromProps: true,
+    mixins: true,
+    propTypes: true,
+    type: true
+};
+
+var KNOWN_STATICS = {
+    name: true,
+    length: true,
+    prototype: true,
+    caller: true,
+    callee: true,
+    arguments: true,
+    arity: true
+};
+
+var TYPE_STATICS = _defineProperty({}, ReactIs.ForwardRef, (_ReactIs$ForwardRef = {}, _defineProperty(_ReactIs$ForwardRef, '$$typeof', true), _defineProperty(_ReactIs$ForwardRef, 'render', true), _ReactIs$ForwardRef));
+
+var defineProperty = Object.defineProperty;
+var getOwnPropertyNames = Object.getOwnPropertyNames;
+var getOwnPropertySymbols = Object.getOwnPropertySymbols;
+var getOwnPropertyDescriptor = Object.getOwnPropertyDescriptor;
+var getPrototypeOf = Object.getPrototypeOf;
+var objectPrototype = Object.prototype;
+
+function hoistNonReactStatics(targetComponent, sourceComponent, blacklist) {
+    if (typeof sourceComponent !== 'string') {
+        // don't hoist over string (html) components
+
+        if (objectPrototype) {
+            var inheritedComponent = getPrototypeOf(sourceComponent);
+            if (inheritedComponent && inheritedComponent !== objectPrototype) {
+                hoistNonReactStatics(targetComponent, inheritedComponent, blacklist);
+            }
+        }
+
+        var keys = getOwnPropertyNames(sourceComponent);
+
+        if (getOwnPropertySymbols) {
+            keys = keys.concat(getOwnPropertySymbols(sourceComponent));
+        }
+
+        var targetStatics = TYPE_STATICS[targetComponent['$$typeof']] || REACT_STATICS;
+        var sourceStatics = TYPE_STATICS[sourceComponent['$$typeof']] || REACT_STATICS;
+
+        for (var i = 0; i < keys.length; ++i) {
+            var key = keys[i];
+            if (!KNOWN_STATICS[key] && !(blacklist && blacklist[key]) && !(sourceStatics && sourceStatics[key]) && !(targetStatics && targetStatics[key])) {
+                var descriptor = getOwnPropertyDescriptor(sourceComponent, key);
+                try {
+                    // Avoid failures from read-only properties
+                    defineProperty(targetComponent, key, descriptor);
+                } catch (e) {}
+            }
+        }
+
+        return targetComponent;
+    }
+
+    return targetComponent;
+}
+
+module.exports = hoistNonReactStatics;
+
+
+/***/ }),
+
 /***/ "./node_modules/ieee754/index.js":
 /*!***************************************!*\
   !*** ./node_modules/ieee754/index.js ***!
@@ -17322,6 +19854,3642 @@ function parseJson (txt, reviver, context) {
 
 /***/ }),
 
+/***/ "./node_modules/make-plural/umd/plurals.js":
+/*!*************************************************!*\
+  !*** ./node_modules/make-plural/umd/plurals.js ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;var _cp = [
+function(n, ord) {
+  if (ord) return 'other';
+  return 'other';
+},
+function(n, ord) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+function(n, ord) {
+  if (ord) return 'other';
+  return ((n == 0
+          || n == 1)) ? 'one' : 'other';
+},
+function(n, ord) {
+  var s = String(n).split('.'), v0 = !s[1];
+  if (ord) return 'other';
+  return (n == 1 && v0) ? 'one' : 'other';
+}
+];
+
+(function (root, plurals) {
+  if (true) {
+    !(__WEBPACK_AMD_DEFINE_FACTORY__ = (plurals),
+				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+				(__WEBPACK_AMD_DEFINE_FACTORY__.call(exports, __webpack_require__, exports, module)) :
+				__WEBPACK_AMD_DEFINE_FACTORY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+  } else {}
+}(this, {
+af: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+ak: function(n, ord
+) {
+  if (ord) return 'other';
+  return ((n == 0
+          || n == 1)) ? 'one' : 'other';
+},
+
+am: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n >= 0 && n <= 1) ? 'one' : 'other';
+},
+
+ar: function(n, ord
+) {
+  var s = String(n).split('.'), t0 = Number(s[0]) == n,
+      n100 = t0 && s[0].slice(-2);
+  if (ord) return 'other';
+  return (n == 0) ? 'zero'
+      : (n == 1) ? 'one'
+      : (n == 2) ? 'two'
+      : ((n100 >= 3 && n100 <= 10)) ? 'few'
+      : ((n100 >= 11 && n100 <= 99)) ? 'many'
+      : 'other';
+},
+
+ars: function(n, ord
+) {
+  var s = String(n).split('.'), t0 = Number(s[0]) == n,
+      n100 = t0 && s[0].slice(-2);
+  if (ord) return 'other';
+  return (n == 0) ? 'zero'
+      : (n == 1) ? 'one'
+      : (n == 2) ? 'two'
+      : ((n100 >= 3 && n100 <= 10)) ? 'few'
+      : ((n100 >= 11 && n100 <= 99)) ? 'many'
+      : 'other';
+},
+
+as: function(n, ord
+) {
+  if (ord) return ((n == 1 || n == 5 || n == 7 || n == 8 || n == 9
+          || n == 10)) ? 'one'
+      : ((n == 2
+          || n == 3)) ? 'two'
+      : (n == 4) ? 'few'
+      : (n == 6) ? 'many'
+      : 'other';
+  return (n >= 0 && n <= 1) ? 'one' : 'other';
+},
+
+asa: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+ast: function(n, ord
+) {
+  var s = String(n).split('.'), v0 = !s[1];
+  if (ord) return 'other';
+  return (n == 1 && v0) ? 'one' : 'other';
+},
+
+az: function(n, ord
+) {
+  var s = String(n).split('.'), i = s[0], i10 = i.slice(-1),
+      i100 = i.slice(-2), i1000 = i.slice(-3);
+  if (ord) return ((i10 == 1 || i10 == 2 || i10 == 5 || i10 == 7 || i10 == 8)
+          || (i100 == 20 || i100 == 50 || i100 == 70
+          || i100 == 80)) ? 'one'
+      : ((i10 == 3 || i10 == 4) || (i1000 == 100 || i1000 == 200
+          || i1000 == 300 || i1000 == 400 || i1000 == 500 || i1000 == 600 || i1000 == 700
+          || i1000 == 800
+          || i1000 == 900)) ? 'few'
+      : (i == 0 || i10 == 6 || (i100 == 40 || i100 == 60
+          || i100 == 90)) ? 'many'
+      : 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+be: function(n, ord
+) {
+  var s = String(n).split('.'), t0 = Number(s[0]) == n,
+      n10 = t0 && s[0].slice(-1), n100 = t0 && s[0].slice(-2);
+  if (ord) return ((n10 == 2
+          || n10 == 3) && n100 != 12 && n100 != 13) ? 'few' : 'other';
+  return (n10 == 1 && n100 != 11) ? 'one'
+      : ((n10 >= 2 && n10 <= 4) && (n100 < 12
+          || n100 > 14)) ? 'few'
+      : (t0 && n10 == 0 || (n10 >= 5 && n10 <= 9)
+          || (n100 >= 11 && n100 <= 14)) ? 'many'
+      : 'other';
+},
+
+bem: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+bez: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+bg: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+bh: function(n, ord
+) {
+  if (ord) return 'other';
+  return ((n == 0
+          || n == 1)) ? 'one' : 'other';
+},
+
+bm: function(n, ord
+) {
+  if (ord) return 'other';
+  return 'other';
+},
+
+bn: function(n, ord
+) {
+  if (ord) return ((n == 1 || n == 5 || n == 7 || n == 8 || n == 9
+          || n == 10)) ? 'one'
+      : ((n == 2
+          || n == 3)) ? 'two'
+      : (n == 4) ? 'few'
+      : (n == 6) ? 'many'
+      : 'other';
+  return (n >= 0 && n <= 1) ? 'one' : 'other';
+},
+
+bo: function(n, ord
+) {
+  if (ord) return 'other';
+  return 'other';
+},
+
+br: function(n, ord
+) {
+  var s = String(n).split('.'), t0 = Number(s[0]) == n,
+      n10 = t0 && s[0].slice(-1), n100 = t0 && s[0].slice(-2),
+      n1000000 = t0 && s[0].slice(-6);
+  if (ord) return 'other';
+  return (n10 == 1 && n100 != 11 && n100 != 71 && n100 != 91) ? 'one'
+      : (n10 == 2 && n100 != 12 && n100 != 72 && n100 != 92) ? 'two'
+      : (((n10 == 3 || n10 == 4) || n10 == 9) && (n100 < 10
+          || n100 > 19) && (n100 < 70 || n100 > 79) && (n100 < 90
+          || n100 > 99)) ? 'few'
+      : (n != 0 && t0 && n1000000 == 0) ? 'many'
+      : 'other';
+},
+
+brx: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+bs: function(n, ord
+) {
+  var s = String(n).split('.'), i = s[0], f = s[1] || '', v0 = !s[1],
+      i10 = i.slice(-1), i100 = i.slice(-2), f10 = f.slice(-1), f100 = f.slice(-2);
+  if (ord) return 'other';
+  return (v0 && i10 == 1 && i100 != 11
+          || f10 == 1 && f100 != 11) ? 'one'
+      : (v0 && (i10 >= 2 && i10 <= 4) && (i100 < 12 || i100 > 14)
+          || (f10 >= 2 && f10 <= 4) && (f100 < 12
+          || f100 > 14)) ? 'few'
+      : 'other';
+},
+
+ca: function(n, ord
+) {
+  var s = String(n).split('.'), v0 = !s[1];
+  if (ord) return ((n == 1
+          || n == 3)) ? 'one'
+      : (n == 2) ? 'two'
+      : (n == 4) ? 'few'
+      : 'other';
+  return (n == 1 && v0) ? 'one' : 'other';
+},
+
+ce: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+cgg: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+chr: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+ckb: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+cs: function(n, ord
+) {
+  var s = String(n).split('.'), i = s[0], v0 = !s[1];
+  if (ord) return 'other';
+  return (n == 1 && v0) ? 'one'
+      : ((i >= 2 && i <= 4) && v0) ? 'few'
+      : (!v0) ? 'many'
+      : 'other';
+},
+
+cy: function(n, ord
+) {
+  if (ord) return ((n == 0 || n == 7 || n == 8
+          || n == 9)) ? 'zero'
+      : (n == 1) ? 'one'
+      : (n == 2) ? 'two'
+      : ((n == 3
+          || n == 4)) ? 'few'
+      : ((n == 5
+          || n == 6)) ? 'many'
+      : 'other';
+  return (n == 0) ? 'zero'
+      : (n == 1) ? 'one'
+      : (n == 2) ? 'two'
+      : (n == 3) ? 'few'
+      : (n == 6) ? 'many'
+      : 'other';
+},
+
+da: function(n, ord
+) {
+  var s = String(n).split('.'), i = s[0], t0 = Number(s[0]) == n;
+  if (ord) return 'other';
+  return (n == 1 || !t0 && (i == 0
+          || i == 1)) ? 'one' : 'other';
+},
+
+de: function(n, ord
+) {
+  var s = String(n).split('.'), v0 = !s[1];
+  if (ord) return 'other';
+  return (n == 1 && v0) ? 'one' : 'other';
+},
+
+dsb: function(n, ord
+) {
+  var s = String(n).split('.'), i = s[0], f = s[1] || '', v0 = !s[1],
+      i100 = i.slice(-2), f100 = f.slice(-2);
+  if (ord) return 'other';
+  return (v0 && i100 == 1
+          || f100 == 1) ? 'one'
+      : (v0 && i100 == 2
+          || f100 == 2) ? 'two'
+      : (v0 && (i100 == 3 || i100 == 4) || (f100 == 3
+          || f100 == 4)) ? 'few'
+      : 'other';
+},
+
+dv: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+dz: function(n, ord
+) {
+  if (ord) return 'other';
+  return 'other';
+},
+
+ee: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+el: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+en: function(n, ord
+) {
+  var s = String(n).split('.'), v0 = !s[1], t0 = Number(s[0]) == n,
+      n10 = t0 && s[0].slice(-1), n100 = t0 && s[0].slice(-2);
+  if (ord) return (n10 == 1 && n100 != 11) ? 'one'
+      : (n10 == 2 && n100 != 12) ? 'two'
+      : (n10 == 3 && n100 != 13) ? 'few'
+      : 'other';
+  return (n == 1 && v0) ? 'one' : 'other';
+},
+
+eo: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+es: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+et: function(n, ord
+) {
+  var s = String(n).split('.'), v0 = !s[1];
+  if (ord) return 'other';
+  return (n == 1 && v0) ? 'one' : 'other';
+},
+
+eu: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+fa: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n >= 0 && n <= 1) ? 'one' : 'other';
+},
+
+ff: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n >= 0 && n < 2) ? 'one' : 'other';
+},
+
+fi: function(n, ord
+) {
+  var s = String(n).split('.'), v0 = !s[1];
+  if (ord) return 'other';
+  return (n == 1 && v0) ? 'one' : 'other';
+},
+
+fil: function(n, ord
+) {
+  var s = String(n).split('.'), i = s[0], f = s[1] || '', v0 = !s[1],
+      i10 = i.slice(-1), f10 = f.slice(-1);
+  if (ord) return (n == 1) ? 'one' : 'other';
+  return (v0 && (i == 1 || i == 2 || i == 3)
+          || v0 && i10 != 4 && i10 != 6 && i10 != 9
+          || !v0 && f10 != 4 && f10 != 6 && f10 != 9) ? 'one' : 'other';
+},
+
+fo: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+fr: function(n, ord
+) {
+  if (ord) return (n == 1) ? 'one' : 'other';
+  return (n >= 0 && n < 2) ? 'one' : 'other';
+},
+
+fur: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+fy: function(n, ord
+) {
+  var s = String(n).split('.'), v0 = !s[1];
+  if (ord) return 'other';
+  return (n == 1 && v0) ? 'one' : 'other';
+},
+
+ga: function(n, ord
+) {
+  var s = String(n).split('.'), t0 = Number(s[0]) == n;
+  if (ord) return (n == 1) ? 'one' : 'other';
+  return (n == 1) ? 'one'
+      : (n == 2) ? 'two'
+      : ((t0 && n >= 3 && n <= 6)) ? 'few'
+      : ((t0 && n >= 7 && n <= 10)) ? 'many'
+      : 'other';
+},
+
+gd: function(n, ord
+) {
+  var s = String(n).split('.'), t0 = Number(s[0]) == n;
+  if (ord) return ((n == 1
+          || n == 11)) ? 'one'
+      : ((n == 2
+          || n == 12)) ? 'two'
+      : ((n == 3
+          || n == 13)) ? 'few'
+      : 'other';
+  return ((n == 1
+          || n == 11)) ? 'one'
+      : ((n == 2
+          || n == 12)) ? 'two'
+      : (((t0 && n >= 3 && n <= 10)
+          || (t0 && n >= 13 && n <= 19))) ? 'few'
+      : 'other';
+},
+
+gl: function(n, ord
+) {
+  var s = String(n).split('.'), v0 = !s[1];
+  if (ord) return 'other';
+  return (n == 1 && v0) ? 'one' : 'other';
+},
+
+gsw: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+gu: function(n, ord
+) {
+  if (ord) return (n == 1) ? 'one'
+      : ((n == 2
+          || n == 3)) ? 'two'
+      : (n == 4) ? 'few'
+      : (n == 6) ? 'many'
+      : 'other';
+  return (n >= 0 && n <= 1) ? 'one' : 'other';
+},
+
+guw: function(n, ord
+) {
+  if (ord) return 'other';
+  return ((n == 0
+          || n == 1)) ? 'one' : 'other';
+},
+
+gv: function(n, ord
+) {
+  var s = String(n).split('.'), i = s[0], v0 = !s[1], i10 = i.slice(-1),
+      i100 = i.slice(-2);
+  if (ord) return 'other';
+  return (v0 && i10 == 1) ? 'one'
+      : (v0 && i10 == 2) ? 'two'
+      : (v0 && (i100 == 0 || i100 == 20 || i100 == 40 || i100 == 60
+          || i100 == 80)) ? 'few'
+      : (!v0) ? 'many'
+      : 'other';
+},
+
+ha: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+haw: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+he: function(n, ord
+) {
+  var s = String(n).split('.'), i = s[0], v0 = !s[1], t0 = Number(s[0]) == n,
+      n10 = t0 && s[0].slice(-1);
+  if (ord) return 'other';
+  return (n == 1 && v0) ? 'one'
+      : (i == 2 && v0) ? 'two'
+      : (v0 && (n < 0
+          || n > 10) && t0 && n10 == 0) ? 'many'
+      : 'other';
+},
+
+hi: function(n, ord
+) {
+  if (ord) return (n == 1) ? 'one'
+      : ((n == 2
+          || n == 3)) ? 'two'
+      : (n == 4) ? 'few'
+      : (n == 6) ? 'many'
+      : 'other';
+  return (n >= 0 && n <= 1) ? 'one' : 'other';
+},
+
+hr: function(n, ord
+) {
+  var s = String(n).split('.'), i = s[0], f = s[1] || '', v0 = !s[1],
+      i10 = i.slice(-1), i100 = i.slice(-2), f10 = f.slice(-1), f100 = f.slice(-2);
+  if (ord) return 'other';
+  return (v0 && i10 == 1 && i100 != 11
+          || f10 == 1 && f100 != 11) ? 'one'
+      : (v0 && (i10 >= 2 && i10 <= 4) && (i100 < 12 || i100 > 14)
+          || (f10 >= 2 && f10 <= 4) && (f100 < 12
+          || f100 > 14)) ? 'few'
+      : 'other';
+},
+
+hsb: function(n, ord
+) {
+  var s = String(n).split('.'), i = s[0], f = s[1] || '', v0 = !s[1],
+      i100 = i.slice(-2), f100 = f.slice(-2);
+  if (ord) return 'other';
+  return (v0 && i100 == 1
+          || f100 == 1) ? 'one'
+      : (v0 && i100 == 2
+          || f100 == 2) ? 'two'
+      : (v0 && (i100 == 3 || i100 == 4) || (f100 == 3
+          || f100 == 4)) ? 'few'
+      : 'other';
+},
+
+hu: function(n, ord
+) {
+  if (ord) return ((n == 1
+          || n == 5)) ? 'one' : 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+hy: function(n, ord
+) {
+  if (ord) return (n == 1) ? 'one' : 'other';
+  return (n >= 0 && n < 2) ? 'one' : 'other';
+},
+
+ia: function(n, ord
+) {
+  var s = String(n).split('.'), v0 = !s[1];
+  if (ord) return 'other';
+  return (n == 1 && v0) ? 'one' : 'other';
+},
+
+id: function(n, ord
+) {
+  if (ord) return 'other';
+  return 'other';
+},
+
+ig: function(n, ord
+) {
+  if (ord) return 'other';
+  return 'other';
+},
+
+ii: function(n, ord
+) {
+  if (ord) return 'other';
+  return 'other';
+},
+
+"in": function(n, ord
+) {
+  if (ord) return 'other';
+  return 'other';
+},
+
+io: function(n, ord
+) {
+  var s = String(n).split('.'), v0 = !s[1];
+  if (ord) return 'other';
+  return (n == 1 && v0) ? 'one' : 'other';
+},
+
+is: function(n, ord
+) {
+  var s = String(n).split('.'), i = s[0], t0 = Number(s[0]) == n,
+      i10 = i.slice(-1), i100 = i.slice(-2);
+  if (ord) return 'other';
+  return (t0 && i10 == 1 && i100 != 11
+          || !t0) ? 'one' : 'other';
+},
+
+it: function(n, ord
+) {
+  var s = String(n).split('.'), v0 = !s[1];
+  if (ord) return ((n == 11 || n == 8 || n == 80
+          || n == 800)) ? 'many' : 'other';
+  return (n == 1 && v0) ? 'one' : 'other';
+},
+
+iu: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one'
+      : (n == 2) ? 'two'
+      : 'other';
+},
+
+iw: function(n, ord
+) {
+  var s = String(n).split('.'), i = s[0], v0 = !s[1], t0 = Number(s[0]) == n,
+      n10 = t0 && s[0].slice(-1);
+  if (ord) return 'other';
+  return (n == 1 && v0) ? 'one'
+      : (i == 2 && v0) ? 'two'
+      : (v0 && (n < 0
+          || n > 10) && t0 && n10 == 0) ? 'many'
+      : 'other';
+},
+
+ja: function(n, ord
+) {
+  if (ord) return 'other';
+  return 'other';
+},
+
+jbo: function(n, ord
+) {
+  if (ord) return 'other';
+  return 'other';
+},
+
+jgo: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+ji: function(n, ord
+) {
+  var s = String(n).split('.'), v0 = !s[1];
+  if (ord) return 'other';
+  return (n == 1 && v0) ? 'one' : 'other';
+},
+
+jmc: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+jv: function(n, ord
+) {
+  if (ord) return 'other';
+  return 'other';
+},
+
+jw: function(n, ord
+) {
+  if (ord) return 'other';
+  return 'other';
+},
+
+ka: function(n, ord
+) {
+  var s = String(n).split('.'), i = s[0], i100 = i.slice(-2);
+  if (ord) return (i == 1) ? 'one'
+      : (i == 0 || ((i100 >= 2 && i100 <= 20) || i100 == 40 || i100 == 60
+          || i100 == 80)) ? 'many'
+      : 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+kab: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n >= 0 && n < 2) ? 'one' : 'other';
+},
+
+kaj: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+kcg: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+kde: function(n, ord
+) {
+  if (ord) return 'other';
+  return 'other';
+},
+
+kea: function(n, ord
+) {
+  if (ord) return 'other';
+  return 'other';
+},
+
+kk: function(n, ord
+) {
+  var s = String(n).split('.'), t0 = Number(s[0]) == n,
+      n10 = t0 && s[0].slice(-1);
+  if (ord) return (n10 == 6 || n10 == 9
+          || t0 && n10 == 0 && n != 0) ? 'many' : 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+kkj: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+kl: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+km: function(n, ord
+) {
+  if (ord) return 'other';
+  return 'other';
+},
+
+kn: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n >= 0 && n <= 1) ? 'one' : 'other';
+},
+
+ko: function(n, ord
+) {
+  if (ord) return 'other';
+  return 'other';
+},
+
+ks: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+ksb: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+ksh: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 0) ? 'zero'
+      : (n == 1) ? 'one'
+      : 'other';
+},
+
+ku: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+kw: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one'
+      : (n == 2) ? 'two'
+      : 'other';
+},
+
+ky: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+lag: function(n, ord
+) {
+  var s = String(n).split('.'), i = s[0];
+  if (ord) return 'other';
+  return (n == 0) ? 'zero'
+      : ((i == 0
+          || i == 1) && n != 0) ? 'one'
+      : 'other';
+},
+
+lb: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+lg: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+lkt: function(n, ord
+) {
+  if (ord) return 'other';
+  return 'other';
+},
+
+ln: function(n, ord
+) {
+  if (ord) return 'other';
+  return ((n == 0
+          || n == 1)) ? 'one' : 'other';
+},
+
+lo: function(n, ord
+) {
+  if (ord) return (n == 1) ? 'one' : 'other';
+  return 'other';
+},
+
+lt: function(n, ord
+) {
+  var s = String(n).split('.'), f = s[1] || '', t0 = Number(s[0]) == n,
+      n10 = t0 && s[0].slice(-1), n100 = t0 && s[0].slice(-2);
+  if (ord) return 'other';
+  return (n10 == 1 && (n100 < 11
+          || n100 > 19)) ? 'one'
+      : ((n10 >= 2 && n10 <= 9) && (n100 < 11
+          || n100 > 19)) ? 'few'
+      : (f != 0) ? 'many'
+      : 'other';
+},
+
+lv: function(n, ord
+) {
+  var s = String(n).split('.'), f = s[1] || '', v = f.length,
+      t0 = Number(s[0]) == n, n10 = t0 && s[0].slice(-1),
+      n100 = t0 && s[0].slice(-2), f100 = f.slice(-2), f10 = f.slice(-1);
+  if (ord) return 'other';
+  return (t0 && n10 == 0 || (n100 >= 11 && n100 <= 19)
+          || v == 2 && (f100 >= 11 && f100 <= 19)) ? 'zero'
+      : (n10 == 1 && n100 != 11 || v == 2 && f10 == 1 && f100 != 11
+          || v != 2 && f10 == 1) ? 'one'
+      : 'other';
+},
+
+mas: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+mg: function(n, ord
+) {
+  if (ord) return 'other';
+  return ((n == 0
+          || n == 1)) ? 'one' : 'other';
+},
+
+mgo: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+mk: function(n, ord
+) {
+  var s = String(n).split('.'), i = s[0], f = s[1] || '', v0 = !s[1],
+      i10 = i.slice(-1), i100 = i.slice(-2), f10 = f.slice(-1), f100 = f.slice(-2);
+  if (ord) return (i10 == 1 && i100 != 11) ? 'one'
+      : (i10 == 2 && i100 != 12) ? 'two'
+      : ((i10 == 7
+          || i10 == 8) && i100 != 17 && i100 != 18) ? 'many'
+      : 'other';
+  return (v0 && i10 == 1 && i100 != 11
+          || f10 == 1 && f100 != 11) ? 'one' : 'other';
+},
+
+ml: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+mn: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+mo: function(n, ord
+) {
+  var s = String(n).split('.'), v0 = !s[1], t0 = Number(s[0]) == n,
+      n100 = t0 && s[0].slice(-2);
+  if (ord) return (n == 1) ? 'one' : 'other';
+  return (n == 1 && v0) ? 'one'
+      : (!v0 || n == 0
+          || n != 1 && (n100 >= 1 && n100 <= 19)) ? 'few'
+      : 'other';
+},
+
+mr: function(n, ord
+) {
+  if (ord) return (n == 1) ? 'one'
+      : ((n == 2
+          || n == 3)) ? 'two'
+      : (n == 4) ? 'few'
+      : 'other';
+  return (n >= 0 && n <= 1) ? 'one' : 'other';
+},
+
+ms: function(n, ord
+) {
+  if (ord) return (n == 1) ? 'one' : 'other';
+  return 'other';
+},
+
+mt: function(n, ord
+) {
+  var s = String(n).split('.'), t0 = Number(s[0]) == n,
+      n100 = t0 && s[0].slice(-2);
+  if (ord) return 'other';
+  return (n == 1) ? 'one'
+      : (n == 0
+          || (n100 >= 2 && n100 <= 10)) ? 'few'
+      : ((n100 >= 11 && n100 <= 19)) ? 'many'
+      : 'other';
+},
+
+my: function(n, ord
+) {
+  if (ord) return 'other';
+  return 'other';
+},
+
+nah: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+naq: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one'
+      : (n == 2) ? 'two'
+      : 'other';
+},
+
+nb: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+nd: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+ne: function(n, ord
+) {
+  var s = String(n).split('.'), t0 = Number(s[0]) == n;
+  if (ord) return ((t0 && n >= 1 && n <= 4)) ? 'one' : 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+nl: function(n, ord
+) {
+  var s = String(n).split('.'), v0 = !s[1];
+  if (ord) return 'other';
+  return (n == 1 && v0) ? 'one' : 'other';
+},
+
+nn: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+nnh: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+no: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+nqo: function(n, ord
+) {
+  if (ord) return 'other';
+  return 'other';
+},
+
+nr: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+nso: function(n, ord
+) {
+  if (ord) return 'other';
+  return ((n == 0
+          || n == 1)) ? 'one' : 'other';
+},
+
+ny: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+nyn: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+om: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+or: function(n, ord
+) {
+  var s = String(n).split('.'), t0 = Number(s[0]) == n;
+  if (ord) return ((n == 1 || n == 5
+          || (t0 && n >= 7 && n <= 9))) ? 'one'
+      : ((n == 2
+          || n == 3)) ? 'two'
+      : (n == 4) ? 'few'
+      : (n == 6) ? 'many'
+      : 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+os: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+pa: function(n, ord
+) {
+  if (ord) return 'other';
+  return ((n == 0
+          || n == 1)) ? 'one' : 'other';
+},
+
+pap: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+pl: function(n, ord
+) {
+  var s = String(n).split('.'), i = s[0], v0 = !s[1], i10 = i.slice(-1),
+      i100 = i.slice(-2);
+  if (ord) return 'other';
+  return (n == 1 && v0) ? 'one'
+      : (v0 && (i10 >= 2 && i10 <= 4) && (i100 < 12
+          || i100 > 14)) ? 'few'
+      : (v0 && i != 1 && (i10 == 0 || i10 == 1)
+          || v0 && (i10 >= 5 && i10 <= 9)
+          || v0 && (i100 >= 12 && i100 <= 14)) ? 'many'
+      : 'other';
+},
+
+prg: function(n, ord
+) {
+  var s = String(n).split('.'), f = s[1] || '', v = f.length,
+      t0 = Number(s[0]) == n, n10 = t0 && s[0].slice(-1),
+      n100 = t0 && s[0].slice(-2), f100 = f.slice(-2), f10 = f.slice(-1);
+  if (ord) return 'other';
+  return (t0 && n10 == 0 || (n100 >= 11 && n100 <= 19)
+          || v == 2 && (f100 >= 11 && f100 <= 19)) ? 'zero'
+      : (n10 == 1 && n100 != 11 || v == 2 && f10 == 1 && f100 != 11
+          || v != 2 && f10 == 1) ? 'one'
+      : 'other';
+},
+
+ps: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+pt: function(n, ord
+) {
+  var s = String(n).split('.'), i = s[0];
+  if (ord) return 'other';
+  return ((i == 0
+          || i == 1)) ? 'one' : 'other';
+},
+
+"pt-PT": function(n, ord
+) {
+  var s = String(n).split('.'), v0 = !s[1];
+  if (ord) return 'other';
+  return (n == 1 && v0) ? 'one' : 'other';
+},
+
+rm: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+ro: function(n, ord
+) {
+  var s = String(n).split('.'), v0 = !s[1], t0 = Number(s[0]) == n,
+      n100 = t0 && s[0].slice(-2);
+  if (ord) return (n == 1) ? 'one' : 'other';
+  return (n == 1 && v0) ? 'one'
+      : (!v0 || n == 0
+          || n != 1 && (n100 >= 1 && n100 <= 19)) ? 'few'
+      : 'other';
+},
+
+rof: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+root: function(n, ord
+) {
+  if (ord) return 'other';
+  return 'other';
+},
+
+ru: function(n, ord
+) {
+  var s = String(n).split('.'), i = s[0], v0 = !s[1], i10 = i.slice(-1),
+      i100 = i.slice(-2);
+  if (ord) return 'other';
+  return (v0 && i10 == 1 && i100 != 11) ? 'one'
+      : (v0 && (i10 >= 2 && i10 <= 4) && (i100 < 12
+          || i100 > 14)) ? 'few'
+      : (v0 && i10 == 0 || v0 && (i10 >= 5 && i10 <= 9)
+          || v0 && (i100 >= 11 && i100 <= 14)) ? 'many'
+      : 'other';
+},
+
+rwk: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+sah: function(n, ord
+) {
+  if (ord) return 'other';
+  return 'other';
+},
+
+saq: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+sc: function(n, ord
+) {
+  var s = String(n).split('.'), v0 = !s[1];
+  if (ord) return ((n == 11 || n == 8 || n == 80
+          || n == 800)) ? 'many' : 'other';
+  return (n == 1 && v0) ? 'one' : 'other';
+},
+
+scn: function(n, ord
+) {
+  var s = String(n).split('.'), v0 = !s[1];
+  if (ord) return ((n == 11 || n == 8 || n == 80
+          || n == 800)) ? 'many' : 'other';
+  return (n == 1 && v0) ? 'one' : 'other';
+},
+
+sd: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+sdh: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+se: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one'
+      : (n == 2) ? 'two'
+      : 'other';
+},
+
+seh: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+ses: function(n, ord
+) {
+  if (ord) return 'other';
+  return 'other';
+},
+
+sg: function(n, ord
+) {
+  if (ord) return 'other';
+  return 'other';
+},
+
+sh: function(n, ord
+) {
+  var s = String(n).split('.'), i = s[0], f = s[1] || '', v0 = !s[1],
+      i10 = i.slice(-1), i100 = i.slice(-2), f10 = f.slice(-1), f100 = f.slice(-2);
+  if (ord) return 'other';
+  return (v0 && i10 == 1 && i100 != 11
+          || f10 == 1 && f100 != 11) ? 'one'
+      : (v0 && (i10 >= 2 && i10 <= 4) && (i100 < 12 || i100 > 14)
+          || (f10 >= 2 && f10 <= 4) && (f100 < 12
+          || f100 > 14)) ? 'few'
+      : 'other';
+},
+
+shi: function(n, ord
+) {
+  var s = String(n).split('.'), t0 = Number(s[0]) == n;
+  if (ord) return 'other';
+  return (n >= 0 && n <= 1) ? 'one'
+      : ((t0 && n >= 2 && n <= 10)) ? 'few'
+      : 'other';
+},
+
+si: function(n, ord
+) {
+  var s = String(n).split('.'), i = s[0], f = s[1] || '';
+  if (ord) return 'other';
+  return ((n == 0 || n == 1)
+          || i == 0 && f == 1) ? 'one' : 'other';
+},
+
+sk: function(n, ord
+) {
+  var s = String(n).split('.'), i = s[0], v0 = !s[1];
+  if (ord) return 'other';
+  return (n == 1 && v0) ? 'one'
+      : ((i >= 2 && i <= 4) && v0) ? 'few'
+      : (!v0) ? 'many'
+      : 'other';
+},
+
+sl: function(n, ord
+) {
+  var s = String(n).split('.'), i = s[0], v0 = !s[1], i100 = i.slice(-2);
+  if (ord) return 'other';
+  return (v0 && i100 == 1) ? 'one'
+      : (v0 && i100 == 2) ? 'two'
+      : (v0 && (i100 == 3 || i100 == 4)
+          || !v0) ? 'few'
+      : 'other';
+},
+
+sma: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one'
+      : (n == 2) ? 'two'
+      : 'other';
+},
+
+smi: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one'
+      : (n == 2) ? 'two'
+      : 'other';
+},
+
+smj: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one'
+      : (n == 2) ? 'two'
+      : 'other';
+},
+
+smn: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one'
+      : (n == 2) ? 'two'
+      : 'other';
+},
+
+sms: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one'
+      : (n == 2) ? 'two'
+      : 'other';
+},
+
+sn: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+so: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+sq: function(n, ord
+) {
+  var s = String(n).split('.'), t0 = Number(s[0]) == n,
+      n10 = t0 && s[0].slice(-1), n100 = t0 && s[0].slice(-2);
+  if (ord) return (n == 1) ? 'one'
+      : (n10 == 4 && n100 != 14) ? 'many'
+      : 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+sr: function(n, ord
+) {
+  var s = String(n).split('.'), i = s[0], f = s[1] || '', v0 = !s[1],
+      i10 = i.slice(-1), i100 = i.slice(-2), f10 = f.slice(-1), f100 = f.slice(-2);
+  if (ord) return 'other';
+  return (v0 && i10 == 1 && i100 != 11
+          || f10 == 1 && f100 != 11) ? 'one'
+      : (v0 && (i10 >= 2 && i10 <= 4) && (i100 < 12 || i100 > 14)
+          || (f10 >= 2 && f10 <= 4) && (f100 < 12
+          || f100 > 14)) ? 'few'
+      : 'other';
+},
+
+ss: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+ssy: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+st: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+sv: function(n, ord
+) {
+  var s = String(n).split('.'), v0 = !s[1], t0 = Number(s[0]) == n,
+      n10 = t0 && s[0].slice(-1), n100 = t0 && s[0].slice(-2);
+  if (ord) return ((n10 == 1
+          || n10 == 2) && n100 != 11 && n100 != 12) ? 'one' : 'other';
+  return (n == 1 && v0) ? 'one' : 'other';
+},
+
+sw: function(n, ord
+) {
+  var s = String(n).split('.'), v0 = !s[1];
+  if (ord) return 'other';
+  return (n == 1 && v0) ? 'one' : 'other';
+},
+
+syr: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+ta: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+te: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+teo: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+th: function(n, ord
+) {
+  if (ord) return 'other';
+  return 'other';
+},
+
+ti: function(n, ord
+) {
+  if (ord) return 'other';
+  return ((n == 0
+          || n == 1)) ? 'one' : 'other';
+},
+
+tig: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+tk: function(n, ord
+) {
+  var s = String(n).split('.'), t0 = Number(s[0]) == n,
+      n10 = t0 && s[0].slice(-1);
+  if (ord) return ((n10 == 6 || n10 == 9)
+          || n == 10) ? 'few' : 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+tl: function(n, ord
+) {
+  var s = String(n).split('.'), i = s[0], f = s[1] || '', v0 = !s[1],
+      i10 = i.slice(-1), f10 = f.slice(-1);
+  if (ord) return (n == 1) ? 'one' : 'other';
+  return (v0 && (i == 1 || i == 2 || i == 3)
+          || v0 && i10 != 4 && i10 != 6 && i10 != 9
+          || !v0 && f10 != 4 && f10 != 6 && f10 != 9) ? 'one' : 'other';
+},
+
+tn: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+to: function(n, ord
+) {
+  if (ord) return 'other';
+  return 'other';
+},
+
+tr: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+ts: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+tzm: function(n, ord
+) {
+  var s = String(n).split('.'), t0 = Number(s[0]) == n;
+  if (ord) return 'other';
+  return ((n == 0 || n == 1)
+          || (t0 && n >= 11 && n <= 99)) ? 'one' : 'other';
+},
+
+ug: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+uk: function(n, ord
+) {
+  var s = String(n).split('.'), i = s[0], v0 = !s[1], t0 = Number(s[0]) == n,
+      n10 = t0 && s[0].slice(-1), n100 = t0 && s[0].slice(-2), i10 = i.slice(-1),
+      i100 = i.slice(-2);
+  if (ord) return (n10 == 3 && n100 != 13) ? 'few' : 'other';
+  return (v0 && i10 == 1 && i100 != 11) ? 'one'
+      : (v0 && (i10 >= 2 && i10 <= 4) && (i100 < 12
+          || i100 > 14)) ? 'few'
+      : (v0 && i10 == 0 || v0 && (i10 >= 5 && i10 <= 9)
+          || v0 && (i100 >= 11 && i100 <= 14)) ? 'many'
+      : 'other';
+},
+
+ur: function(n, ord
+) {
+  var s = String(n).split('.'), v0 = !s[1];
+  if (ord) return 'other';
+  return (n == 1 && v0) ? 'one' : 'other';
+},
+
+uz: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+ve: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+vi: function(n, ord
+) {
+  if (ord) return (n == 1) ? 'one' : 'other';
+  return 'other';
+},
+
+vo: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+vun: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+wa: function(n, ord
+) {
+  if (ord) return 'other';
+  return ((n == 0
+          || n == 1)) ? 'one' : 'other';
+},
+
+wae: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+wo: function(n, ord
+) {
+  if (ord) return 'other';
+  return 'other';
+},
+
+xh: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+xog: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n == 1) ? 'one' : 'other';
+},
+
+yi: function(n, ord
+) {
+  var s = String(n).split('.'), v0 = !s[1];
+  if (ord) return 'other';
+  return (n == 1 && v0) ? 'one' : 'other';
+},
+
+yo: function(n, ord
+) {
+  if (ord) return 'other';
+  return 'other';
+},
+
+yue: function(n, ord
+) {
+  if (ord) return 'other';
+  return 'other';
+},
+
+zh: function(n, ord
+) {
+  if (ord) return 'other';
+  return 'other';
+},
+
+zu: function(n, ord
+) {
+  if (ord) return 'other';
+  return (n >= 0 && n <= 1) ? 'one' : 'other';
+}
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/messageformat-parser/parser.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/messageformat-parser/parser.js ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/*
+ * Generated by PEG.js 0.10.0.
+ *
+ * http://pegjs.org/
+ */
+
+
+
+function peg$subclass(child, parent) {
+  function ctor() { this.constructor = child; }
+  ctor.prototype = parent.prototype;
+  child.prototype = new ctor();
+}
+
+function peg$SyntaxError(message, expected, found, location) {
+  this.message  = message;
+  this.expected = expected;
+  this.found    = found;
+  this.location = location;
+  this.name     = "SyntaxError";
+
+  if (typeof Error.captureStackTrace === "function") {
+    Error.captureStackTrace(this, peg$SyntaxError);
+  }
+}
+
+peg$subclass(peg$SyntaxError, Error);
+
+peg$SyntaxError.buildMessage = function(expected, found) {
+  var DESCRIBE_EXPECTATION_FNS = {
+        literal: function(expectation) {
+          return "\"" + literalEscape(expectation.text) + "\"";
+        },
+
+        "class": function(expectation) {
+          var escapedParts = "",
+              i;
+
+          for (i = 0; i < expectation.parts.length; i++) {
+            escapedParts += expectation.parts[i] instanceof Array
+              ? classEscape(expectation.parts[i][0]) + "-" + classEscape(expectation.parts[i][1])
+              : classEscape(expectation.parts[i]);
+          }
+
+          return "[" + (expectation.inverted ? "^" : "") + escapedParts + "]";
+        },
+
+        any: function(expectation) {
+          return "any character";
+        },
+
+        end: function(expectation) {
+          return "end of input";
+        },
+
+        other: function(expectation) {
+          return expectation.description;
+        }
+      };
+
+  function hex(ch) {
+    return ch.charCodeAt(0).toString(16).toUpperCase();
+  }
+
+  function literalEscape(s) {
+    return s
+      .replace(/\\/g, '\\\\')
+      .replace(/"/g,  '\\"')
+      .replace(/\0/g, '\\0')
+      .replace(/\t/g, '\\t')
+      .replace(/\n/g, '\\n')
+      .replace(/\r/g, '\\r')
+      .replace(/[\x00-\x0F]/g,          function(ch) { return '\\x0' + hex(ch); })
+      .replace(/[\x10-\x1F\x7F-\x9F]/g, function(ch) { return '\\x'  + hex(ch); });
+  }
+
+  function classEscape(s) {
+    return s
+      .replace(/\\/g, '\\\\')
+      .replace(/\]/g, '\\]')
+      .replace(/\^/g, '\\^')
+      .replace(/-/g,  '\\-')
+      .replace(/\0/g, '\\0')
+      .replace(/\t/g, '\\t')
+      .replace(/\n/g, '\\n')
+      .replace(/\r/g, '\\r')
+      .replace(/[\x00-\x0F]/g,          function(ch) { return '\\x0' + hex(ch); })
+      .replace(/[\x10-\x1F\x7F-\x9F]/g, function(ch) { return '\\x'  + hex(ch); });
+  }
+
+  function describeExpectation(expectation) {
+    return DESCRIBE_EXPECTATION_FNS[expectation.type](expectation);
+  }
+
+  function describeExpected(expected) {
+    var descriptions = new Array(expected.length),
+        i, j;
+
+    for (i = 0; i < expected.length; i++) {
+      descriptions[i] = describeExpectation(expected[i]);
+    }
+
+    descriptions.sort();
+
+    if (descriptions.length > 0) {
+      for (i = 1, j = 1; i < descriptions.length; i++) {
+        if (descriptions[i - 1] !== descriptions[i]) {
+          descriptions[j] = descriptions[i];
+          j++;
+        }
+      }
+      descriptions.length = j;
+    }
+
+    switch (descriptions.length) {
+      case 1:
+        return descriptions[0];
+
+      case 2:
+        return descriptions[0] + " or " + descriptions[1];
+
+      default:
+        return descriptions.slice(0, -1).join(", ")
+          + ", or "
+          + descriptions[descriptions.length - 1];
+    }
+  }
+
+  function describeFound(found) {
+    return found ? "\"" + literalEscape(found) + "\"" : "end of input";
+  }
+
+  return "Expected " + describeExpected(expected) + " but " + describeFound(found) + " found.";
+};
+
+function peg$parse(input, options) {
+  options = options !== void 0 ? options : {};
+
+  var peg$FAILED = {},
+
+      peg$startRuleFunctions = { start: peg$parsestart },
+      peg$startRuleFunction  = peg$parsestart,
+
+      peg$c0 = "#",
+      peg$c1 = peg$literalExpectation("#", false),
+      peg$c2 = function() { return inPlural; },
+      peg$c3 = function() { return { type: 'octothorpe' }; },
+      peg$c4 = function(str) { return str.join(''); },
+      peg$c5 = "{",
+      peg$c6 = peg$literalExpectation("{", false),
+      peg$c7 = "}",
+      peg$c8 = peg$literalExpectation("}", false),
+      peg$c9 = function(arg) {
+          return {
+            type: 'argument',
+            arg: arg
+          };
+        },
+      peg$c10 = ",",
+      peg$c11 = peg$literalExpectation(",", false),
+      peg$c12 = "select",
+      peg$c13 = peg$literalExpectation("select", false),
+      peg$c14 = function(arg, m) { if (options.strictNumberSign) { inPlural = false; } return m; },
+      peg$c15 = function(arg, cases) {
+          return {
+            type: 'select',
+            arg: arg,
+            cases: cases
+          };
+        },
+      peg$c16 = "plural",
+      peg$c17 = peg$literalExpectation("plural", false),
+      peg$c18 = "selectordinal",
+      peg$c19 = peg$literalExpectation("selectordinal", false),
+      peg$c20 = function(arg, m) { inPlural = true; return m; },
+      peg$c21 = function(arg, type, offset, cases) {
+          var ls = ((type === 'selectordinal') ? options.ordinal : options.cardinal)
+                   || ['zero', 'one', 'two', 'few', 'many', 'other'];
+          if (ls && ls.length) cases.forEach(function(c) {
+            if (isNaN(c.key) && ls.indexOf(c.key) < 0) throw new Error(
+              'Invalid key `' + c.key + '` for argument `' + arg + '`.' +
+              ' Valid ' + type + ' keys for this locale are `' + ls.join('`, `') +
+              '`, and explicit keys like `=0`.');
+          });
+          inPlural = false;
+          return {
+            type: type,
+            arg: arg,
+            offset: offset || 0,
+            cases: cases
+          };
+        },
+      peg$c22 = function(arg, key, params) {
+          return {
+            type: 'function',
+            arg: arg,
+            key: key,
+            params: params
+          };
+        },
+      peg$c23 = /^[^\t-\r \x85\u200E\u200F\u2028\u2029!-\/:-@[-\^`{-~\xA1-\xA7\xA9\xAB\xAC\xAE\xB0\xB1\xB6\xBB\xBF\xD7\xF7\u2010-\u2027\u2030-\u203E\u2041-\u2053\u2055-\u205E\u2190-\u245F\u2500-\u2775\u2794-\u2BFF\u2E00-\u2E7F\u3001-\u3003\u3008-\u3020\u3030\uFD3E\uFD3F\uFE45\uFE46]/,
+      peg$c24 = peg$classExpectation([["\t", "\r"], " ", "\x85", "\u200E", "\u200F", "\u2028", "\u2029", ["!", "/"], [":", "@"], ["[", "^"], "`", ["{", "~"], ["\xA1", "\xA7"], "\xA9", "\xAB", "\xAC", "\xAE", "\xB0", "\xB1", "\xB6", "\xBB", "\xBF", "\xD7", "\xF7", ["\u2010", "\u2027"], ["\u2030", "\u203E"], ["\u2041", "\u2053"], ["\u2055", "\u205E"], ["\u2190", "\u245F"], ["\u2500", "\u2775"], ["\u2794", "\u2BFF"], ["\u2E00", "\u2E7F"], ["\u3001", "\u3003"], ["\u3008", "\u3020"], "\u3030", "\uFD3E", "\uFD3F", "\uFE45", "\uFE46"], true, false),
+      peg$c25 = function(key, tokens) { return { key: key, tokens: tokens }; },
+      peg$c26 = function(tokens) { return tokens; },
+      peg$c27 = "offset",
+      peg$c28 = peg$literalExpectation("offset", false),
+      peg$c29 = ":",
+      peg$c30 = peg$literalExpectation(":", false),
+      peg$c31 = function(d) { return d; },
+      peg$c32 = "=",
+      peg$c33 = peg$literalExpectation("=", false),
+      peg$c34 = function(p) { return options.strictFunctionParams; },
+      peg$c35 = function(p) { return p; },
+      peg$c36 = function(p) { return p.replace(whitespaceTrimRE, ''); },
+      peg$c37 = "''",
+      peg$c38 = peg$literalExpectation("''", false),
+      peg$c39 = function() { return "'"; },
+      peg$c40 = /^[^']/,
+      peg$c41 = peg$classExpectation(["'"], true, false),
+      peg$c42 = "'{",
+      peg$c43 = peg$literalExpectation("'{", false),
+      peg$c44 = "'",
+      peg$c45 = peg$literalExpectation("'", false),
+      peg$c46 = function(str) { return '\u007B'+str.join(''); },
+      peg$c47 = "'}",
+      peg$c48 = peg$literalExpectation("'}", false),
+      peg$c49 = function(str) { return '\u007D'+str.join(''); },
+      peg$c50 = "'#",
+      peg$c51 = peg$literalExpectation("'#", false),
+      peg$c52 = function(str) { return "#"+str.join(''); },
+      peg$c53 = function(quotedOcto) { return quotedOcto[0]; },
+      peg$c54 = function(octo) { return !inPlural; },
+      peg$c55 = function(octo) { return octo; },
+      peg$c56 = /^[^{}#\\\0-\x08\x0E-\x1F\x7F]/,
+      peg$c57 = peg$classExpectation(["{", "}", "#", "\\", ["\0", "\b"], ["\x0E", "\x1F"], "\x7F"], true, false),
+      peg$c58 = "\\\\",
+      peg$c59 = peg$literalExpectation("\\\\", false),
+      peg$c60 = function() { return '\\'; },
+      peg$c61 = "\\#",
+      peg$c62 = peg$literalExpectation("\\#", false),
+      peg$c63 = function() { return '#'; },
+      peg$c64 = "\\{",
+      peg$c65 = peg$literalExpectation("\\{", false),
+      peg$c66 = function() { return '\u007B'; },
+      peg$c67 = "\\}",
+      peg$c68 = peg$literalExpectation("\\}", false),
+      peg$c69 = function() { return '\u007D'; },
+      peg$c70 = "\\u",
+      peg$c71 = peg$literalExpectation("\\u", false),
+      peg$c72 = function(h1, h2, h3, h4) {
+            return String.fromCharCode(parseInt('0x' + h1 + h2 + h3 + h4));
+          },
+      peg$c73 = /^[^',}]/,
+      peg$c74 = peg$classExpectation(["'", ",", "}"], true, false),
+      peg$c75 = /^[^'}]/,
+      peg$c76 = peg$classExpectation(["'", "}"], true, false),
+      peg$c77 = /^[0-9]/,
+      peg$c78 = peg$classExpectation([["0", "9"]], false, false),
+      peg$c79 = /^[0-9a-fA-F]/,
+      peg$c80 = peg$classExpectation([["0", "9"], ["a", "f"], ["A", "F"]], false, false),
+      peg$c81 = /^[\t-\r \x85\u200E\u200F\u2028\u2029]/,
+      peg$c82 = peg$classExpectation([["\t", "\r"], " ", "\x85", "\u200E", "\u200F", "\u2028", "\u2029"], false, false),
+
+      peg$currPos          = 0,
+      peg$savedPos         = 0,
+      peg$posDetailsCache  = [{ line: 1, column: 1 }],
+      peg$maxFailPos       = 0,
+      peg$maxFailExpected  = [],
+      peg$silentFails      = 0,
+
+      peg$result;
+
+  if ("startRule" in options) {
+    if (!(options.startRule in peg$startRuleFunctions)) {
+      throw new Error("Can't start parsing from rule \"" + options.startRule + "\".");
+    }
+
+    peg$startRuleFunction = peg$startRuleFunctions[options.startRule];
+  }
+
+  function text() {
+    return input.substring(peg$savedPos, peg$currPos);
+  }
+
+  function location() {
+    return peg$computeLocation(peg$savedPos, peg$currPos);
+  }
+
+  function expected(description, location) {
+    location = location !== void 0 ? location : peg$computeLocation(peg$savedPos, peg$currPos)
+
+    throw peg$buildStructuredError(
+      [peg$otherExpectation(description)],
+      input.substring(peg$savedPos, peg$currPos),
+      location
+    );
+  }
+
+  function error(message, location) {
+    location = location !== void 0 ? location : peg$computeLocation(peg$savedPos, peg$currPos)
+
+    throw peg$buildSimpleError(message, location);
+  }
+
+  function peg$literalExpectation(text, ignoreCase) {
+    return { type: "literal", text: text, ignoreCase: ignoreCase };
+  }
+
+  function peg$classExpectation(parts, inverted, ignoreCase) {
+    return { type: "class", parts: parts, inverted: inverted, ignoreCase: ignoreCase };
+  }
+
+  function peg$anyExpectation() {
+    return { type: "any" };
+  }
+
+  function peg$endExpectation() {
+    return { type: "end" };
+  }
+
+  function peg$otherExpectation(description) {
+    return { type: "other", description: description };
+  }
+
+  function peg$computePosDetails(pos) {
+    var details = peg$posDetailsCache[pos], p;
+
+    if (details) {
+      return details;
+    } else {
+      p = pos - 1;
+      while (!peg$posDetailsCache[p]) {
+        p--;
+      }
+
+      details = peg$posDetailsCache[p];
+      details = {
+        line:   details.line,
+        column: details.column
+      };
+
+      while (p < pos) {
+        if (input.charCodeAt(p) === 10) {
+          details.line++;
+          details.column = 1;
+        } else {
+          details.column++;
+        }
+
+        p++;
+      }
+
+      peg$posDetailsCache[pos] = details;
+      return details;
+    }
+  }
+
+  function peg$computeLocation(startPos, endPos) {
+    var startPosDetails = peg$computePosDetails(startPos),
+        endPosDetails   = peg$computePosDetails(endPos);
+
+    return {
+      start: {
+        offset: startPos,
+        line:   startPosDetails.line,
+        column: startPosDetails.column
+      },
+      end: {
+        offset: endPos,
+        line:   endPosDetails.line,
+        column: endPosDetails.column
+      }
+    };
+  }
+
+  function peg$fail(expected) {
+    if (peg$currPos < peg$maxFailPos) { return; }
+
+    if (peg$currPos > peg$maxFailPos) {
+      peg$maxFailPos = peg$currPos;
+      peg$maxFailExpected = [];
+    }
+
+    peg$maxFailExpected.push(expected);
+  }
+
+  function peg$buildSimpleError(message, location) {
+    return new peg$SyntaxError(message, null, null, location);
+  }
+
+  function peg$buildStructuredError(expected, found, location) {
+    return new peg$SyntaxError(
+      peg$SyntaxError.buildMessage(expected, found),
+      expected,
+      found,
+      location
+    );
+  }
+
+  function peg$parsestart() {
+    var s0, s1;
+
+    s0 = [];
+    s1 = peg$parsetoken();
+    while (s1 !== peg$FAILED) {
+      s0.push(s1);
+      s1 = peg$parsetoken();
+    }
+
+    return s0;
+  }
+
+  function peg$parsetoken() {
+    var s0, s1, s2;
+
+    s0 = peg$parseargument();
+    if (s0 === peg$FAILED) {
+      s0 = peg$parseselect();
+      if (s0 === peg$FAILED) {
+        s0 = peg$parseplural();
+        if (s0 === peg$FAILED) {
+          s0 = peg$parsefunction();
+          if (s0 === peg$FAILED) {
+            s0 = peg$currPos;
+            if (input.charCodeAt(peg$currPos) === 35) {
+              s1 = peg$c0;
+              peg$currPos++;
+            } else {
+              s1 = peg$FAILED;
+              if (peg$silentFails === 0) { peg$fail(peg$c1); }
+            }
+            if (s1 !== peg$FAILED) {
+              peg$savedPos = peg$currPos;
+              s2 = peg$c2();
+              if (s2) {
+                s2 = void 0;
+              } else {
+                s2 = peg$FAILED;
+              }
+              if (s2 !== peg$FAILED) {
+                peg$savedPos = s0;
+                s1 = peg$c3();
+                s0 = s1;
+              } else {
+                peg$currPos = s0;
+                s0 = peg$FAILED;
+              }
+            } else {
+              peg$currPos = s0;
+              s0 = peg$FAILED;
+            }
+            if (s0 === peg$FAILED) {
+              s0 = peg$currPos;
+              s1 = [];
+              s2 = peg$parsechar();
+              if (s2 !== peg$FAILED) {
+                while (s2 !== peg$FAILED) {
+                  s1.push(s2);
+                  s2 = peg$parsechar();
+                }
+              } else {
+                s1 = peg$FAILED;
+              }
+              if (s1 !== peg$FAILED) {
+                peg$savedPos = s0;
+                s1 = peg$c4(s1);
+              }
+              s0 = s1;
+            }
+          }
+        }
+      }
+    }
+
+    return s0;
+  }
+
+  function peg$parseargument() {
+    var s0, s1, s2, s3, s4, s5;
+
+    s0 = peg$currPos;
+    if (input.charCodeAt(peg$currPos) === 123) {
+      s1 = peg$c5;
+      peg$currPos++;
+    } else {
+      s1 = peg$FAILED;
+      if (peg$silentFails === 0) { peg$fail(peg$c6); }
+    }
+    if (s1 !== peg$FAILED) {
+      s2 = peg$parse_();
+      if (s2 !== peg$FAILED) {
+        s3 = peg$parseid();
+        if (s3 !== peg$FAILED) {
+          s4 = peg$parse_();
+          if (s4 !== peg$FAILED) {
+            if (input.charCodeAt(peg$currPos) === 125) {
+              s5 = peg$c7;
+              peg$currPos++;
+            } else {
+              s5 = peg$FAILED;
+              if (peg$silentFails === 0) { peg$fail(peg$c8); }
+            }
+            if (s5 !== peg$FAILED) {
+              peg$savedPos = s0;
+              s1 = peg$c9(s3);
+              s0 = s1;
+            } else {
+              peg$currPos = s0;
+              s0 = peg$FAILED;
+            }
+          } else {
+            peg$currPos = s0;
+            s0 = peg$FAILED;
+          }
+        } else {
+          peg$currPos = s0;
+          s0 = peg$FAILED;
+        }
+      } else {
+        peg$currPos = s0;
+        s0 = peg$FAILED;
+      }
+    } else {
+      peg$currPos = s0;
+      s0 = peg$FAILED;
+    }
+
+    return s0;
+  }
+
+  function peg$parseselect() {
+    var s0, s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12, s13;
+
+    s0 = peg$currPos;
+    if (input.charCodeAt(peg$currPos) === 123) {
+      s1 = peg$c5;
+      peg$currPos++;
+    } else {
+      s1 = peg$FAILED;
+      if (peg$silentFails === 0) { peg$fail(peg$c6); }
+    }
+    if (s1 !== peg$FAILED) {
+      s2 = peg$parse_();
+      if (s2 !== peg$FAILED) {
+        s3 = peg$parseid();
+        if (s3 !== peg$FAILED) {
+          s4 = peg$parse_();
+          if (s4 !== peg$FAILED) {
+            if (input.charCodeAt(peg$currPos) === 44) {
+              s5 = peg$c10;
+              peg$currPos++;
+            } else {
+              s5 = peg$FAILED;
+              if (peg$silentFails === 0) { peg$fail(peg$c11); }
+            }
+            if (s5 !== peg$FAILED) {
+              s6 = peg$parse_();
+              if (s6 !== peg$FAILED) {
+                s7 = peg$currPos;
+                if (input.substr(peg$currPos, 6) === peg$c12) {
+                  s8 = peg$c12;
+                  peg$currPos += 6;
+                } else {
+                  s8 = peg$FAILED;
+                  if (peg$silentFails === 0) { peg$fail(peg$c13); }
+                }
+                if (s8 !== peg$FAILED) {
+                  peg$savedPos = s7;
+                  s8 = peg$c14(s3, s8);
+                }
+                s7 = s8;
+                if (s7 !== peg$FAILED) {
+                  s8 = peg$parse_();
+                  if (s8 !== peg$FAILED) {
+                    if (input.charCodeAt(peg$currPos) === 44) {
+                      s9 = peg$c10;
+                      peg$currPos++;
+                    } else {
+                      s9 = peg$FAILED;
+                      if (peg$silentFails === 0) { peg$fail(peg$c11); }
+                    }
+                    if (s9 !== peg$FAILED) {
+                      s10 = peg$parse_();
+                      if (s10 !== peg$FAILED) {
+                        s11 = [];
+                        s12 = peg$parseselectCase();
+                        if (s12 !== peg$FAILED) {
+                          while (s12 !== peg$FAILED) {
+                            s11.push(s12);
+                            s12 = peg$parseselectCase();
+                          }
+                        } else {
+                          s11 = peg$FAILED;
+                        }
+                        if (s11 !== peg$FAILED) {
+                          s12 = peg$parse_();
+                          if (s12 !== peg$FAILED) {
+                            if (input.charCodeAt(peg$currPos) === 125) {
+                              s13 = peg$c7;
+                              peg$currPos++;
+                            } else {
+                              s13 = peg$FAILED;
+                              if (peg$silentFails === 0) { peg$fail(peg$c8); }
+                            }
+                            if (s13 !== peg$FAILED) {
+                              peg$savedPos = s0;
+                              s1 = peg$c15(s3, s11);
+                              s0 = s1;
+                            } else {
+                              peg$currPos = s0;
+                              s0 = peg$FAILED;
+                            }
+                          } else {
+                            peg$currPos = s0;
+                            s0 = peg$FAILED;
+                          }
+                        } else {
+                          peg$currPos = s0;
+                          s0 = peg$FAILED;
+                        }
+                      } else {
+                        peg$currPos = s0;
+                        s0 = peg$FAILED;
+                      }
+                    } else {
+                      peg$currPos = s0;
+                      s0 = peg$FAILED;
+                    }
+                  } else {
+                    peg$currPos = s0;
+                    s0 = peg$FAILED;
+                  }
+                } else {
+                  peg$currPos = s0;
+                  s0 = peg$FAILED;
+                }
+              } else {
+                peg$currPos = s0;
+                s0 = peg$FAILED;
+              }
+            } else {
+              peg$currPos = s0;
+              s0 = peg$FAILED;
+            }
+          } else {
+            peg$currPos = s0;
+            s0 = peg$FAILED;
+          }
+        } else {
+          peg$currPos = s0;
+          s0 = peg$FAILED;
+        }
+      } else {
+        peg$currPos = s0;
+        s0 = peg$FAILED;
+      }
+    } else {
+      peg$currPos = s0;
+      s0 = peg$FAILED;
+    }
+
+    return s0;
+  }
+
+  function peg$parseplural() {
+    var s0, s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12, s13, s14;
+
+    s0 = peg$currPos;
+    if (input.charCodeAt(peg$currPos) === 123) {
+      s1 = peg$c5;
+      peg$currPos++;
+    } else {
+      s1 = peg$FAILED;
+      if (peg$silentFails === 0) { peg$fail(peg$c6); }
+    }
+    if (s1 !== peg$FAILED) {
+      s2 = peg$parse_();
+      if (s2 !== peg$FAILED) {
+        s3 = peg$parseid();
+        if (s3 !== peg$FAILED) {
+          s4 = peg$parse_();
+          if (s4 !== peg$FAILED) {
+            if (input.charCodeAt(peg$currPos) === 44) {
+              s5 = peg$c10;
+              peg$currPos++;
+            } else {
+              s5 = peg$FAILED;
+              if (peg$silentFails === 0) { peg$fail(peg$c11); }
+            }
+            if (s5 !== peg$FAILED) {
+              s6 = peg$parse_();
+              if (s6 !== peg$FAILED) {
+                s7 = peg$currPos;
+                if (input.substr(peg$currPos, 6) === peg$c16) {
+                  s8 = peg$c16;
+                  peg$currPos += 6;
+                } else {
+                  s8 = peg$FAILED;
+                  if (peg$silentFails === 0) { peg$fail(peg$c17); }
+                }
+                if (s8 === peg$FAILED) {
+                  if (input.substr(peg$currPos, 13) === peg$c18) {
+                    s8 = peg$c18;
+                    peg$currPos += 13;
+                  } else {
+                    s8 = peg$FAILED;
+                    if (peg$silentFails === 0) { peg$fail(peg$c19); }
+                  }
+                }
+                if (s8 !== peg$FAILED) {
+                  peg$savedPos = s7;
+                  s8 = peg$c20(s3, s8);
+                }
+                s7 = s8;
+                if (s7 !== peg$FAILED) {
+                  s8 = peg$parse_();
+                  if (s8 !== peg$FAILED) {
+                    if (input.charCodeAt(peg$currPos) === 44) {
+                      s9 = peg$c10;
+                      peg$currPos++;
+                    } else {
+                      s9 = peg$FAILED;
+                      if (peg$silentFails === 0) { peg$fail(peg$c11); }
+                    }
+                    if (s9 !== peg$FAILED) {
+                      s10 = peg$parse_();
+                      if (s10 !== peg$FAILED) {
+                        s11 = peg$parseoffset();
+                        if (s11 === peg$FAILED) {
+                          s11 = null;
+                        }
+                        if (s11 !== peg$FAILED) {
+                          s12 = [];
+                          s13 = peg$parsepluralCase();
+                          if (s13 !== peg$FAILED) {
+                            while (s13 !== peg$FAILED) {
+                              s12.push(s13);
+                              s13 = peg$parsepluralCase();
+                            }
+                          } else {
+                            s12 = peg$FAILED;
+                          }
+                          if (s12 !== peg$FAILED) {
+                            s13 = peg$parse_();
+                            if (s13 !== peg$FAILED) {
+                              if (input.charCodeAt(peg$currPos) === 125) {
+                                s14 = peg$c7;
+                                peg$currPos++;
+                              } else {
+                                s14 = peg$FAILED;
+                                if (peg$silentFails === 0) { peg$fail(peg$c8); }
+                              }
+                              if (s14 !== peg$FAILED) {
+                                peg$savedPos = s0;
+                                s1 = peg$c21(s3, s7, s11, s12);
+                                s0 = s1;
+                              } else {
+                                peg$currPos = s0;
+                                s0 = peg$FAILED;
+                              }
+                            } else {
+                              peg$currPos = s0;
+                              s0 = peg$FAILED;
+                            }
+                          } else {
+                            peg$currPos = s0;
+                            s0 = peg$FAILED;
+                          }
+                        } else {
+                          peg$currPos = s0;
+                          s0 = peg$FAILED;
+                        }
+                      } else {
+                        peg$currPos = s0;
+                        s0 = peg$FAILED;
+                      }
+                    } else {
+                      peg$currPos = s0;
+                      s0 = peg$FAILED;
+                    }
+                  } else {
+                    peg$currPos = s0;
+                    s0 = peg$FAILED;
+                  }
+                } else {
+                  peg$currPos = s0;
+                  s0 = peg$FAILED;
+                }
+              } else {
+                peg$currPos = s0;
+                s0 = peg$FAILED;
+              }
+            } else {
+              peg$currPos = s0;
+              s0 = peg$FAILED;
+            }
+          } else {
+            peg$currPos = s0;
+            s0 = peg$FAILED;
+          }
+        } else {
+          peg$currPos = s0;
+          s0 = peg$FAILED;
+        }
+      } else {
+        peg$currPos = s0;
+        s0 = peg$FAILED;
+      }
+    } else {
+      peg$currPos = s0;
+      s0 = peg$FAILED;
+    }
+
+    return s0;
+  }
+
+  function peg$parsefunction() {
+    var s0, s1, s2, s3, s4, s5, s6, s7, s8, s9, s10;
+
+    s0 = peg$currPos;
+    if (input.charCodeAt(peg$currPos) === 123) {
+      s1 = peg$c5;
+      peg$currPos++;
+    } else {
+      s1 = peg$FAILED;
+      if (peg$silentFails === 0) { peg$fail(peg$c6); }
+    }
+    if (s1 !== peg$FAILED) {
+      s2 = peg$parse_();
+      if (s2 !== peg$FAILED) {
+        s3 = peg$parseid();
+        if (s3 !== peg$FAILED) {
+          s4 = peg$parse_();
+          if (s4 !== peg$FAILED) {
+            if (input.charCodeAt(peg$currPos) === 44) {
+              s5 = peg$c10;
+              peg$currPos++;
+            } else {
+              s5 = peg$FAILED;
+              if (peg$silentFails === 0) { peg$fail(peg$c11); }
+            }
+            if (s5 !== peg$FAILED) {
+              s6 = peg$parse_();
+              if (s6 !== peg$FAILED) {
+                s7 = peg$currPos;
+                s8 = peg$parseid();
+                if (s8 !== peg$FAILED) {
+                  peg$savedPos = s7;
+                  s8 = peg$c14(s3, s8);
+                }
+                s7 = s8;
+                if (s7 !== peg$FAILED) {
+                  s8 = peg$parse_();
+                  if (s8 !== peg$FAILED) {
+                    s9 = peg$parsefunctionParams();
+                    if (s9 !== peg$FAILED) {
+                      if (input.charCodeAt(peg$currPos) === 125) {
+                        s10 = peg$c7;
+                        peg$currPos++;
+                      } else {
+                        s10 = peg$FAILED;
+                        if (peg$silentFails === 0) { peg$fail(peg$c8); }
+                      }
+                      if (s10 !== peg$FAILED) {
+                        peg$savedPos = s0;
+                        s1 = peg$c22(s3, s7, s9);
+                        s0 = s1;
+                      } else {
+                        peg$currPos = s0;
+                        s0 = peg$FAILED;
+                      }
+                    } else {
+                      peg$currPos = s0;
+                      s0 = peg$FAILED;
+                    }
+                  } else {
+                    peg$currPos = s0;
+                    s0 = peg$FAILED;
+                  }
+                } else {
+                  peg$currPos = s0;
+                  s0 = peg$FAILED;
+                }
+              } else {
+                peg$currPos = s0;
+                s0 = peg$FAILED;
+              }
+            } else {
+              peg$currPos = s0;
+              s0 = peg$FAILED;
+            }
+          } else {
+            peg$currPos = s0;
+            s0 = peg$FAILED;
+          }
+        } else {
+          peg$currPos = s0;
+          s0 = peg$FAILED;
+        }
+      } else {
+        peg$currPos = s0;
+        s0 = peg$FAILED;
+      }
+    } else {
+      peg$currPos = s0;
+      s0 = peg$FAILED;
+    }
+
+    return s0;
+  }
+
+  function peg$parseid() {
+    var s0, s1, s2;
+
+    s0 = peg$currPos;
+    s1 = [];
+    if (peg$c23.test(input.charAt(peg$currPos))) {
+      s2 = input.charAt(peg$currPos);
+      peg$currPos++;
+    } else {
+      s2 = peg$FAILED;
+      if (peg$silentFails === 0) { peg$fail(peg$c24); }
+    }
+    if (s2 !== peg$FAILED) {
+      while (s2 !== peg$FAILED) {
+        s1.push(s2);
+        if (peg$c23.test(input.charAt(peg$currPos))) {
+          s2 = input.charAt(peg$currPos);
+          peg$currPos++;
+        } else {
+          s2 = peg$FAILED;
+          if (peg$silentFails === 0) { peg$fail(peg$c24); }
+        }
+      }
+    } else {
+      s1 = peg$FAILED;
+    }
+    if (s1 !== peg$FAILED) {
+      s0 = input.substring(s0, peg$currPos);
+    } else {
+      s0 = s1;
+    }
+
+    return s0;
+  }
+
+  function peg$parseparamDefault() {
+    var s0, s1, s2;
+
+    s0 = peg$currPos;
+    s1 = [];
+    s2 = peg$parseparamcharsDefault();
+    if (s2 !== peg$FAILED) {
+      while (s2 !== peg$FAILED) {
+        s1.push(s2);
+        s2 = peg$parseparamcharsDefault();
+      }
+    } else {
+      s1 = peg$FAILED;
+    }
+    if (s1 !== peg$FAILED) {
+      peg$savedPos = s0;
+      s1 = peg$c4(s1);
+    }
+    s0 = s1;
+
+    return s0;
+  }
+
+  function peg$parseparamStrict() {
+    var s0, s1, s2;
+
+    s0 = peg$currPos;
+    s1 = [];
+    s2 = peg$parseparamcharsStrict();
+    if (s2 !== peg$FAILED) {
+      while (s2 !== peg$FAILED) {
+        s1.push(s2);
+        s2 = peg$parseparamcharsStrict();
+      }
+    } else {
+      s1 = peg$FAILED;
+    }
+    if (s1 !== peg$FAILED) {
+      peg$savedPos = s0;
+      s1 = peg$c4(s1);
+    }
+    s0 = s1;
+
+    return s0;
+  }
+
+  function peg$parseselectCase() {
+    var s0, s1, s2, s3, s4;
+
+    s0 = peg$currPos;
+    s1 = peg$parse_();
+    if (s1 !== peg$FAILED) {
+      s2 = peg$parseid();
+      if (s2 !== peg$FAILED) {
+        s3 = peg$parse_();
+        if (s3 !== peg$FAILED) {
+          s4 = peg$parsecaseTokens();
+          if (s4 !== peg$FAILED) {
+            peg$savedPos = s0;
+            s1 = peg$c25(s2, s4);
+            s0 = s1;
+          } else {
+            peg$currPos = s0;
+            s0 = peg$FAILED;
+          }
+        } else {
+          peg$currPos = s0;
+          s0 = peg$FAILED;
+        }
+      } else {
+        peg$currPos = s0;
+        s0 = peg$FAILED;
+      }
+    } else {
+      peg$currPos = s0;
+      s0 = peg$FAILED;
+    }
+
+    return s0;
+  }
+
+  function peg$parsepluralCase() {
+    var s0, s1, s2, s3, s4;
+
+    s0 = peg$currPos;
+    s1 = peg$parse_();
+    if (s1 !== peg$FAILED) {
+      s2 = peg$parsepluralKey();
+      if (s2 !== peg$FAILED) {
+        s3 = peg$parse_();
+        if (s3 !== peg$FAILED) {
+          s4 = peg$parsecaseTokens();
+          if (s4 !== peg$FAILED) {
+            peg$savedPos = s0;
+            s1 = peg$c25(s2, s4);
+            s0 = s1;
+          } else {
+            peg$currPos = s0;
+            s0 = peg$FAILED;
+          }
+        } else {
+          peg$currPos = s0;
+          s0 = peg$FAILED;
+        }
+      } else {
+        peg$currPos = s0;
+        s0 = peg$FAILED;
+      }
+    } else {
+      peg$currPos = s0;
+      s0 = peg$FAILED;
+    }
+
+    return s0;
+  }
+
+  function peg$parsecaseTokens() {
+    var s0, s1, s2, s3, s4, s5;
+
+    s0 = peg$currPos;
+    if (input.charCodeAt(peg$currPos) === 123) {
+      s1 = peg$c5;
+      peg$currPos++;
+    } else {
+      s1 = peg$FAILED;
+      if (peg$silentFails === 0) { peg$fail(peg$c6); }
+    }
+    if (s1 !== peg$FAILED) {
+      s2 = peg$currPos;
+      s3 = peg$parse_();
+      if (s3 !== peg$FAILED) {
+        s4 = peg$currPos;
+        peg$silentFails++;
+        if (input.charCodeAt(peg$currPos) === 123) {
+          s5 = peg$c5;
+          peg$currPos++;
+        } else {
+          s5 = peg$FAILED;
+          if (peg$silentFails === 0) { peg$fail(peg$c6); }
+        }
+        peg$silentFails--;
+        if (s5 !== peg$FAILED) {
+          peg$currPos = s4;
+          s4 = void 0;
+        } else {
+          s4 = peg$FAILED;
+        }
+        if (s4 !== peg$FAILED) {
+          s3 = [s3, s4];
+          s2 = s3;
+        } else {
+          peg$currPos = s2;
+          s2 = peg$FAILED;
+        }
+      } else {
+        peg$currPos = s2;
+        s2 = peg$FAILED;
+      }
+      if (s2 === peg$FAILED) {
+        s2 = null;
+      }
+      if (s2 !== peg$FAILED) {
+        s3 = [];
+        s4 = peg$parsetoken();
+        while (s4 !== peg$FAILED) {
+          s3.push(s4);
+          s4 = peg$parsetoken();
+        }
+        if (s3 !== peg$FAILED) {
+          s4 = peg$parse_();
+          if (s4 !== peg$FAILED) {
+            if (input.charCodeAt(peg$currPos) === 125) {
+              s5 = peg$c7;
+              peg$currPos++;
+            } else {
+              s5 = peg$FAILED;
+              if (peg$silentFails === 0) { peg$fail(peg$c8); }
+            }
+            if (s5 !== peg$FAILED) {
+              peg$savedPos = s0;
+              s1 = peg$c26(s3);
+              s0 = s1;
+            } else {
+              peg$currPos = s0;
+              s0 = peg$FAILED;
+            }
+          } else {
+            peg$currPos = s0;
+            s0 = peg$FAILED;
+          }
+        } else {
+          peg$currPos = s0;
+          s0 = peg$FAILED;
+        }
+      } else {
+        peg$currPos = s0;
+        s0 = peg$FAILED;
+      }
+    } else {
+      peg$currPos = s0;
+      s0 = peg$FAILED;
+    }
+
+    return s0;
+  }
+
+  function peg$parseoffset() {
+    var s0, s1, s2, s3, s4, s5, s6, s7;
+
+    s0 = peg$currPos;
+    s1 = peg$parse_();
+    if (s1 !== peg$FAILED) {
+      if (input.substr(peg$currPos, 6) === peg$c27) {
+        s2 = peg$c27;
+        peg$currPos += 6;
+      } else {
+        s2 = peg$FAILED;
+        if (peg$silentFails === 0) { peg$fail(peg$c28); }
+      }
+      if (s2 !== peg$FAILED) {
+        s3 = peg$parse_();
+        if (s3 !== peg$FAILED) {
+          if (input.charCodeAt(peg$currPos) === 58) {
+            s4 = peg$c29;
+            peg$currPos++;
+          } else {
+            s4 = peg$FAILED;
+            if (peg$silentFails === 0) { peg$fail(peg$c30); }
+          }
+          if (s4 !== peg$FAILED) {
+            s5 = peg$parse_();
+            if (s5 !== peg$FAILED) {
+              s6 = peg$parsedigits();
+              if (s6 !== peg$FAILED) {
+                s7 = peg$parse_();
+                if (s7 !== peg$FAILED) {
+                  peg$savedPos = s0;
+                  s1 = peg$c31(s6);
+                  s0 = s1;
+                } else {
+                  peg$currPos = s0;
+                  s0 = peg$FAILED;
+                }
+              } else {
+                peg$currPos = s0;
+                s0 = peg$FAILED;
+              }
+            } else {
+              peg$currPos = s0;
+              s0 = peg$FAILED;
+            }
+          } else {
+            peg$currPos = s0;
+            s0 = peg$FAILED;
+          }
+        } else {
+          peg$currPos = s0;
+          s0 = peg$FAILED;
+        }
+      } else {
+        peg$currPos = s0;
+        s0 = peg$FAILED;
+      }
+    } else {
+      peg$currPos = s0;
+      s0 = peg$FAILED;
+    }
+
+    return s0;
+  }
+
+  function peg$parsepluralKey() {
+    var s0, s1, s2;
+
+    s0 = peg$parseid();
+    if (s0 === peg$FAILED) {
+      s0 = peg$currPos;
+      if (input.charCodeAt(peg$currPos) === 61) {
+        s1 = peg$c32;
+        peg$currPos++;
+      } else {
+        s1 = peg$FAILED;
+        if (peg$silentFails === 0) { peg$fail(peg$c33); }
+      }
+      if (s1 !== peg$FAILED) {
+        s2 = peg$parsedigits();
+        if (s2 !== peg$FAILED) {
+          peg$savedPos = s0;
+          s1 = peg$c31(s2);
+          s0 = s1;
+        } else {
+          peg$currPos = s0;
+          s0 = peg$FAILED;
+        }
+      } else {
+        peg$currPos = s0;
+        s0 = peg$FAILED;
+      }
+    }
+
+    return s0;
+  }
+
+  function peg$parsefunctionParams() {
+    var s0, s1, s2;
+
+    s0 = peg$currPos;
+    s1 = [];
+    s2 = peg$parsefunctionParamsDefault();
+    while (s2 !== peg$FAILED) {
+      s1.push(s2);
+      s2 = peg$parsefunctionParamsDefault();
+    }
+    if (s1 !== peg$FAILED) {
+      peg$savedPos = peg$currPos;
+      s2 = peg$c34(s1);
+      if (s2) {
+        s2 = peg$FAILED;
+      } else {
+        s2 = void 0;
+      }
+      if (s2 !== peg$FAILED) {
+        peg$savedPos = s0;
+        s1 = peg$c35(s1);
+        s0 = s1;
+      } else {
+        peg$currPos = s0;
+        s0 = peg$FAILED;
+      }
+    } else {
+      peg$currPos = s0;
+      s0 = peg$FAILED;
+    }
+    if (s0 === peg$FAILED) {
+      s0 = peg$currPos;
+      s1 = [];
+      s2 = peg$parsefunctionParamsStrict();
+      while (s2 !== peg$FAILED) {
+        s1.push(s2);
+        s2 = peg$parsefunctionParamsStrict();
+      }
+      if (s1 !== peg$FAILED) {
+        peg$savedPos = peg$currPos;
+        s2 = peg$c34(s1);
+        if (s2) {
+          s2 = void 0;
+        } else {
+          s2 = peg$FAILED;
+        }
+        if (s2 !== peg$FAILED) {
+          peg$savedPos = s0;
+          s1 = peg$c35(s1);
+          s0 = s1;
+        } else {
+          peg$currPos = s0;
+          s0 = peg$FAILED;
+        }
+      } else {
+        peg$currPos = s0;
+        s0 = peg$FAILED;
+      }
+    }
+
+    return s0;
+  }
+
+  function peg$parsefunctionParamsStrict() {
+    var s0, s1, s2, s3;
+
+    s0 = peg$currPos;
+    s1 = peg$parse_();
+    if (s1 !== peg$FAILED) {
+      if (input.charCodeAt(peg$currPos) === 44) {
+        s2 = peg$c10;
+        peg$currPos++;
+      } else {
+        s2 = peg$FAILED;
+        if (peg$silentFails === 0) { peg$fail(peg$c11); }
+      }
+      if (s2 !== peg$FAILED) {
+        s3 = peg$parseparamStrict();
+        if (s3 !== peg$FAILED) {
+          peg$savedPos = s0;
+          s1 = peg$c35(s3);
+          s0 = s1;
+        } else {
+          peg$currPos = s0;
+          s0 = peg$FAILED;
+        }
+      } else {
+        peg$currPos = s0;
+        s0 = peg$FAILED;
+      }
+    } else {
+      peg$currPos = s0;
+      s0 = peg$FAILED;
+    }
+
+    return s0;
+  }
+
+  function peg$parsefunctionParamsDefault() {
+    var s0, s1, s2, s3, s4, s5;
+
+    s0 = peg$currPos;
+    s1 = peg$parse_();
+    if (s1 !== peg$FAILED) {
+      if (input.charCodeAt(peg$currPos) === 44) {
+        s2 = peg$c10;
+        peg$currPos++;
+      } else {
+        s2 = peg$FAILED;
+        if (peg$silentFails === 0) { peg$fail(peg$c11); }
+      }
+      if (s2 !== peg$FAILED) {
+        s3 = peg$parse_();
+        if (s3 !== peg$FAILED) {
+          s4 = peg$parseparamDefault();
+          if (s4 !== peg$FAILED) {
+            s5 = peg$parse_();
+            if (s5 !== peg$FAILED) {
+              peg$savedPos = s0;
+              s1 = peg$c36(s4);
+              s0 = s1;
+            } else {
+              peg$currPos = s0;
+              s0 = peg$FAILED;
+            }
+          } else {
+            peg$currPos = s0;
+            s0 = peg$FAILED;
+          }
+        } else {
+          peg$currPos = s0;
+          s0 = peg$FAILED;
+        }
+      } else {
+        peg$currPos = s0;
+        s0 = peg$FAILED;
+      }
+    } else {
+      peg$currPos = s0;
+      s0 = peg$FAILED;
+    }
+
+    return s0;
+  }
+
+  function peg$parsedoubleapos() {
+    var s0, s1;
+
+    s0 = peg$currPos;
+    if (input.substr(peg$currPos, 2) === peg$c37) {
+      s1 = peg$c37;
+      peg$currPos += 2;
+    } else {
+      s1 = peg$FAILED;
+      if (peg$silentFails === 0) { peg$fail(peg$c38); }
+    }
+    if (s1 !== peg$FAILED) {
+      peg$savedPos = s0;
+      s1 = peg$c39();
+    }
+    s0 = s1;
+
+    return s0;
+  }
+
+  function peg$parseinapos() {
+    var s0, s1, s2;
+
+    s0 = peg$parsedoubleapos();
+    if (s0 === peg$FAILED) {
+      s0 = peg$currPos;
+      s1 = [];
+      if (peg$c40.test(input.charAt(peg$currPos))) {
+        s2 = input.charAt(peg$currPos);
+        peg$currPos++;
+      } else {
+        s2 = peg$FAILED;
+        if (peg$silentFails === 0) { peg$fail(peg$c41); }
+      }
+      if (s2 !== peg$FAILED) {
+        while (s2 !== peg$FAILED) {
+          s1.push(s2);
+          if (peg$c40.test(input.charAt(peg$currPos))) {
+            s2 = input.charAt(peg$currPos);
+            peg$currPos++;
+          } else {
+            s2 = peg$FAILED;
+            if (peg$silentFails === 0) { peg$fail(peg$c41); }
+          }
+        }
+      } else {
+        s1 = peg$FAILED;
+      }
+      if (s1 !== peg$FAILED) {
+        peg$savedPos = s0;
+        s1 = peg$c4(s1);
+      }
+      s0 = s1;
+    }
+
+    return s0;
+  }
+
+  function peg$parsequotedCurly() {
+    var s0, s1, s2, s3;
+
+    s0 = peg$currPos;
+    if (input.substr(peg$currPos, 2) === peg$c42) {
+      s1 = peg$c42;
+      peg$currPos += 2;
+    } else {
+      s1 = peg$FAILED;
+      if (peg$silentFails === 0) { peg$fail(peg$c43); }
+    }
+    if (s1 !== peg$FAILED) {
+      s2 = [];
+      s3 = peg$parseinapos();
+      while (s3 !== peg$FAILED) {
+        s2.push(s3);
+        s3 = peg$parseinapos();
+      }
+      if (s2 !== peg$FAILED) {
+        if (input.charCodeAt(peg$currPos) === 39) {
+          s3 = peg$c44;
+          peg$currPos++;
+        } else {
+          s3 = peg$FAILED;
+          if (peg$silentFails === 0) { peg$fail(peg$c45); }
+        }
+        if (s3 !== peg$FAILED) {
+          peg$savedPos = s0;
+          s1 = peg$c46(s2);
+          s0 = s1;
+        } else {
+          peg$currPos = s0;
+          s0 = peg$FAILED;
+        }
+      } else {
+        peg$currPos = s0;
+        s0 = peg$FAILED;
+      }
+    } else {
+      peg$currPos = s0;
+      s0 = peg$FAILED;
+    }
+    if (s0 === peg$FAILED) {
+      s0 = peg$currPos;
+      if (input.substr(peg$currPos, 2) === peg$c47) {
+        s1 = peg$c47;
+        peg$currPos += 2;
+      } else {
+        s1 = peg$FAILED;
+        if (peg$silentFails === 0) { peg$fail(peg$c48); }
+      }
+      if (s1 !== peg$FAILED) {
+        s2 = [];
+        s3 = peg$parseinapos();
+        while (s3 !== peg$FAILED) {
+          s2.push(s3);
+          s3 = peg$parseinapos();
+        }
+        if (s2 !== peg$FAILED) {
+          if (input.charCodeAt(peg$currPos) === 39) {
+            s3 = peg$c44;
+            peg$currPos++;
+          } else {
+            s3 = peg$FAILED;
+            if (peg$silentFails === 0) { peg$fail(peg$c45); }
+          }
+          if (s3 !== peg$FAILED) {
+            peg$savedPos = s0;
+            s1 = peg$c49(s2);
+            s0 = s1;
+          } else {
+            peg$currPos = s0;
+            s0 = peg$FAILED;
+          }
+        } else {
+          peg$currPos = s0;
+          s0 = peg$FAILED;
+        }
+      } else {
+        peg$currPos = s0;
+        s0 = peg$FAILED;
+      }
+    }
+
+    return s0;
+  }
+
+  function peg$parsequoted() {
+    var s0, s1, s2, s3, s4, s5;
+
+    s0 = peg$parsequotedCurly();
+    if (s0 === peg$FAILED) {
+      s0 = peg$currPos;
+      s1 = peg$currPos;
+      s2 = peg$currPos;
+      if (input.substr(peg$currPos, 2) === peg$c50) {
+        s3 = peg$c50;
+        peg$currPos += 2;
+      } else {
+        s3 = peg$FAILED;
+        if (peg$silentFails === 0) { peg$fail(peg$c51); }
+      }
+      if (s3 !== peg$FAILED) {
+        s4 = [];
+        s5 = peg$parseinapos();
+        while (s5 !== peg$FAILED) {
+          s4.push(s5);
+          s5 = peg$parseinapos();
+        }
+        if (s4 !== peg$FAILED) {
+          if (input.charCodeAt(peg$currPos) === 39) {
+            s5 = peg$c44;
+            peg$currPos++;
+          } else {
+            s5 = peg$FAILED;
+            if (peg$silentFails === 0) { peg$fail(peg$c45); }
+          }
+          if (s5 !== peg$FAILED) {
+            peg$savedPos = s2;
+            s3 = peg$c52(s4);
+            s2 = s3;
+          } else {
+            peg$currPos = s2;
+            s2 = peg$FAILED;
+          }
+        } else {
+          peg$currPos = s2;
+          s2 = peg$FAILED;
+        }
+      } else {
+        peg$currPos = s2;
+        s2 = peg$FAILED;
+      }
+      if (s2 !== peg$FAILED) {
+        peg$savedPos = peg$currPos;
+        s3 = peg$c2();
+        if (s3) {
+          s3 = void 0;
+        } else {
+          s3 = peg$FAILED;
+        }
+        if (s3 !== peg$FAILED) {
+          s2 = [s2, s3];
+          s1 = s2;
+        } else {
+          peg$currPos = s1;
+          s1 = peg$FAILED;
+        }
+      } else {
+        peg$currPos = s1;
+        s1 = peg$FAILED;
+      }
+      if (s1 !== peg$FAILED) {
+        peg$savedPos = s0;
+        s1 = peg$c53(s1);
+      }
+      s0 = s1;
+      if (s0 === peg$FAILED) {
+        if (input.charCodeAt(peg$currPos) === 39) {
+          s0 = peg$c44;
+          peg$currPos++;
+        } else {
+          s0 = peg$FAILED;
+          if (peg$silentFails === 0) { peg$fail(peg$c45); }
+        }
+      }
+    }
+
+    return s0;
+  }
+
+  function peg$parsequotedFunctionParams() {
+    var s0;
+
+    s0 = peg$parsequotedCurly();
+    if (s0 === peg$FAILED) {
+      if (input.charCodeAt(peg$currPos) === 39) {
+        s0 = peg$c44;
+        peg$currPos++;
+      } else {
+        s0 = peg$FAILED;
+        if (peg$silentFails === 0) { peg$fail(peg$c45); }
+      }
+    }
+
+    return s0;
+  }
+
+  function peg$parsechar() {
+    var s0, s1, s2, s3, s4, s5;
+
+    s0 = peg$parsedoubleapos();
+    if (s0 === peg$FAILED) {
+      s0 = peg$parsequoted();
+      if (s0 === peg$FAILED) {
+        s0 = peg$currPos;
+        if (input.charCodeAt(peg$currPos) === 35) {
+          s1 = peg$c0;
+          peg$currPos++;
+        } else {
+          s1 = peg$FAILED;
+          if (peg$silentFails === 0) { peg$fail(peg$c1); }
+        }
+        if (s1 !== peg$FAILED) {
+          peg$savedPos = peg$currPos;
+          s2 = peg$c54(s1);
+          if (s2) {
+            s2 = void 0;
+          } else {
+            s2 = peg$FAILED;
+          }
+          if (s2 !== peg$FAILED) {
+            peg$savedPos = s0;
+            s1 = peg$c55(s1);
+            s0 = s1;
+          } else {
+            peg$currPos = s0;
+            s0 = peg$FAILED;
+          }
+        } else {
+          peg$currPos = s0;
+          s0 = peg$FAILED;
+        }
+        if (s0 === peg$FAILED) {
+          if (peg$c56.test(input.charAt(peg$currPos))) {
+            s0 = input.charAt(peg$currPos);
+            peg$currPos++;
+          } else {
+            s0 = peg$FAILED;
+            if (peg$silentFails === 0) { peg$fail(peg$c57); }
+          }
+          if (s0 === peg$FAILED) {
+            s0 = peg$currPos;
+            if (input.substr(peg$currPos, 2) === peg$c58) {
+              s1 = peg$c58;
+              peg$currPos += 2;
+            } else {
+              s1 = peg$FAILED;
+              if (peg$silentFails === 0) { peg$fail(peg$c59); }
+            }
+            if (s1 !== peg$FAILED) {
+              peg$savedPos = s0;
+              s1 = peg$c60();
+            }
+            s0 = s1;
+            if (s0 === peg$FAILED) {
+              s0 = peg$currPos;
+              if (input.substr(peg$currPos, 2) === peg$c61) {
+                s1 = peg$c61;
+                peg$currPos += 2;
+              } else {
+                s1 = peg$FAILED;
+                if (peg$silentFails === 0) { peg$fail(peg$c62); }
+              }
+              if (s1 !== peg$FAILED) {
+                peg$savedPos = s0;
+                s1 = peg$c63();
+              }
+              s0 = s1;
+              if (s0 === peg$FAILED) {
+                s0 = peg$currPos;
+                if (input.substr(peg$currPos, 2) === peg$c64) {
+                  s1 = peg$c64;
+                  peg$currPos += 2;
+                } else {
+                  s1 = peg$FAILED;
+                  if (peg$silentFails === 0) { peg$fail(peg$c65); }
+                }
+                if (s1 !== peg$FAILED) {
+                  peg$savedPos = s0;
+                  s1 = peg$c66();
+                }
+                s0 = s1;
+                if (s0 === peg$FAILED) {
+                  s0 = peg$currPos;
+                  if (input.substr(peg$currPos, 2) === peg$c67) {
+                    s1 = peg$c67;
+                    peg$currPos += 2;
+                  } else {
+                    s1 = peg$FAILED;
+                    if (peg$silentFails === 0) { peg$fail(peg$c68); }
+                  }
+                  if (s1 !== peg$FAILED) {
+                    peg$savedPos = s0;
+                    s1 = peg$c69();
+                  }
+                  s0 = s1;
+                  if (s0 === peg$FAILED) {
+                    s0 = peg$currPos;
+                    if (input.substr(peg$currPos, 2) === peg$c70) {
+                      s1 = peg$c70;
+                      peg$currPos += 2;
+                    } else {
+                      s1 = peg$FAILED;
+                      if (peg$silentFails === 0) { peg$fail(peg$c71); }
+                    }
+                    if (s1 !== peg$FAILED) {
+                      s2 = peg$parsehexDigit();
+                      if (s2 !== peg$FAILED) {
+                        s3 = peg$parsehexDigit();
+                        if (s3 !== peg$FAILED) {
+                          s4 = peg$parsehexDigit();
+                          if (s4 !== peg$FAILED) {
+                            s5 = peg$parsehexDigit();
+                            if (s5 !== peg$FAILED) {
+                              peg$savedPos = s0;
+                              s1 = peg$c72(s2, s3, s4, s5);
+                              s0 = s1;
+                            } else {
+                              peg$currPos = s0;
+                              s0 = peg$FAILED;
+                            }
+                          } else {
+                            peg$currPos = s0;
+                            s0 = peg$FAILED;
+                          }
+                        } else {
+                          peg$currPos = s0;
+                          s0 = peg$FAILED;
+                        }
+                      } else {
+                        peg$currPos = s0;
+                        s0 = peg$FAILED;
+                      }
+                    } else {
+                      peg$currPos = s0;
+                      s0 = peg$FAILED;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    return s0;
+  }
+
+  function peg$parseparamcharsCommon() {
+    var s0;
+
+    s0 = peg$parsedoubleapos();
+    if (s0 === peg$FAILED) {
+      s0 = peg$parsequotedFunctionParams();
+    }
+
+    return s0;
+  }
+
+  function peg$parseparamcharsDefault() {
+    var s0, s1, s2;
+
+    s0 = peg$parseparamcharsCommon();
+    if (s0 === peg$FAILED) {
+      s0 = peg$currPos;
+      s1 = [];
+      if (peg$c73.test(input.charAt(peg$currPos))) {
+        s2 = input.charAt(peg$currPos);
+        peg$currPos++;
+      } else {
+        s2 = peg$FAILED;
+        if (peg$silentFails === 0) { peg$fail(peg$c74); }
+      }
+      if (s2 !== peg$FAILED) {
+        while (s2 !== peg$FAILED) {
+          s1.push(s2);
+          if (peg$c73.test(input.charAt(peg$currPos))) {
+            s2 = input.charAt(peg$currPos);
+            peg$currPos++;
+          } else {
+            s2 = peg$FAILED;
+            if (peg$silentFails === 0) { peg$fail(peg$c74); }
+          }
+        }
+      } else {
+        s1 = peg$FAILED;
+      }
+      if (s1 !== peg$FAILED) {
+        peg$savedPos = s0;
+        s1 = peg$c4(s1);
+      }
+      s0 = s1;
+    }
+
+    return s0;
+  }
+
+  function peg$parseparamcharsStrict() {
+    var s0, s1, s2;
+
+    s0 = peg$parseparamcharsCommon();
+    if (s0 === peg$FAILED) {
+      s0 = peg$currPos;
+      s1 = [];
+      if (peg$c75.test(input.charAt(peg$currPos))) {
+        s2 = input.charAt(peg$currPos);
+        peg$currPos++;
+      } else {
+        s2 = peg$FAILED;
+        if (peg$silentFails === 0) { peg$fail(peg$c76); }
+      }
+      if (s2 !== peg$FAILED) {
+        while (s2 !== peg$FAILED) {
+          s1.push(s2);
+          if (peg$c75.test(input.charAt(peg$currPos))) {
+            s2 = input.charAt(peg$currPos);
+            peg$currPos++;
+          } else {
+            s2 = peg$FAILED;
+            if (peg$silentFails === 0) { peg$fail(peg$c76); }
+          }
+        }
+      } else {
+        s1 = peg$FAILED;
+      }
+      if (s1 !== peg$FAILED) {
+        peg$savedPos = s0;
+        s1 = peg$c4(s1);
+      }
+      s0 = s1;
+    }
+
+    return s0;
+  }
+
+  function peg$parsedigits() {
+    var s0, s1, s2;
+
+    s0 = peg$currPos;
+    s1 = [];
+    if (peg$c77.test(input.charAt(peg$currPos))) {
+      s2 = input.charAt(peg$currPos);
+      peg$currPos++;
+    } else {
+      s2 = peg$FAILED;
+      if (peg$silentFails === 0) { peg$fail(peg$c78); }
+    }
+    if (s2 !== peg$FAILED) {
+      while (s2 !== peg$FAILED) {
+        s1.push(s2);
+        if (peg$c77.test(input.charAt(peg$currPos))) {
+          s2 = input.charAt(peg$currPos);
+          peg$currPos++;
+        } else {
+          s2 = peg$FAILED;
+          if (peg$silentFails === 0) { peg$fail(peg$c78); }
+        }
+      }
+    } else {
+      s1 = peg$FAILED;
+    }
+    if (s1 !== peg$FAILED) {
+      s0 = input.substring(s0, peg$currPos);
+    } else {
+      s0 = s1;
+    }
+
+    return s0;
+  }
+
+  function peg$parsehexDigit() {
+    var s0;
+
+    if (peg$c79.test(input.charAt(peg$currPos))) {
+      s0 = input.charAt(peg$currPos);
+      peg$currPos++;
+    } else {
+      s0 = peg$FAILED;
+      if (peg$silentFails === 0) { peg$fail(peg$c80); }
+    }
+
+    return s0;
+  }
+
+  function peg$parse_() {
+    var s0, s1, s2;
+
+    s0 = peg$currPos;
+    s1 = [];
+    if (peg$c81.test(input.charAt(peg$currPos))) {
+      s2 = input.charAt(peg$currPos);
+      peg$currPos++;
+    } else {
+      s2 = peg$FAILED;
+      if (peg$silentFails === 0) { peg$fail(peg$c82); }
+    }
+    while (s2 !== peg$FAILED) {
+      s1.push(s2);
+      if (peg$c81.test(input.charAt(peg$currPos))) {
+        s2 = input.charAt(peg$currPos);
+        peg$currPos++;
+      } else {
+        s2 = peg$FAILED;
+        if (peg$silentFails === 0) { peg$fail(peg$c82); }
+      }
+    }
+    if (s1 !== peg$FAILED) {
+      s0 = input.substring(s0, peg$currPos);
+    } else {
+      s0 = s1;
+    }
+
+    return s0;
+  }
+
+
+    var inPlural = false;
+    var whitespaceChars = "[\u0009-\u000d \u0085\u200e\u200f\u2028\u2029]*";
+    var whitespaceTrimRE = new RegExp("^" + whitespaceChars + "|" + whitespaceChars + "$", "g");
+
+
+  peg$result = peg$startRuleFunction();
+
+  if (peg$result !== peg$FAILED && peg$currPos === input.length) {
+    return peg$result;
+  } else {
+    if (peg$result !== peg$FAILED && peg$currPos < input.length) {
+      peg$fail(peg$endExpectation());
+    }
+
+    throw peg$buildStructuredError(
+      peg$maxFailExpected,
+      peg$maxFailPos < input.length ? input.charAt(peg$maxFailPos) : null,
+      peg$maxFailPos < input.length
+        ? peg$computeLocation(peg$maxFailPos, peg$maxFailPos + 1)
+        : peg$computeLocation(peg$maxFailPos, peg$maxFailPos)
+    );
+  }
+}
+
+module.exports = {
+  SyntaxError: peg$SyntaxError,
+  parse:       peg$parse
+};
+
+
+/***/ }),
+
 /***/ "./node_modules/node-libs-browser/mock/empty.js":
 /*!******************************************************!*\
   !*** ./node_modules/node-libs-browser/mock/empty.js ***!
@@ -18131,6 +24299,608 @@ function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
 }
 
 module.exports = checkPropTypes;
+
+
+/***/ }),
+
+/***/ "./node_modules/prop-types/factoryWithTypeCheckers.js":
+/*!************************************************************!*\
+  !*** ./node_modules/prop-types/factoryWithTypeCheckers.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+
+
+var assign = __webpack_require__(/*! object-assign */ "./node_modules/object-assign/index.js");
+
+var ReactPropTypesSecret = __webpack_require__(/*! ./lib/ReactPropTypesSecret */ "./node_modules/prop-types/lib/ReactPropTypesSecret.js");
+var checkPropTypes = __webpack_require__(/*! ./checkPropTypes */ "./node_modules/prop-types/checkPropTypes.js");
+
+var printWarning = function() {};
+
+if (true) {
+  printWarning = function(text) {
+    var message = 'Warning: ' + text;
+    if (typeof console !== 'undefined') {
+      console.error(message);
+    }
+    try {
+      // --- Welcome to debugging React ---
+      // This error was thrown as a convenience so that you can use this stack
+      // to find the callsite that caused this warning to fire.
+      throw new Error(message);
+    } catch (x) {}
+  };
+}
+
+function emptyFunctionThatReturnsNull() {
+  return null;
+}
+
+module.exports = function(isValidElement, throwOnDirectAccess) {
+  /* global Symbol */
+  var ITERATOR_SYMBOL = typeof Symbol === 'function' && Symbol.iterator;
+  var FAUX_ITERATOR_SYMBOL = '@@iterator'; // Before Symbol spec.
+
+  /**
+   * Returns the iterator method function contained on the iterable object.
+   *
+   * Be sure to invoke the function with the iterable as context:
+   *
+   *     var iteratorFn = getIteratorFn(myIterable);
+   *     if (iteratorFn) {
+   *       var iterator = iteratorFn.call(myIterable);
+   *       ...
+   *     }
+   *
+   * @param {?object} maybeIterable
+   * @return {?function}
+   */
+  function getIteratorFn(maybeIterable) {
+    var iteratorFn = maybeIterable && (ITERATOR_SYMBOL && maybeIterable[ITERATOR_SYMBOL] || maybeIterable[FAUX_ITERATOR_SYMBOL]);
+    if (typeof iteratorFn === 'function') {
+      return iteratorFn;
+    }
+  }
+
+  /**
+   * Collection of methods that allow declaration and validation of props that are
+   * supplied to React components. Example usage:
+   *
+   *   var Props = require('ReactPropTypes');
+   *   var MyArticle = React.createClass({
+   *     propTypes: {
+   *       // An optional string prop named "description".
+   *       description: Props.string,
+   *
+   *       // A required enum prop named "category".
+   *       category: Props.oneOf(['News','Photos']).isRequired,
+   *
+   *       // A prop named "dialog" that requires an instance of Dialog.
+   *       dialog: Props.instanceOf(Dialog).isRequired
+   *     },
+   *     render: function() { ... }
+   *   });
+   *
+   * A more formal specification of how these methods are used:
+   *
+   *   type := array|bool|func|object|number|string|oneOf([...])|instanceOf(...)
+   *   decl := ReactPropTypes.{type}(.isRequired)?
+   *
+   * Each and every declaration produces a function with the same signature. This
+   * allows the creation of custom validation functions. For example:
+   *
+   *  var MyLink = React.createClass({
+   *    propTypes: {
+   *      // An optional string or URI prop named "href".
+   *      href: function(props, propName, componentName) {
+   *        var propValue = props[propName];
+   *        if (propValue != null && typeof propValue !== 'string' &&
+   *            !(propValue instanceof URI)) {
+   *          return new Error(
+   *            'Expected a string or an URI for ' + propName + ' in ' +
+   *            componentName
+   *          );
+   *        }
+   *      }
+   *    },
+   *    render: function() {...}
+   *  });
+   *
+   * @internal
+   */
+
+  var ANONYMOUS = '<<anonymous>>';
+
+  // Important!
+  // Keep this list in sync with production version in `./factoryWithThrowingShims.js`.
+  var ReactPropTypes = {
+    array: createPrimitiveTypeChecker('array'),
+    bool: createPrimitiveTypeChecker('boolean'),
+    func: createPrimitiveTypeChecker('function'),
+    number: createPrimitiveTypeChecker('number'),
+    object: createPrimitiveTypeChecker('object'),
+    string: createPrimitiveTypeChecker('string'),
+    symbol: createPrimitiveTypeChecker('symbol'),
+
+    any: createAnyTypeChecker(),
+    arrayOf: createArrayOfTypeChecker,
+    element: createElementTypeChecker(),
+    instanceOf: createInstanceTypeChecker,
+    node: createNodeChecker(),
+    objectOf: createObjectOfTypeChecker,
+    oneOf: createEnumTypeChecker,
+    oneOfType: createUnionTypeChecker,
+    shape: createShapeTypeChecker,
+    exact: createStrictShapeTypeChecker,
+  };
+
+  /**
+   * inlined Object.is polyfill to avoid requiring consumers ship their own
+   * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is
+   */
+  /*eslint-disable no-self-compare*/
+  function is(x, y) {
+    // SameValue algorithm
+    if (x === y) {
+      // Steps 1-5, 7-10
+      // Steps 6.b-6.e: +0 != -0
+      return x !== 0 || 1 / x === 1 / y;
+    } else {
+      // Step 6.a: NaN == NaN
+      return x !== x && y !== y;
+    }
+  }
+  /*eslint-enable no-self-compare*/
+
+  /**
+   * We use an Error-like object for backward compatibility as people may call
+   * PropTypes directly and inspect their output. However, we don't use real
+   * Errors anymore. We don't inspect their stack anyway, and creating them
+   * is prohibitively expensive if they are created too often, such as what
+   * happens in oneOfType() for any type before the one that matched.
+   */
+  function PropTypeError(message) {
+    this.message = message;
+    this.stack = '';
+  }
+  // Make `instanceof Error` still work for returned errors.
+  PropTypeError.prototype = Error.prototype;
+
+  function createChainableTypeChecker(validate) {
+    if (true) {
+      var manualPropTypeCallCache = {};
+      var manualPropTypeWarningCount = 0;
+    }
+    function checkType(isRequired, props, propName, componentName, location, propFullName, secret) {
+      componentName = componentName || ANONYMOUS;
+      propFullName = propFullName || propName;
+
+      if (secret !== ReactPropTypesSecret) {
+        if (throwOnDirectAccess) {
+          // New behavior only for users of `prop-types` package
+          var err = new Error(
+            'Calling PropTypes validators directly is not supported by the `prop-types` package. ' +
+            'Use `PropTypes.checkPropTypes()` to call them. ' +
+            'Read more at http://fb.me/use-check-prop-types'
+          );
+          err.name = 'Invariant Violation';
+          throw err;
+        } else if ( true && typeof console !== 'undefined') {
+          // Old behavior for people using React.PropTypes
+          var cacheKey = componentName + ':' + propName;
+          if (
+            !manualPropTypeCallCache[cacheKey] &&
+            // Avoid spamming the console because they are often not actionable except for lib authors
+            manualPropTypeWarningCount < 3
+          ) {
+            printWarning(
+              'You are manually calling a React.PropTypes validation ' +
+              'function for the `' + propFullName + '` prop on `' + componentName  + '`. This is deprecated ' +
+              'and will throw in the standalone `prop-types` package. ' +
+              'You may be seeing this warning due to a third-party PropTypes ' +
+              'library. See https://fb.me/react-warning-dont-call-proptypes ' + 'for details.'
+            );
+            manualPropTypeCallCache[cacheKey] = true;
+            manualPropTypeWarningCount++;
+          }
+        }
+      }
+      if (props[propName] == null) {
+        if (isRequired) {
+          if (props[propName] === null) {
+            return new PropTypeError('The ' + location + ' `' + propFullName + '` is marked as required ' + ('in `' + componentName + '`, but its value is `null`.'));
+          }
+          return new PropTypeError('The ' + location + ' `' + propFullName + '` is marked as required in ' + ('`' + componentName + '`, but its value is `undefined`.'));
+        }
+        return null;
+      } else {
+        return validate(props, propName, componentName, location, propFullName);
+      }
+    }
+
+    var chainedCheckType = checkType.bind(null, false);
+    chainedCheckType.isRequired = checkType.bind(null, true);
+
+    return chainedCheckType;
+  }
+
+  function createPrimitiveTypeChecker(expectedType) {
+    function validate(props, propName, componentName, location, propFullName, secret) {
+      var propValue = props[propName];
+      var propType = getPropType(propValue);
+      if (propType !== expectedType) {
+        // `propValue` being instance of, say, date/regexp, pass the 'object'
+        // check, but we can offer a more precise error message here rather than
+        // 'of type `object`'.
+        var preciseType = getPreciseType(propValue);
+
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + preciseType + '` supplied to `' + componentName + '`, expected ') + ('`' + expectedType + '`.'));
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createAnyTypeChecker() {
+    return createChainableTypeChecker(emptyFunctionThatReturnsNull);
+  }
+
+  function createArrayOfTypeChecker(typeChecker) {
+    function validate(props, propName, componentName, location, propFullName) {
+      if (typeof typeChecker !== 'function') {
+        return new PropTypeError('Property `' + propFullName + '` of component `' + componentName + '` has invalid PropType notation inside arrayOf.');
+      }
+      var propValue = props[propName];
+      if (!Array.isArray(propValue)) {
+        var propType = getPropType(propValue);
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected an array.'));
+      }
+      for (var i = 0; i < propValue.length; i++) {
+        var error = typeChecker(propValue, i, componentName, location, propFullName + '[' + i + ']', ReactPropTypesSecret);
+        if (error instanceof Error) {
+          return error;
+        }
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createElementTypeChecker() {
+    function validate(props, propName, componentName, location, propFullName) {
+      var propValue = props[propName];
+      if (!isValidElement(propValue)) {
+        var propType = getPropType(propValue);
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected a single ReactElement.'));
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createInstanceTypeChecker(expectedClass) {
+    function validate(props, propName, componentName, location, propFullName) {
+      if (!(props[propName] instanceof expectedClass)) {
+        var expectedClassName = expectedClass.name || ANONYMOUS;
+        var actualClassName = getClassName(props[propName]);
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + actualClassName + '` supplied to `' + componentName + '`, expected ') + ('instance of `' + expectedClassName + '`.'));
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createEnumTypeChecker(expectedValues) {
+    if (!Array.isArray(expectedValues)) {
+       true ? printWarning('Invalid argument supplied to oneOf, expected an instance of array.') : undefined;
+      return emptyFunctionThatReturnsNull;
+    }
+
+    function validate(props, propName, componentName, location, propFullName) {
+      var propValue = props[propName];
+      for (var i = 0; i < expectedValues.length; i++) {
+        if (is(propValue, expectedValues[i])) {
+          return null;
+        }
+      }
+
+      var valuesString = JSON.stringify(expectedValues);
+      return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of value `' + propValue + '` ' + ('supplied to `' + componentName + '`, expected one of ' + valuesString + '.'));
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createObjectOfTypeChecker(typeChecker) {
+    function validate(props, propName, componentName, location, propFullName) {
+      if (typeof typeChecker !== 'function') {
+        return new PropTypeError('Property `' + propFullName + '` of component `' + componentName + '` has invalid PropType notation inside objectOf.');
+      }
+      var propValue = props[propName];
+      var propType = getPropType(propValue);
+      if (propType !== 'object') {
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected an object.'));
+      }
+      for (var key in propValue) {
+        if (propValue.hasOwnProperty(key)) {
+          var error = typeChecker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
+          if (error instanceof Error) {
+            return error;
+          }
+        }
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createUnionTypeChecker(arrayOfTypeCheckers) {
+    if (!Array.isArray(arrayOfTypeCheckers)) {
+       true ? printWarning('Invalid argument supplied to oneOfType, expected an instance of array.') : undefined;
+      return emptyFunctionThatReturnsNull;
+    }
+
+    for (var i = 0; i < arrayOfTypeCheckers.length; i++) {
+      var checker = arrayOfTypeCheckers[i];
+      if (typeof checker !== 'function') {
+        printWarning(
+          'Invalid argument supplied to oneOfType. Expected an array of check functions, but ' +
+          'received ' + getPostfixForTypeWarning(checker) + ' at index ' + i + '.'
+        );
+        return emptyFunctionThatReturnsNull;
+      }
+    }
+
+    function validate(props, propName, componentName, location, propFullName) {
+      for (var i = 0; i < arrayOfTypeCheckers.length; i++) {
+        var checker = arrayOfTypeCheckers[i];
+        if (checker(props, propName, componentName, location, propFullName, ReactPropTypesSecret) == null) {
+          return null;
+        }
+      }
+
+      return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` supplied to ' + ('`' + componentName + '`.'));
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createNodeChecker() {
+    function validate(props, propName, componentName, location, propFullName) {
+      if (!isNode(props[propName])) {
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` supplied to ' + ('`' + componentName + '`, expected a ReactNode.'));
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createShapeTypeChecker(shapeTypes) {
+    function validate(props, propName, componentName, location, propFullName) {
+      var propValue = props[propName];
+      var propType = getPropType(propValue);
+      if (propType !== 'object') {
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type `' + propType + '` ' + ('supplied to `' + componentName + '`, expected `object`.'));
+      }
+      for (var key in shapeTypes) {
+        var checker = shapeTypes[key];
+        if (!checker) {
+          continue;
+        }
+        var error = checker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
+        if (error) {
+          return error;
+        }
+      }
+      return null;
+    }
+    return createChainableTypeChecker(validate);
+  }
+
+  function createStrictShapeTypeChecker(shapeTypes) {
+    function validate(props, propName, componentName, location, propFullName) {
+      var propValue = props[propName];
+      var propType = getPropType(propValue);
+      if (propType !== 'object') {
+        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type `' + propType + '` ' + ('supplied to `' + componentName + '`, expected `object`.'));
+      }
+      // We need to check all keys in case some are required but missing from
+      // props.
+      var allKeys = assign({}, props[propName], shapeTypes);
+      for (var key in allKeys) {
+        var checker = shapeTypes[key];
+        if (!checker) {
+          return new PropTypeError(
+            'Invalid ' + location + ' `' + propFullName + '` key `' + key + '` supplied to `' + componentName + '`.' +
+            '\nBad object: ' + JSON.stringify(props[propName], null, '  ') +
+            '\nValid keys: ' +  JSON.stringify(Object.keys(shapeTypes), null, '  ')
+          );
+        }
+        var error = checker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
+        if (error) {
+          return error;
+        }
+      }
+      return null;
+    }
+
+    return createChainableTypeChecker(validate);
+  }
+
+  function isNode(propValue) {
+    switch (typeof propValue) {
+      case 'number':
+      case 'string':
+      case 'undefined':
+        return true;
+      case 'boolean':
+        return !propValue;
+      case 'object':
+        if (Array.isArray(propValue)) {
+          return propValue.every(isNode);
+        }
+        if (propValue === null || isValidElement(propValue)) {
+          return true;
+        }
+
+        var iteratorFn = getIteratorFn(propValue);
+        if (iteratorFn) {
+          var iterator = iteratorFn.call(propValue);
+          var step;
+          if (iteratorFn !== propValue.entries) {
+            while (!(step = iterator.next()).done) {
+              if (!isNode(step.value)) {
+                return false;
+              }
+            }
+          } else {
+            // Iterator will provide entry [k,v] tuples rather than values.
+            while (!(step = iterator.next()).done) {
+              var entry = step.value;
+              if (entry) {
+                if (!isNode(entry[1])) {
+                  return false;
+                }
+              }
+            }
+          }
+        } else {
+          return false;
+        }
+
+        return true;
+      default:
+        return false;
+    }
+  }
+
+  function isSymbol(propType, propValue) {
+    // Native Symbol.
+    if (propType === 'symbol') {
+      return true;
+    }
+
+    // 19.4.3.5 Symbol.prototype[@@toStringTag] === 'Symbol'
+    if (propValue['@@toStringTag'] === 'Symbol') {
+      return true;
+    }
+
+    // Fallback for non-spec compliant Symbols which are polyfilled.
+    if (typeof Symbol === 'function' && propValue instanceof Symbol) {
+      return true;
+    }
+
+    return false;
+  }
+
+  // Equivalent of `typeof` but with special handling for array and regexp.
+  function getPropType(propValue) {
+    var propType = typeof propValue;
+    if (Array.isArray(propValue)) {
+      return 'array';
+    }
+    if (propValue instanceof RegExp) {
+      // Old webkits (at least until Android 4.0) return 'function' rather than
+      // 'object' for typeof a RegExp. We'll normalize this here so that /bla/
+      // passes PropTypes.object.
+      return 'object';
+    }
+    if (isSymbol(propType, propValue)) {
+      return 'symbol';
+    }
+    return propType;
+  }
+
+  // This handles more types than `getPropType`. Only used for error messages.
+  // See `createPrimitiveTypeChecker`.
+  function getPreciseType(propValue) {
+    if (typeof propValue === 'undefined' || propValue === null) {
+      return '' + propValue;
+    }
+    var propType = getPropType(propValue);
+    if (propType === 'object') {
+      if (propValue instanceof Date) {
+        return 'date';
+      } else if (propValue instanceof RegExp) {
+        return 'regexp';
+      }
+    }
+    return propType;
+  }
+
+  // Returns a string that is postfixed to a warning about an invalid type.
+  // For example, "undefined" or "of type array"
+  function getPostfixForTypeWarning(value) {
+    var type = getPreciseType(value);
+    switch (type) {
+      case 'array':
+      case 'object':
+        return 'an ' + type;
+      case 'boolean':
+      case 'date':
+      case 'regexp':
+        return 'a ' + type;
+      default:
+        return type;
+    }
+  }
+
+  // Returns class name of the object, if any.
+  function getClassName(propValue) {
+    if (!propValue.constructor || !propValue.constructor.name) {
+      return ANONYMOUS;
+    }
+    return propValue.constructor.name;
+  }
+
+  ReactPropTypes.checkPropTypes = checkPropTypes;
+  ReactPropTypes.PropTypes = ReactPropTypes;
+
+  return ReactPropTypes;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/prop-types/index.js":
+/*!******************************************!*\
+  !*** ./node_modules/prop-types/index.js ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+if (true) {
+  var REACT_ELEMENT_TYPE = (typeof Symbol === 'function' &&
+    Symbol.for &&
+    Symbol.for('react.element')) ||
+    0xeac7;
+
+  var isValidElement = function(object) {
+    return typeof object === 'object' &&
+      object !== null &&
+      object.$$typeof === REACT_ELEMENT_TYPE;
+  };
+
+  // By explicitly using `prop-types` you are opting into new development behavior.
+  // http://fb.me/prop-types-in-prod
+  var throwOnDirectAccess = true;
+  module.exports = __webpack_require__(/*! ./factoryWithTypeCheckers */ "./node_modules/prop-types/factoryWithTypeCheckers.js")(isValidElement, throwOnDirectAccess);
+} else {}
 
 
 /***/ }),
@@ -37929,6 +44699,262 @@ if (false) {} else {
 
 /***/ }),
 
+/***/ "./node_modules/react-is/cjs/react-is.development.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/react-is/cjs/react-is.development.js ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/** @license React v16.7.0
+ * react-is.development.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+
+
+
+
+if (true) {
+  (function() {
+'use strict';
+
+Object.defineProperty(exports, '__esModule', { value: true });
+
+// The Symbol used to tag the ReactElement-like types. If there is no native Symbol
+// nor polyfill, then a plain number is used for performance.
+var hasSymbol = typeof Symbol === 'function' && Symbol.for;
+
+var REACT_ELEMENT_TYPE = hasSymbol ? Symbol.for('react.element') : 0xeac7;
+var REACT_PORTAL_TYPE = hasSymbol ? Symbol.for('react.portal') : 0xeaca;
+var REACT_FRAGMENT_TYPE = hasSymbol ? Symbol.for('react.fragment') : 0xeacb;
+var REACT_STRICT_MODE_TYPE = hasSymbol ? Symbol.for('react.strict_mode') : 0xeacc;
+var REACT_PROFILER_TYPE = hasSymbol ? Symbol.for('react.profiler') : 0xead2;
+var REACT_PROVIDER_TYPE = hasSymbol ? Symbol.for('react.provider') : 0xeacd;
+var REACT_CONTEXT_TYPE = hasSymbol ? Symbol.for('react.context') : 0xeace;
+var REACT_ASYNC_MODE_TYPE = hasSymbol ? Symbol.for('react.async_mode') : 0xeacf;
+var REACT_CONCURRENT_MODE_TYPE = hasSymbol ? Symbol.for('react.concurrent_mode') : 0xeacf;
+var REACT_FORWARD_REF_TYPE = hasSymbol ? Symbol.for('react.forward_ref') : 0xead0;
+var REACT_SUSPENSE_TYPE = hasSymbol ? Symbol.for('react.suspense') : 0xead1;
+var REACT_MEMO_TYPE = hasSymbol ? Symbol.for('react.memo') : 0xead3;
+var REACT_LAZY_TYPE = hasSymbol ? Symbol.for('react.lazy') : 0xead4;
+
+function isValidElementType(type) {
+  return typeof type === 'string' || typeof type === 'function' ||
+  // Note: its typeof might be other than 'symbol' or 'number' if it's a polyfill.
+  type === REACT_FRAGMENT_TYPE || type === REACT_CONCURRENT_MODE_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || typeof type === 'object' && type !== null && (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE);
+}
+
+/**
+ * Forked from fbjs/warning:
+ * https://github.com/facebook/fbjs/blob/e66ba20ad5be433eb54423f2b097d829324d9de6/packages/fbjs/src/__forks__/warning.js
+ *
+ * Only change is we use console.warn instead of console.error,
+ * and do nothing when 'console' is not supported.
+ * This really simplifies the code.
+ * ---
+ * Similar to invariant but only logs a warning if the condition is not met.
+ * This can be used to log issues in development environments in critical
+ * paths. Removing the logging code for production environments will keep the
+ * same logic and follow the same code paths.
+ */
+
+var lowPriorityWarning = function () {};
+
+{
+  var printWarning = function (format) {
+    for (var _len = arguments.length, args = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+      args[_key - 1] = arguments[_key];
+    }
+
+    var argIndex = 0;
+    var message = 'Warning: ' + format.replace(/%s/g, function () {
+      return args[argIndex++];
+    });
+    if (typeof console !== 'undefined') {
+      console.warn(message);
+    }
+    try {
+      // --- Welcome to debugging React ---
+      // This error was thrown as a convenience so that you can use this stack
+      // to find the callsite that caused this warning to fire.
+      throw new Error(message);
+    } catch (x) {}
+  };
+
+  lowPriorityWarning = function (condition, format) {
+    if (format === undefined) {
+      throw new Error('`lowPriorityWarning(condition, format, ...args)` requires a warning ' + 'message argument');
+    }
+    if (!condition) {
+      for (var _len2 = arguments.length, args = Array(_len2 > 2 ? _len2 - 2 : 0), _key2 = 2; _key2 < _len2; _key2++) {
+        args[_key2 - 2] = arguments[_key2];
+      }
+
+      printWarning.apply(undefined, [format].concat(args));
+    }
+  };
+}
+
+var lowPriorityWarning$1 = lowPriorityWarning;
+
+function typeOf(object) {
+  if (typeof object === 'object' && object !== null) {
+    var $$typeof = object.$$typeof;
+    switch ($$typeof) {
+      case REACT_ELEMENT_TYPE:
+        var type = object.type;
+
+        switch (type) {
+          case REACT_ASYNC_MODE_TYPE:
+          case REACT_CONCURRENT_MODE_TYPE:
+          case REACT_FRAGMENT_TYPE:
+          case REACT_PROFILER_TYPE:
+          case REACT_STRICT_MODE_TYPE:
+          case REACT_SUSPENSE_TYPE:
+            return type;
+          default:
+            var $$typeofType = type && type.$$typeof;
+
+            switch ($$typeofType) {
+              case REACT_CONTEXT_TYPE:
+              case REACT_FORWARD_REF_TYPE:
+              case REACT_PROVIDER_TYPE:
+                return $$typeofType;
+              default:
+                return $$typeof;
+            }
+        }
+      case REACT_LAZY_TYPE:
+      case REACT_MEMO_TYPE:
+      case REACT_PORTAL_TYPE:
+        return $$typeof;
+    }
+  }
+
+  return undefined;
+}
+
+// AsyncMode is deprecated along with isAsyncMode
+var AsyncMode = REACT_ASYNC_MODE_TYPE;
+var ConcurrentMode = REACT_CONCURRENT_MODE_TYPE;
+var ContextConsumer = REACT_CONTEXT_TYPE;
+var ContextProvider = REACT_PROVIDER_TYPE;
+var Element = REACT_ELEMENT_TYPE;
+var ForwardRef = REACT_FORWARD_REF_TYPE;
+var Fragment = REACT_FRAGMENT_TYPE;
+var Lazy = REACT_LAZY_TYPE;
+var Memo = REACT_MEMO_TYPE;
+var Portal = REACT_PORTAL_TYPE;
+var Profiler = REACT_PROFILER_TYPE;
+var StrictMode = REACT_STRICT_MODE_TYPE;
+var Suspense = REACT_SUSPENSE_TYPE;
+
+var hasWarnedAboutDeprecatedIsAsyncMode = false;
+
+// AsyncMode should be deprecated
+function isAsyncMode(object) {
+  {
+    if (!hasWarnedAboutDeprecatedIsAsyncMode) {
+      hasWarnedAboutDeprecatedIsAsyncMode = true;
+      lowPriorityWarning$1(false, 'The ReactIs.isAsyncMode() alias has been deprecated, ' + 'and will be removed in React 17+. Update your code to use ' + 'ReactIs.isConcurrentMode() instead. It has the exact same API.');
+    }
+  }
+  return isConcurrentMode(object) || typeOf(object) === REACT_ASYNC_MODE_TYPE;
+}
+function isConcurrentMode(object) {
+  return typeOf(object) === REACT_CONCURRENT_MODE_TYPE;
+}
+function isContextConsumer(object) {
+  return typeOf(object) === REACT_CONTEXT_TYPE;
+}
+function isContextProvider(object) {
+  return typeOf(object) === REACT_PROVIDER_TYPE;
+}
+function isElement(object) {
+  return typeof object === 'object' && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
+}
+function isForwardRef(object) {
+  return typeOf(object) === REACT_FORWARD_REF_TYPE;
+}
+function isFragment(object) {
+  return typeOf(object) === REACT_FRAGMENT_TYPE;
+}
+function isLazy(object) {
+  return typeOf(object) === REACT_LAZY_TYPE;
+}
+function isMemo(object) {
+  return typeOf(object) === REACT_MEMO_TYPE;
+}
+function isPortal(object) {
+  return typeOf(object) === REACT_PORTAL_TYPE;
+}
+function isProfiler(object) {
+  return typeOf(object) === REACT_PROFILER_TYPE;
+}
+function isStrictMode(object) {
+  return typeOf(object) === REACT_STRICT_MODE_TYPE;
+}
+function isSuspense(object) {
+  return typeOf(object) === REACT_SUSPENSE_TYPE;
+}
+
+exports.typeOf = typeOf;
+exports.AsyncMode = AsyncMode;
+exports.ConcurrentMode = ConcurrentMode;
+exports.ContextConsumer = ContextConsumer;
+exports.ContextProvider = ContextProvider;
+exports.Element = Element;
+exports.ForwardRef = ForwardRef;
+exports.Fragment = Fragment;
+exports.Lazy = Lazy;
+exports.Memo = Memo;
+exports.Portal = Portal;
+exports.Profiler = Profiler;
+exports.StrictMode = StrictMode;
+exports.Suspense = Suspense;
+exports.isValidElementType = isValidElementType;
+exports.isAsyncMode = isAsyncMode;
+exports.isConcurrentMode = isConcurrentMode;
+exports.isContextConsumer = isContextConsumer;
+exports.isContextProvider = isContextProvider;
+exports.isElement = isElement;
+exports.isForwardRef = isForwardRef;
+exports.isFragment = isFragment;
+exports.isLazy = isLazy;
+exports.isMemo = isMemo;
+exports.isPortal = isPortal;
+exports.isProfiler = isProfiler;
+exports.isStrictMode = isStrictMode;
+exports.isSuspense = isSuspense;
+  })();
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/react-is/index.js":
+/*!****************************************!*\
+  !*** ./node_modules/react-is/index.js ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+if (false) {} else {
+  module.exports = __webpack_require__(/*! ./cjs/react-is.development.js */ "./node_modules/react-is/cjs/react-is.development.js");
+}
+
+
+/***/ }),
+
 /***/ "./node_modules/react/cjs/react.development.js":
 /*!*****************************************************!*\
   !*** ./node_modules/react/cjs/react.development.js ***!
@@ -42071,6 +49097,176 @@ try {
 
 module.exports = g;
 
+
+/***/ }),
+
+/***/ "./server/public/locales/de/messages.js":
+/*!**********************************************!*\
+  !*** ./server/public/locales/de/messages.js ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* eslint-disable */
+module.exports = {
+  languageData: {
+    "plurals": function plurals(n, ord) {
+      var s = String(n).split("."),
+          v0 = !s[1];
+      if (ord) return "other";
+      return n == 1 && v0 ? "one" : "other";
+    }
+  },
+  messages: {
+    "About Us": "\xDCber",
+    "Blog": "Blog",
+    "Build The Community Your Fans Will Love": "Baue eine Gemeinschaft auf, die deine Fans lieben werden",
+    "Career": "Karriere",
+    "Contact Us": "Kontakt",
+    "FAQ": "FAQ",
+    "Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussions.": "Huddle gestaltet Gemeinschaften neu. Deine Besucher haben das gleiche Mitspracherecht wie du. Erstelle Verbindungen durch bedeutungsvolle Unterhaltungen.",
+    "Huddle re-imagines the way we build communities. You have a voice,<0/>but so does your audience. Create connections with your users as you <1/>engage in genuine discussions.": "Huddle re-imagines the way we build communities. You have a voice,<0/>but so does your audience. Create connections with your users as you <1/>engage in genuine discussions.",
+    "Register": "Anmelden",
+    "Sign Up For Early Access": "Melde dich an, um fr\xFChen Zugang zu erhalten",
+    "What We Do": "Was wir machen",
+    "\xA9 2018 Huddle Copyright": "\xA9 2018 Huddle Copyright"
+  }
+};
+
+/***/ }),
+
+/***/ "./server/public/locales/en/messages.js":
+/*!**********************************************!*\
+  !*** ./server/public/locales/en/messages.js ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* eslint-disable */
+module.exports = {
+  languageData: {
+    "plurals": function plurals(n, ord) {
+      var s = String(n).split("."),
+          v0 = !s[1],
+          t0 = Number(s[0]) == n,
+          n10 = t0 && s[0].slice(-1),
+          n100 = t0 && s[0].slice(-2);
+      if (ord) return n10 == 1 && n100 != 11 ? "one" : n10 == 2 && n100 != 12 ? "two" : n10 == 3 && n100 != 13 ? "few" : "other";
+      return n == 1 && v0 ? "one" : "other";
+    }
+  },
+  messages: {
+    "About Us": "About Us",
+    "Blog": "Blog",
+    "Build The Community Your Fans Will Love": "Build The Community Your Fans Will Love",
+    "Career": "Build The Community Your Fans Will Love",
+    "Contact Us": "Contact Us",
+    "FAQ": "FAQ",
+    "Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussions.": "Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussions.",
+    "Huddle re-imagines the way we build communities. You have a voice,<0/>but so does your audience. Create connections with your users as you <1/>engage in genuine discussions.": "Huddle re-imagines the way we build communities. You have a voice,<0/>but so does your audience. Create connections with your users as you <1/>engage in genuine discussions.",
+    "Register": "Register",
+    "Sign Up For Early Access": "Sign Up For Early Access",
+    "What We Do": "What We Do",
+    "\xA9 2018 Huddle Copyright": "\xA9 2018 Huddle Copyright"
+  }
+};
+
+/***/ }),
+
+/***/ "./serviceWorker.js":
+/*!**************************!*\
+  !*** ./serviceWorker.js ***!
+  \**************************/
+/*! exports provided: register, unregister */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "register", function() { return register; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unregister", function() { return unregister; });
+// This optional code is used to register a service worker.
+// register() is not called by default.
+// This lets the app load faster on subsequent visits in production, and gives
+// it offline capabilities. However, it also means that developers (and users)
+// will only see deployed updates on subsequent visits to a page, after all the
+// existing tabs open on the page have been closed, since previously cached
+// resources are updated in the background.
+// To learn more about the benefits of this model and instructions on how to
+// opt-in, read http://bit.ly/CRA-PWA
+var isLocalhost = Boolean(window.location.hostname === 'localhost' || // [::1] is the IPv6 localhost address.
+window.location.hostname === '[::1]' || // 127.0.0.1/8 is considered localhost for IPv4.
+window.location.hostname.match(/^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/));
+function register(config) {
+  if (false) { var publicUrl; }
+}
+
+function registerValidSW(swUrl, config) {
+  navigator.serviceWorker.register(swUrl).then(function (registration) {
+    registration.onupdatefound = function () {
+      var installingWorker = registration.installing;
+
+      if (installingWorker == null) {
+        return;
+      }
+
+      installingWorker.onstatechange = function () {
+        if (installingWorker.state === 'installed') {
+          if (navigator.serviceWorker.controller) {
+            // At this point, the updated precached content has been fetched,
+            // but the previous service worker will still serve the older
+            // content until all client tabs are closed.
+            console.log('New content is available and will be used when all ' + 'tabs for this page are closed. See http://bit.ly/CRA-PWA.'); // Execute callback
+
+            if (config && config.onUpdate) {
+              config.onUpdate(registration);
+            }
+          } else {
+            // At this point, everything has been precached.
+            // It's the perfect time to display a
+            // "Content is cached for offline use." message.
+            console.log('Content is cached for offline use.'); // Execute callback
+
+            if (config && config.onSuccess) {
+              config.onSuccess(registration);
+            }
+          }
+        }
+      };
+    };
+  }).catch(function (error) {
+    console.error('Error during service worker registration:', error);
+  });
+}
+
+function checkValidServiceWorker(swUrl, config) {
+  // Check if the service worker can be found. If it can't reload the page.
+  fetch(swUrl).then(function (response) {
+    // Ensure service worker exists, and that we really are getting a JS file.
+    var contentType = response.headers.get('content-type');
+
+    if (response.status === 404 || contentType != null && contentType.indexOf('javascript') === -1) {
+      // No service worker found. Probably a different app. Reload the page.
+      navigator.serviceWorker.ready.then(function (registration) {
+        registration.unregister().then(function () {
+          window.location.reload();
+        });
+      });
+    } else {
+      // Service worker found. Proceed as normal.
+      registerValidSW(swUrl, config);
+    }
+  }).catch(function () {
+    console.log('No internet connection found. App is running in offline mode.');
+  });
+}
+
+function unregister() {
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.ready.then(function (registration) {
+      registration.unregister();
+    });
+  }
+}
 
 /***/ })
 

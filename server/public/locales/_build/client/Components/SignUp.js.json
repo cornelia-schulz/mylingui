@@ -2,7 +2,7 @@
   "Sign Up For Early Access": {
     "origin": [
       [
-        "src/Components/SignUp.js",
+        "client/Components/SignUp.js",
         8
       ]
     ]
@@ -10,7 +10,7 @@
   "Register": {
     "origin": [
       [
-        "src/Components/SignUp.js",
+        "client/Components/SignUp.js",
         13
       ]
     ]

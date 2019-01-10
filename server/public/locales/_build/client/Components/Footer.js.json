@@ -2,56 +2,56 @@
   "About Us": {
     "origin": [
       [
-        "src/Components/Footer.js",
-        13
+        "client/Components/Footer.js",
+        15
       ]
     ]
   },
   "What We Do": {
     "origin": [
       [
-        "src/Components/Footer.js",
-        14
+        "client/Components/Footer.js",
+        16
       ]
     ]
   },
   "FAQ": {
     "origin": [
       [
-        "src/Components/Footer.js",
-        15
+        "client/Components/Footer.js",
+        17
       ]
     ]
   },
   "Career": {
     "origin": [
       [
-        "src/Components/Footer.js",
-        16
+        "client/Components/Footer.js",
+        18
       ]
     ]
   },
   "Blog": {
     "origin": [
       [
-        "src/Components/Footer.js",
-        17
+        "client/Components/Footer.js",
+        19
       ]
     ]
   },
   "Contact Us": {
     "origin": [
       [
-        "src/Components/Footer.js",
-        18
+        "client/Components/Footer.js",
+        20
       ]
     ]
   },
   "© 2018 Huddle Copyright": {
     "origin": [
       [
-        "src/Components/Footer.js",
-        23
+        "client/Components/Footer.js",
+        21
       ]
     ]
   }

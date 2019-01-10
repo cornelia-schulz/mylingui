@@ -1,11 +1,11 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2018-11-13 10:46+1300\n"
+"POT-Creation-Date: 2019-01-10 10:52+1300\n"
 "Mime-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: @lingui/cli\n"
-"Language: de\n"
+"Language: de_DE\n"
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: \n"
@@ -15,31 +15,27 @@ msgstr ""
 
 #: client/Components/Footer.js:15
 msgid "About Us"
-msgstr "Über"
+msgstr ""
 
 #: client/Components/Footer.js:19
 msgid "Blog"
-msgstr "Blog"
+msgstr ""
 
 #: client/Components/Main.js:8
 msgid "Build The Community Your Fans Will Love"
-msgstr "Baue eine Gemeinschaft auf, die deine Fans lieben werden"
+msgstr ""
 
 #: client/Components/Footer.js:18
 msgid "Career"
-msgstr "Karriere"
+msgstr ""
 
 #: client/Components/Footer.js:20
 msgid "Contact Us"
-msgstr "Kontakt"
+msgstr ""
 
 #: client/Components/Footer.js:17
 msgid "FAQ"
-msgstr "FAQ"
-
-#: src/Components/Main.js:14
-#~ msgid "Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussions."
-#~ msgstr "Huddle gestaltet Gemeinschaften neu. Deine Besucher haben das gleiche Mitspracherecht wie du. Erstelle Verbindungen durch bedeutungsvolle Unterhaltungen."
+msgstr ""
 
 #: client/Components/Main.js:13
 msgid "Huddle re-imagines the way we build communities. You have a voice,<0/>but so does your audience. Create connections with your users as you <1/>engage in genuine discussions."
@@ -47,16 +43,16 @@ msgstr ""
 
 #: client/Components/SignUp.js:13
 msgid "Register"
-msgstr "Anmelden"
+msgstr ""
 
 #: client/Components/SignUp.js:8
 msgid "Sign Up For Early Access"
-msgstr "Melde dich an, um frühen Zugang zu erhalten"
+msgstr ""
 
 #: client/Components/Footer.js:16
 msgid "What We Do"
-msgstr "Was wir machen"
+msgstr ""
 
 #: client/Components/Footer.js:21
 msgid "© 2018 Huddle Copyright"
-msgstr "© 2018 Huddle Copyright"
+msgstr ""

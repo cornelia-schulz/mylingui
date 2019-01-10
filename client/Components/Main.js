@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Trans } from '@lingui/macro';
 
 function Main(props) {
@@ -20,5 +21,10 @@ function Main(props) {
         </main>
     )
 }
+
+Main.contextTypes = {
+    linguiPublisher: PropTypes.object.isRequired,
+    linguiDefaultRender: PropTypes.any
+  }
 
 export default Main
